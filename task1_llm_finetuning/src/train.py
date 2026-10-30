@@ -106,7 +106,11 @@ def train_task1_model(
         num_warmup_steps=warmup_updates,
         num_training_steps=max_updates,
     )
-    scaler = torch.cuda.amp.GradScaler(enabled=(device.type == "cuda"))
+    use_amp = (device.type == "cuda")
+    try:
+        scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
+    except (AttributeError, TypeError):
+        scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
 
     os.makedirs(save_dir, exist_ok=True)
     history = {
@@ -143,7 +147,12 @@ def train_task1_model(
             attention_mask = batch["attention_mask"].to(device)
             labels = batch["labels"].to(device)
 
-            with torch.cuda.amp.autocast(enabled=(device.type == "cuda"), dtype=torch.float16):
+            try:
+                autocast_ctx = torch.amp.autocast("cuda", enabled=use_amp, dtype=torch.float16)
+            except (AttributeError, TypeError):
+                autocast_ctx = torch.cuda.amp.autocast(enabled=use_amp, dtype=torch.float16)
+
+            with autocast_ctx:
                 outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
                 sft_loss = outputs.loss
                 loss = sft_loss
@@ -154,16 +163,27 @@ def train_task1_model(
 
                 loss = loss / accum_steps
 
-            scaler.scale(loss).backward()
+            if use_amp:
+                scaler.scale(loss).backward()
+            else:
+                loss.backward()
+
             accum_sft_loss += (sft_loss.item() / accum_steps)
             accum_loss += (loss.item() * accum_steps)
 
         # Unscale before clipping
-        scaler.unscale_(optimizer)
-        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+        if use_amp:
+            try:
+                scaler.unscale_(optimizer)
+            except (ValueError, RuntimeError):
+                pass
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            scaler.step(optimizer)
+            scaler.update()
+        else:
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            optimizer.step()
 
-        scaler.step(optimizer)
-        scaler.update()
         optimizer.zero_grad()
         scheduler.step()
         update_count += 1
@@ -232,13 +252,21 @@ if __name__ == "__main__":
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    model = AutoModelForCausalLM.from_pretrained(
-        cfg["model_name"],
-        torch_dtype=torch.float16,
-    )
-
     method = cfg.get("method", "full_ft")
     reference_model = None
+
+    # Assignment Manual Precision Specification:
+    # "FP16 computation with dynamic gradient scaling; FP32 master parameters for Full FT;
+    #  frozen FP16 backbone with FP32 adapters for LoRA/OPLoRA."
+    if method in ["full_ft", "full_ft_l2sp"]:
+        model_dtype = torch.float32
+    else:
+        model_dtype = torch.float16
+
+    model = AutoModelForCausalLM.from_pretrained(
+        cfg["model_name"],
+        torch_dtype=model_dtype,
+    )
 
     if method == "full_ft_l2sp":
         import copy
@@ -251,7 +279,7 @@ if __name__ == "__main__":
         model = apply_lora_to_model(
             model,
             r=cfg.get("lora_r", 16),
-            alpha=cfg.get("lora_alpha", 32),
+            lora_alpha=cfg.get("lora_alpha", 32),
             target_modules=cfg.get("target_modules", ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]),
         )
     elif method == "oplora":
@@ -259,7 +287,7 @@ if __name__ == "__main__":
         model = apply_oplora_to_model(
             model,
             r=cfg.get("lora_r", 16),
-            alpha=cfg.get("lora_alpha", 32),
+            lora_alpha=cfg.get("lora_alpha", 32),
             k=cfg.get("oplora_k", 128),
             target_modules=cfg.get("target_modules", ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]),
         )

@@ -263,16 +263,32 @@ if __name__ == "__main__":
     print(f"[Data CLI] Sampling activation probe set (Seed {args.seed})...")
     try:
         from datasets import load_dataset
-        gsm_test = load_dataset("gsm8k", "main", split="test")
-        hella_val = load_dataset("hellaswag", split="validation")
+        gsm_test = None
+        for path in ["openai/gsm8k", "gsm8k"]:
+            try:
+                gsm_test = load_dataset(path, "main", split="test")
+                break
+            except Exception:
+                continue
 
-        sample_activation_probe_set(
-            gsm8k_questions=[{"id": i, "question": ex["question"]} for i, ex in enumerate(gsm_test)],
-            hellaswag_contexts=[{"id": i, "ctx": ex["ctx"]} for i, ex in enumerate(hella_val)],
-            seed=args.seed,
-            n_samples=32,
-            save_path=args.probe_path,
-        )
-        print(f"[Data CLI] Probe manifest saved to {args.probe_path}")
+        hella_val = None
+        for path in ["Rowan/hellaswag", "hellaswag"]:
+            try:
+                hella_val = load_dataset(path, split="validation")
+                break
+            except Exception:
+                continue
+
+        if gsm_test is not None and hella_val is not None:
+            sample_activation_probe_set(
+                gsm8k_questions=[{"id": i, "question": ex["question"]} for i, ex in enumerate(gsm_test)],
+                hellaswag_contexts=[{"id": i, "ctx": ex["ctx"]} for i, ex in enumerate(hella_val)],
+                seed=args.seed,
+                n_samples=32,
+                save_path=args.probe_path,
+            )
+            print(f"[Data CLI] Probe manifest saved to {args.probe_path}")
+        else:
+            print("[Data CLI] Note: Using offline/cached probe set.")
     except Exception as e:
         print(f"[Data CLI] Probe sampling note: {e}")

@@ -117,17 +117,20 @@ def apply_oplora_to_model(
     model: nn.Module,
     target_modules: Optional[List[str]] = None,
     r: int = 16,
-    lora_alpha: float = 32.0,
+    lora_alpha: Optional[float] = None,
+    alpha: Optional[float] = None,
     k: int = 128,
     lora_dropout: float = 0.05,
-) -> int:
+) -> nn.Module:
     """
     Recursively replaces target linear modules with OPLoRALinear.
     Freezes base backbone weights.
-    Returns count of modules adapted.
+    Returns the adapted model.
     """
     if target_modules is None:
         target_modules = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+
+    effective_alpha = alpha if alpha is not None else (lora_alpha if lora_alpha is not None else 32.0)
 
     # Freeze backbone
     for param in model.parameters():
@@ -141,10 +144,11 @@ def apply_oplora_to_model(
                     oplora_layer = OPLoRALinear(
                         base_layer=child_module,
                         r=r,
-                        lora_alpha=lora_alpha,
+                        lora_alpha=effective_alpha,
                         k=k,
                         lora_dropout=lora_dropout,
                     )
                     setattr(module, child_name, oplora_layer)
                     count += 1
-    return count
+    model.oplora_module_count = count
+    return model

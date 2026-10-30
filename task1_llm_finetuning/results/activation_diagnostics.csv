@@ -1,1153 +1,1153 @@
 Model,Layer,Domain,R(z)
-Full FT Midpoint,Layer 0,Math (GSM8K),0.05356196100472868
-Full FT Midpoint,Layer 0,Math (GSM8K),0.06210199040968195
-Full FT Midpoint,Layer 0,Math (GSM8K),0.08145046113026366
-Full FT Midpoint,Layer 0,Math (GSM8K),0.05375223835948708
-Full FT Midpoint,Layer 0,Math (GSM8K),0.06662425557310281
-Full FT Midpoint,Layer 0,Math (GSM8K),0.0729592738341818
-Full FT Midpoint,Layer 0,Math (GSM8K),0.047205744530234225
-Full FT Midpoint,Layer 0,Math (GSM8K),0.05006659570966415
-Full FT Midpoint,Layer 0,Math (GSM8K),0.05728250263684907
-Full FT Midpoint,Layer 0,Math (GSM8K),0.0704993173593498
-Full FT Midpoint,Layer 0,Math (GSM8K),0.059787844908825466
-Full FT Midpoint,Layer 0,Math (GSM8K),0.060225617357245624
-Full FT Midpoint,Layer 0,Math (GSM8K),0.06204919313951739
-Full FT Midpoint,Layer 0,Math (GSM8K),0.05722601862932754
-Full FT Midpoint,Layer 0,Math (GSM8K),0.039225775213444426
-Full FT Midpoint,Layer 0,Math (GSM8K),0.09835754559234086
-Full FT Midpoint,Layer 0,Math (GSM8K),0.07015759437434642
-Full FT Midpoint,Layer 0,Math (GSM8K),0.05001235463893548
-Full FT Midpoint,Layer 0,Math (GSM8K),0.05691266214177148
-Full FT Midpoint,Layer 0,Math (GSM8K),0.04971058100620043
-Full FT Midpoint,Layer 0,Math (GSM8K),0.03810994633075203
-Full FT Midpoint,Layer 0,Math (GSM8K),0.06610226657551335
-Full FT Midpoint,Layer 0,Math (GSM8K),0.07777089956764482
-Full FT Midpoint,Layer 0,Math (GSM8K),0.06300262965422246
-Full FT Midpoint,Layer 0,Math (GSM8K),0.07094847170332774
-Full FT Midpoint,Layer 0,Math (GSM8K),0.04199804356391648
-Full FT Midpoint,Layer 0,Math (GSM8K),0.05762397825331501
-Full FT Midpoint,Layer 0,Math (GSM8K),0.0788531042024417
-Full FT Midpoint,Layer 0,Math (GSM8K),0.04653192602661313
-Full FT Midpoint,Layer 0,Math (GSM8K),0.08080648327718509
-Full FT Midpoint,Layer 0,Math (GSM8K),0.055267766810814266
-Full FT Midpoint,Layer 0,Math (GSM8K),0.06838915738030282
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05987150707189989
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04542578407400535
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04614582402197246
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.0404083729472525
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06561221160773321
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.054191137698026894
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04995315384755166
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05750008925754757
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.047239684551614196
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05378100287116999
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05005952842097606
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04972990732993353
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04913797001939978
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.07034779101539813
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06391376038699384
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05618637304569382
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05097001240599559
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06142828920339894
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.057644687509255305
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.07580006759380545
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06605860138777411
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04146045153783223
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.051313949419617345
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06748367797744008
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04950005935952233
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04736269966683675
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.053708007233282666
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.0678524657689525
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.047073440374851505
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04896680854332167
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05706971700415766
-Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.042005801558186395
-Full FT Midpoint,Layer 13,Math (GSM8K),0.060726493904079
-Full FT Midpoint,Layer 13,Math (GSM8K),0.07461739770674385
-Full FT Midpoint,Layer 13,Math (GSM8K),0.08391789196283855
-Full FT Midpoint,Layer 13,Math (GSM8K),0.07420193664024789
-Full FT Midpoint,Layer 13,Math (GSM8K),0.0764108806116739
-Full FT Midpoint,Layer 13,Math (GSM8K),0.076169249012599
-Full FT Midpoint,Layer 13,Math (GSM8K),0.07950759200681608
-Full FT Midpoint,Layer 13,Math (GSM8K),0.08954766071333534
-Full FT Midpoint,Layer 13,Math (GSM8K),0.04148707529569088
-Full FT Midpoint,Layer 13,Math (GSM8K),0.05758854097120341
-Full FT Midpoint,Layer 13,Math (GSM8K),0.09004185704745149
-Full FT Midpoint,Layer 13,Math (GSM8K),0.062323112016676896
-Full FT Midpoint,Layer 13,Math (GSM8K),0.08725153266154287
-Full FT Midpoint,Layer 13,Math (GSM8K),0.07485266572226984
-Full FT Midpoint,Layer 13,Math (GSM8K),0.052367268184371374
-Full FT Midpoint,Layer 13,Math (GSM8K),0.05302578443529021
-Full FT Midpoint,Layer 13,Math (GSM8K),0.057987062302384734
-Full FT Midpoint,Layer 13,Math (GSM8K),0.06985119822500087
-Full FT Midpoint,Layer 13,Math (GSM8K),0.08767568799011868
-Full FT Midpoint,Layer 13,Math (GSM8K),0.05825446036429546
-Full FT Midpoint,Layer 13,Math (GSM8K),0.06662788179514408
-Full FT Midpoint,Layer 13,Math (GSM8K),0.059656486866213845
-Full FT Midpoint,Layer 13,Math (GSM8K),0.0724948133641557
-Full FT Midpoint,Layer 13,Math (GSM8K),0.07631051202681775
-Full FT Midpoint,Layer 13,Math (GSM8K),0.07679465128188519
-Full FT Midpoint,Layer 13,Math (GSM8K),0.08868461784216329
-Full FT Midpoint,Layer 13,Math (GSM8K),0.10059716831545754
-Full FT Midpoint,Layer 13,Math (GSM8K),0.06431922445558247
-Full FT Midpoint,Layer 13,Math (GSM8K),0.07213941797097004
-Full FT Midpoint,Layer 13,Math (GSM8K),0.09926443558598262
-Full FT Midpoint,Layer 13,Math (GSM8K),0.0853613536701052
-Full FT Midpoint,Layer 13,Math (GSM8K),0.0879679305720216
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.052422631885940874
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06927131442212796
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07418043768191465
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06618804821121406
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.062258046920362554
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.054928345949793414
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06478761336013317
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.050535499182592966
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.08901092629852991
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.04748294893564066
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07116758729921951
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.0650929707859241
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.0662259463967254
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07156928107563501
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07230884378696961
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.061661151007415455
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07542685285420263
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.05690422230848565
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06817607234800901
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.04897498736204942
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06053971973579057
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.05643402993244513
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06501065969474704
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.05442096706662704
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.046701139808525055
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06219731063015079
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.05687192594036729
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07789027428547428
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.04929771269485629
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.05954379863588566
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.0673944866693647
-Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06622269590950441
-Full FT Midpoint,Layer 27,Math (GSM8K),0.08467267908574386
-Full FT Midpoint,Layer 27,Math (GSM8K),0.08505388558710597
-Full FT Midpoint,Layer 27,Math (GSM8K),0.08293697599698938
-Full FT Midpoint,Layer 27,Math (GSM8K),0.0993216490224413
-Full FT Midpoint,Layer 27,Math (GSM8K),0.10486283384539516
-Full FT Midpoint,Layer 27,Math (GSM8K),0.10423641160908897
-Full FT Midpoint,Layer 27,Math (GSM8K),0.0974542972392976
-Full FT Midpoint,Layer 27,Math (GSM8K),0.09367803888083462
-Full FT Midpoint,Layer 27,Math (GSM8K),0.11343666584865078
-Full FT Midpoint,Layer 27,Math (GSM8K),0.07564481460449617
-Full FT Midpoint,Layer 27,Math (GSM8K),0.07346250671786568
-Full FT Midpoint,Layer 27,Math (GSM8K),0.1026836694330341
-Full FT Midpoint,Layer 27,Math (GSM8K),0.09264552112830048
-Full FT Midpoint,Layer 27,Math (GSM8K),0.07638661314720305
-Full FT Midpoint,Layer 27,Math (GSM8K),0.0788471325915171
-Full FT Midpoint,Layer 27,Math (GSM8K),0.07825095696371599
-Full FT Midpoint,Layer 27,Math (GSM8K),0.11776501607878695
-Full FT Midpoint,Layer 27,Math (GSM8K),0.08326628688122605
-Full FT Midpoint,Layer 27,Math (GSM8K),0.07792688125642781
-Full FT Midpoint,Layer 27,Math (GSM8K),0.0942147110944107
-Full FT Midpoint,Layer 27,Math (GSM8K),0.087544072451759
-Full FT Midpoint,Layer 27,Math (GSM8K),0.07148863313512671
-Full FT Midpoint,Layer 27,Math (GSM8K),0.08417651744239864
-Full FT Midpoint,Layer 27,Math (GSM8K),0.0912641988978524
-Full FT Midpoint,Layer 27,Math (GSM8K),0.06748677506591198
-Full FT Midpoint,Layer 27,Math (GSM8K),0.07317020781860234
-Full FT Midpoint,Layer 27,Math (GSM8K),0.09201740429391828
-Full FT Midpoint,Layer 27,Math (GSM8K),0.10278632388169613
-Full FT Midpoint,Layer 27,Math (GSM8K),0.10689658046125054
-Full FT Midpoint,Layer 27,Math (GSM8K),0.09533652984432468
-Full FT Midpoint,Layer 27,Math (GSM8K),0.0769849121281296
-Full FT Midpoint,Layer 27,Math (GSM8K),0.08089225607185975
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06167781973355067
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.05782887517581789
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07692084865995637
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.061435243861811574
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.0676647603818871
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07875611604764791
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08763981883734079
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07794937249979816
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08797958367305622
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07234313405716694
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.0860211546260701
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.080262153803603
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08658657415523716
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06903457349572006
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.05028541793922964
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06382463528205923
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08864810901150665
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07754139248236085
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07617936657130515
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07885476655668518
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.09974880547647115
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.0857111854621092
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.0771285422296118
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07073628714478067
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.05154883841141719
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07638580863889102
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.056942949897054326
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07080280737932335
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08999114497897243
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08024845144291938
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06260288562910249
-Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07837796380126073
-Full FT Final,Layer 0,Math (GSM8K),0.15324353373365734
-Full FT Final,Layer 0,Math (GSM8K),0.13808268310673172
-Full FT Final,Layer 0,Math (GSM8K),0.14628944481074463
-Full FT Final,Layer 0,Math (GSM8K),0.1470278537441863
-Full FT Final,Layer 0,Math (GSM8K),0.14422417689771092
-Full FT Final,Layer 0,Math (GSM8K),0.15079630059355842
-Full FT Final,Layer 0,Math (GSM8K),0.15339252553463475
-Full FT Final,Layer 0,Math (GSM8K),0.14716420660586665
-Full FT Final,Layer 0,Math (GSM8K),0.1382082438578924
-Full FT Final,Layer 0,Math (GSM8K),0.13483718952263085
-Full FT Final,Layer 0,Math (GSM8K),0.15752815465852182
-Full FT Final,Layer 0,Math (GSM8K),0.13453779289520357
-Full FT Final,Layer 0,Math (GSM8K),0.149952867195684
-Full FT Final,Layer 0,Math (GSM8K),0.1471679219626944
-Full FT Final,Layer 0,Math (GSM8K),0.14018527820150642
-Full FT Final,Layer 0,Math (GSM8K),0.13284618187344127
-Full FT Final,Layer 0,Math (GSM8K),0.13252169553912
-Full FT Final,Layer 0,Math (GSM8K),0.15511070488494685
-Full FT Final,Layer 0,Math (GSM8K),0.14419007680619297
-Full FT Final,Layer 0,Math (GSM8K),0.16436799060040413
-Full FT Final,Layer 0,Math (GSM8K),0.14463821789391826
-Full FT Final,Layer 0,Math (GSM8K),0.14320893136091817
-Full FT Final,Layer 0,Math (GSM8K),0.1331051316865058
-Full FT Final,Layer 0,Math (GSM8K),0.14198637070929856
-Full FT Final,Layer 0,Math (GSM8K),0.1500363515463054
-Full FT Final,Layer 0,Math (GSM8K),0.13218481694123038
-Full FT Final,Layer 0,Math (GSM8K),0.16129586872284207
-Full FT Final,Layer 0,Math (GSM8K),0.15357554905159804
-Full FT Final,Layer 0,Math (GSM8K),0.12151112554542619
-Full FT Final,Layer 0,Math (GSM8K),0.1158155909742912
-Full FT Final,Layer 0,Math (GSM8K),0.1414254435640173
-Full FT Final,Layer 0,Math (GSM8K),0.12272417127414549
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.13554835436457913
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.13830020837904136
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.13716355802610894
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.12122991498823715
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.14644814682179863
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.13169733379919712
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.12728504333344712
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.14635968072607472
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.14322710308016623
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.1407469328391278
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.1493434770822775
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.1357539697767647
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.13541070589207413
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.15345088482478406
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.14398678118144775
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.11878612181387924
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.1267530422827674
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.14539769198016478
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.12698633515303598
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.1510778614659565
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.11899242094478898
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.13791124230010474
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.1414792630739505
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.15242009967464246
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.13382770703396432
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.13547970777735052
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.12274346230399749
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.12776397794896796
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.14820298900691659
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.1273697041672675
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.12678076737764638
-Full FT Final,Layer 0,Non-Math (HellaSwag),0.11723722132858742
-Full FT Final,Layer 13,Math (GSM8K),0.15602688481724358
-Full FT Final,Layer 13,Math (GSM8K),0.16353122450138713
-Full FT Final,Layer 13,Math (GSM8K),0.18473184819128097
-Full FT Final,Layer 13,Math (GSM8K),0.16551800100474182
-Full FT Final,Layer 13,Math (GSM8K),0.1500820258431796
-Full FT Final,Layer 13,Math (GSM8K),0.16917916582304174
-Full FT Final,Layer 13,Math (GSM8K),0.17560481991171423
-Full FT Final,Layer 13,Math (GSM8K),0.16752866837125652
-Full FT Final,Layer 13,Math (GSM8K),0.16057375991227327
-Full FT Final,Layer 13,Math (GSM8K),0.16730235115253828
-Full FT Final,Layer 13,Math (GSM8K),0.18677390866311058
-Full FT Final,Layer 13,Math (GSM8K),0.178922121566683
-Full FT Final,Layer 13,Math (GSM8K),0.1834649171996991
-Full FT Final,Layer 13,Math (GSM8K),0.18200499151842675
-Full FT Final,Layer 13,Math (GSM8K),0.15230590035147326
-Full FT Final,Layer 13,Math (GSM8K),0.17265063487808055
-Full FT Final,Layer 13,Math (GSM8K),0.18228501269312278
-Full FT Final,Layer 13,Math (GSM8K),0.16490054398660123
-Full FT Final,Layer 13,Math (GSM8K),0.1799531053377638
-Full FT Final,Layer 13,Math (GSM8K),0.16972171908052044
-Full FT Final,Layer 13,Math (GSM8K),0.15380821438176803
-Full FT Final,Layer 13,Math (GSM8K),0.15990291501663437
-Full FT Final,Layer 13,Math (GSM8K),0.15723915342709724
-Full FT Final,Layer 13,Math (GSM8K),0.16946974655285157
-Full FT Final,Layer 13,Math (GSM8K),0.1894759148950436
-Full FT Final,Layer 13,Math (GSM8K),0.16235261399990375
-Full FT Final,Layer 13,Math (GSM8K),0.17044232848468488
-Full FT Final,Layer 13,Math (GSM8K),0.1786491438890153
-Full FT Final,Layer 13,Math (GSM8K),0.16028847160688403
-Full FT Final,Layer 13,Math (GSM8K),0.1542857868629649
-Full FT Final,Layer 13,Math (GSM8K),0.19623581479897584
-Full FT Final,Layer 13,Math (GSM8K),0.1702245355759636
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.16523396544807
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.14723966965480778
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.16069752346446
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.1738712553380595
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.1558634017955469
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.1737827175227794
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.18334762095723656
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.1691104089844494
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.16490293289178928
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.1654090357811586
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.15419116638687091
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.16877493096922336
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.16406147957970357
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.18447374148438267
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.17689002539733747
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.15425642860961847
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.15719946342571006
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.18031355865175427
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.1602373159961826
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.14668403254395546
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.15456216926183214
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.1686113253011468
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.1469598340546562
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.15896921329222188
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.15901806614110753
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.15942048538449635
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.18400893879543337
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.1581880794213839
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.15381304502410328
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.15934081083279888
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.1763805848290527
-Full FT Final,Layer 13,Non-Math (HellaSwag),0.16110225755662108
-Full FT Final,Layer 27,Math (GSM8K),0.20052279804298498
-Full FT Final,Layer 27,Math (GSM8K),0.22433778983586447
-Full FT Final,Layer 27,Math (GSM8K),0.19668180815724992
-Full FT Final,Layer 27,Math (GSM8K),0.17754260984681072
-Full FT Final,Layer 27,Math (GSM8K),0.21603502610233632
-Full FT Final,Layer 27,Math (GSM8K),0.2008302828792588
-Full FT Final,Layer 27,Math (GSM8K),0.22550985803825926
-Full FT Final,Layer 27,Math (GSM8K),0.2134091839866201
-Full FT Final,Layer 27,Math (GSM8K),0.18597044741968172
-Full FT Final,Layer 27,Math (GSM8K),0.19431264812357757
-Full FT Final,Layer 27,Math (GSM8K),0.1904844526335068
-Full FT Final,Layer 27,Math (GSM8K),0.20244769513003
-Full FT Final,Layer 27,Math (GSM8K),0.18077010988250786
-Full FT Final,Layer 27,Math (GSM8K),0.19614767389425405
-Full FT Final,Layer 27,Math (GSM8K),0.2162813017672166
-Full FT Final,Layer 27,Math (GSM8K),0.2191367360911486
-Full FT Final,Layer 27,Math (GSM8K),0.2038494450962011
-Full FT Final,Layer 27,Math (GSM8K),0.21830261924249425
-Full FT Final,Layer 27,Math (GSM8K),0.212548978148656
-Full FT Final,Layer 27,Math (GSM8K),0.19901044047005073
-Full FT Final,Layer 27,Math (GSM8K),0.19676719483180996
-Full FT Final,Layer 27,Math (GSM8K),0.20133639961045124
-Full FT Final,Layer 27,Math (GSM8K),0.20025639889584906
-Full FT Final,Layer 27,Math (GSM8K),0.20217316035953478
-Full FT Final,Layer 27,Math (GSM8K),0.20288294200291582
-Full FT Final,Layer 27,Math (GSM8K),0.2026433401633989
-Full FT Final,Layer 27,Math (GSM8K),0.1884664219707035
-Full FT Final,Layer 27,Math (GSM8K),0.1964489008762572
-Full FT Final,Layer 27,Math (GSM8K),0.20829460737771227
-Full FT Final,Layer 27,Math (GSM8K),0.20177656253914072
-Full FT Final,Layer 27,Math (GSM8K),0.23549488186500778
-Full FT Final,Layer 27,Math (GSM8K),0.1881427616372205
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.19372629498931904
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.18520751330741828
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.19634904771107184
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.18677385573228408
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.195339254498498
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.20817560649002273
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.1754614719785077
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.21614298938299095
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.1879620652088652
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.1984292770140027
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.2055741167018414
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.19895152992973675
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.18713313817438948
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.2019083540098492
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.19440180766479195
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.1944810179154224
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.19412096641813092
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.19128986698406805
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.21304327767121883
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.19924667557477066
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.19503289255947717
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.1878574313684562
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.1892330782937162
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.20239092419434582
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.17415540886492192
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.17852067053120643
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.1898000220274831
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.18388450872274645
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.1920865898447833
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.2039097339827116
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.17201076310829916
-Full FT Final,Layer 27,Non-Math (HellaSwag),0.19526174375767447
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07848335714964173
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.09288696866116425
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.0636713679410372
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07428898445473645
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07275846496900822
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.08850857055212653
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.08945737461973577
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.0831155842971805
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07486821743363901
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07006800163117971
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07296856436069606
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07553178974743499
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07335515112719915
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.06979121415103474
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.0882589226256792
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07689301013415226
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07891049123178735
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07020095324167551
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.06493973804584541
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.06286271654983604
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.0750153468274086
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.0783114827750777
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.062585083765658
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.08410239934710893
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.06327120108293179
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07904697491492943
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07739890008008685
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07471001163771325
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.08620247410091852
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.07337700389759438
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.08580112026583514
-Full FT + L2-SP,Layer 0,Math (GSM8K),0.0772712466210534
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.044225958063279586
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04390820679422995
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04588727391482937
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.06023048368438257
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.034839238756659306
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.03632631726830975
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.03912555214860007
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05886788465039358
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.056567406129055864
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04958923056868818
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.038305111001946196
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.03866157519264253
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04567935795774366
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05181308552891086
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.039332843051041566
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04083520599414106
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.053059699581490455
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.06023915092231711
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05675540266477681
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05333401758739466
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.06813948985448884
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.03782802304288699
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05151363094090317
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05580740830611103
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05016180125980279
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.06646241509294436
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05732527058021046
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04538128846116016
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05652957665857784
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05113354911519155
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04465518967702967
-Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05850306910951934
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.08147949392076147
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.07812933548021919
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.07807784546696635
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.0830833809862654
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.0986723788009414
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.07071742232140599
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.09708467732444881
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.0931758087388026
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.08832110534463633
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.08509226895082352
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.08676891265947939
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.08300962303348941
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.10368164764992233
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.0772208846483436
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.08303509150905156
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.09379473202803926
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.09766900687229711
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.08141126652848618
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.07874516993543268
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.0916070356171626
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.10782634102830718
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.09679384144203003
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.06569359998923381
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.06103796762397819
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.09440021117141599
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.07856627972858692
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.08810078539488145
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.10347200694818905
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.07327053878026786
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.09710448814354025
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.09184736813612716
-Full FT + L2-SP,Layer 13,Math (GSM8K),0.08292173836299836
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.049567586550367665
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05360571476280391
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06105747531732264
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06141948421115836
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06412689316240865
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06296338468187167
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05662728671073996
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05688952165180369
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05579236253513696
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.04541914364451668
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.07163338077219561
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05501879391789042
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06951089858403987
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06183213950501069
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.054753882279321056
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05146192904143615
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.061854998729034556
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.0619911515894676
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06608216009332109
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.0697871116966528
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05129776083698686
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.0651052589503994
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.055812133976647665
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.07116330784414163
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06016722089745757
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06391192389354264
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06607450851246349
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.053564439201084724
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.04294908266475289
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.046951452378601724
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.0740516756713965
-Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06891230265135043
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10462553683631999
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10535991640053256
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.11859339695722214
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10761070262956668
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.11786149350315125
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10556405735412469
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.11119078971882095
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.0943246405471742
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.12350360632624739
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.11113818409468179
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.11543888493358992
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.1076960302665231
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10189143242066911
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.08840500671106535
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10053472013020713
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10492394949524744
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10468334511284288
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.11128900808712852
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.1048015058622926
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10351437604276018
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.08446870685065883
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.11173257526057546
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.09815095460306353
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.11032194238374224
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10007482431074859
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.11378789545106369
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.0971196957211729
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.09728480077787884
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.1119993184500335
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.12296234375037575
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.10578213641383426
-Full FT + L2-SP,Layer 27,Math (GSM8K),0.11596172121274691
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06274206758924346
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07004952550941225
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07562727237071319
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07272018068553215
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.09108355504015299
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.0725112638934021
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07337984655412673
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07029306542154606
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06981484554624605
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06896447565080088
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.08824799880395445
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07172439346905757
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07921011988048188
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06850116232793349
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06198669964483647
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.05913674008144494
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06308533387940382
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.05093733326275324
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07517862298552198
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07208797842438738
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07245573403343832
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06482060644960473
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06684550023285694
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.08232792071271058
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06953270418993462
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07492530297902786
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06346993882251828
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07119374039746551
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07524122733030608
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.0649773287867713
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07128686232442133
-Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.08900307555330605
-LoRA-4,Layer 0,Math (GSM8K),0.03981671366445558
-LoRA-4,Layer 0,Math (GSM8K),0.035200632999260274
-LoRA-4,Layer 0,Math (GSM8K),0.03617834560623921
-LoRA-4,Layer 0,Math (GSM8K),0.01929319740046591
-LoRA-4,Layer 0,Math (GSM8K),0.04134874755095764
-LoRA-4,Layer 0,Math (GSM8K),0.02936023715131416
-LoRA-4,Layer 0,Math (GSM8K),0.053523292529875865
-LoRA-4,Layer 0,Math (GSM8K),0.030103900096591675
-LoRA-4,Layer 0,Math (GSM8K),0.044145169862164026
-LoRA-4,Layer 0,Math (GSM8K),0.051238424365115595
-LoRA-4,Layer 0,Math (GSM8K),0.046063046252434695
-LoRA-4,Layer 0,Math (GSM8K),0.0631505353216529
-LoRA-4,Layer 0,Math (GSM8K),0.040337172681275735
-LoRA-4,Layer 0,Math (GSM8K),0.04266370194914356
-LoRA-4,Layer 0,Math (GSM8K),0.053716931832755034
-LoRA-4,Layer 0,Math (GSM8K),0.057765863934030076
-LoRA-4,Layer 0,Math (GSM8K),0.059026746309564546
-LoRA-4,Layer 0,Math (GSM8K),0.07537634339544119
-LoRA-4,Layer 0,Math (GSM8K),0.0488436230408689
-LoRA-4,Layer 0,Math (GSM8K),0.06302812648130057
-LoRA-4,Layer 0,Math (GSM8K),0.05107791527590742
-LoRA-4,Layer 0,Math (GSM8K),0.044204065808609326
-LoRA-4,Layer 0,Math (GSM8K),0.0449455448606958
-LoRA-4,Layer 0,Math (GSM8K),0.06557224859516211
-LoRA-4,Layer 0,Math (GSM8K),0.03787015946913971
-LoRA-4,Layer 0,Math (GSM8K),0.051570200697342465
-LoRA-4,Layer 0,Math (GSM8K),0.031162064871641748
-LoRA-4,Layer 0,Math (GSM8K),0.03941643111088223
-LoRA-4,Layer 0,Math (GSM8K),0.059662048630762556
-LoRA-4,Layer 0,Math (GSM8K),0.04836203224837124
-LoRA-4,Layer 0,Math (GSM8K),0.03899660046080476
-LoRA-4,Layer 0,Math (GSM8K),0.04037719296369785
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03363068436806951
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03327318537510946
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.025288427067454967
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.022929667702639777
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.021480120316027473
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.018808633232847496
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03808682924210157
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.005
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03547026378226698
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03218745714147176
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.02297591926214946
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.05381596745758396
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.027169774473685265
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.030784809964773483
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03330606177041513
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.030225659970660217
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03955794490761396
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.026778409586935316
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.030898171634257596
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.04271172646040479
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.020385037612219783
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.013768600538178046
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03730853575296576
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.040185049557785485
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03377860214278823
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.04638179450071935
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.024635234088936468
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03884550122017399
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.0397952212166777
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.040222543686942724
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.02785557337995895
-LoRA-4,Layer 0,Non-Math (HellaSwag),0.03607352841247383
-LoRA-4,Layer 13,Math (GSM8K),0.04848703188387956
-LoRA-4,Layer 13,Math (GSM8K),0.06745279486182801
-LoRA-4,Layer 13,Math (GSM8K),0.04822171379654929
-LoRA-4,Layer 13,Math (GSM8K),0.06583973084380669
-LoRA-4,Layer 13,Math (GSM8K),0.04080723662925422
-LoRA-4,Layer 13,Math (GSM8K),0.04837234980899824
-LoRA-4,Layer 13,Math (GSM8K),0.06412178608374282
-LoRA-4,Layer 13,Math (GSM8K),0.066300312749083
-LoRA-4,Layer 13,Math (GSM8K),0.050552230099093404
-LoRA-4,Layer 13,Math (GSM8K),0.03633148879465506
-LoRA-4,Layer 13,Math (GSM8K),0.07308139996056605
-LoRA-4,Layer 13,Math (GSM8K),0.0772720058929241
-LoRA-4,Layer 13,Math (GSM8K),0.06348175429700109
-LoRA-4,Layer 13,Math (GSM8K),0.09361629872995125
-LoRA-4,Layer 13,Math (GSM8K),0.0441355548515414
-LoRA-4,Layer 13,Math (GSM8K),0.046660889679057654
-LoRA-4,Layer 13,Math (GSM8K),0.0451964592635177
-LoRA-4,Layer 13,Math (GSM8K),0.07060776866277163
-LoRA-4,Layer 13,Math (GSM8K),0.034619035157850205
-LoRA-4,Layer 13,Math (GSM8K),0.06377042848614453
-LoRA-4,Layer 13,Math (GSM8K),0.03856489772443064
-LoRA-4,Layer 13,Math (GSM8K),0.04180670823135565
-LoRA-4,Layer 13,Math (GSM8K),0.050830413752098104
-LoRA-4,Layer 13,Math (GSM8K),0.039762110427322896
-LoRA-4,Layer 13,Math (GSM8K),0.06990769976350061
-LoRA-4,Layer 13,Math (GSM8K),0.060018176480434865
-LoRA-4,Layer 13,Math (GSM8K),0.05148795884381414
-LoRA-4,Layer 13,Math (GSM8K),0.05271232685438938
-LoRA-4,Layer 13,Math (GSM8K),0.046410569007343895
-LoRA-4,Layer 13,Math (GSM8K),0.04501413874786049
-LoRA-4,Layer 13,Math (GSM8K),0.055348913853580366
-LoRA-4,Layer 13,Math (GSM8K),0.0671571717804439
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.02733886179529452
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.04550962248490406
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.03796291149960725
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.04078946467587799
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.04048166548702125
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.042589757561609556
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.0303329049636621
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.031976267015736616
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.05034209046985749
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.026084523499150476
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.03975806342225709
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.05666981551795171
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.05444237164054873
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.041272868060249636
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.037981381541757224
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.044821397958979645
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.02013789262449833
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.029795714617967747
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.028074676619000757
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.032965330737142716
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.035901476021511204
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.05520272454373672
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.03257653522887484
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.028513937297821076
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.025836485699520434
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.046953420650742934
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.04964397887065687
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.05620438301683564
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.030697581260888906
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.037255329340655084
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.031058039638730158
-LoRA-4,Layer 13,Non-Math (HellaSwag),0.03707005506103739
-LoRA-4,Layer 27,Math (GSM8K),0.06521598358012201
-LoRA-4,Layer 27,Math (GSM8K),0.06391570269764114
-LoRA-4,Layer 27,Math (GSM8K),0.040299721290730575
-LoRA-4,Layer 27,Math (GSM8K),0.06852744383610776
-LoRA-4,Layer 27,Math (GSM8K),0.07587251079459069
-LoRA-4,Layer 27,Math (GSM8K),0.08131289467365657
-LoRA-4,Layer 27,Math (GSM8K),0.06210389288311983
-LoRA-4,Layer 27,Math (GSM8K),0.0876882512307165
-LoRA-4,Layer 27,Math (GSM8K),0.06161753154330828
-LoRA-4,Layer 27,Math (GSM8K),0.055411195079254745
-LoRA-4,Layer 27,Math (GSM8K),0.050325849444828596
-LoRA-4,Layer 27,Math (GSM8K),0.08310855573899174
-LoRA-4,Layer 27,Math (GSM8K),0.060716794084382165
-LoRA-4,Layer 27,Math (GSM8K),0.0683107146724338
-LoRA-4,Layer 27,Math (GSM8K),0.055917942648504484
-LoRA-4,Layer 27,Math (GSM8K),0.07488992630053284
-LoRA-4,Layer 27,Math (GSM8K),0.0979706161643517
-LoRA-4,Layer 27,Math (GSM8K),0.0729571917380497
-LoRA-4,Layer 27,Math (GSM8K),0.054699051493446005
-LoRA-4,Layer 27,Math (GSM8K),0.04932328886235518
-LoRA-4,Layer 27,Math (GSM8K),0.0845641700128082
-LoRA-4,Layer 27,Math (GSM8K),0.07069120813626571
-LoRA-4,Layer 27,Math (GSM8K),0.06584415878719509
-LoRA-4,Layer 27,Math (GSM8K),0.06304293359544341
-LoRA-4,Layer 27,Math (GSM8K),0.05772388071624402
-LoRA-4,Layer 27,Math (GSM8K),0.04574211214490445
-LoRA-4,Layer 27,Math (GSM8K),0.06288799771044547
-LoRA-4,Layer 27,Math (GSM8K),0.07544691202745694
-LoRA-4,Layer 27,Math (GSM8K),0.09483099105991653
-LoRA-4,Layer 27,Math (GSM8K),0.06430899453792326
-LoRA-4,Layer 27,Math (GSM8K),0.08152173205765752
-LoRA-4,Layer 27,Math (GSM8K),0.06837533346368392
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.03618489555198385
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.060048954671938985
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.04028661388160112
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.03699294102936577
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.0365960293393895
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.06882750328233656
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.040646878599900016
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.04054434001622946
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.061025408169213105
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.045095220722417076
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.06001634749820587
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.04363836604190004
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.038880144114307465
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.028346504551991905
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.050212362877589935
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.04307333682753153
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.04517073850348234
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.026396840801156736
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.04518292999440392
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.04649708953981872
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.06297419345891223
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.044078045670814456
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.042483609543332454
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.04990662224355062
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.04056995960026858
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.056916208947539626
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.0459823015284736
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.05230943312098436
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.060361933255392256
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.0652577494325802
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.03944718856309741
-LoRA-4,Layer 27,Non-Math (HellaSwag),0.04420928298867826
-LoRA-16,Layer 0,Math (GSM8K),0.08385320044152073
-LoRA-16,Layer 0,Math (GSM8K),0.09708439219432344
-LoRA-16,Layer 0,Math (GSM8K),0.08283803861708251
-LoRA-16,Layer 0,Math (GSM8K),0.11552475814273497
-LoRA-16,Layer 0,Math (GSM8K),0.10411679259257965
-LoRA-16,Layer 0,Math (GSM8K),0.08998968957728486
-LoRA-16,Layer 0,Math (GSM8K),0.11015873559090161
-LoRA-16,Layer 0,Math (GSM8K),0.08680021693466239
-LoRA-16,Layer 0,Math (GSM8K),0.07658530810413713
-LoRA-16,Layer 0,Math (GSM8K),0.07699845963586592
-LoRA-16,Layer 0,Math (GSM8K),0.09259884890659992
-LoRA-16,Layer 0,Math (GSM8K),0.06821311388626676
-LoRA-16,Layer 0,Math (GSM8K),0.06594412947201392
-LoRA-16,Layer 0,Math (GSM8K),0.08732390073460755
-LoRA-16,Layer 0,Math (GSM8K),0.09139569483027547
-LoRA-16,Layer 0,Math (GSM8K),0.07623750596706944
-LoRA-16,Layer 0,Math (GSM8K),0.07266267100817628
-LoRA-16,Layer 0,Math (GSM8K),0.09526834086190462
-LoRA-16,Layer 0,Math (GSM8K),0.09381097469981309
-LoRA-16,Layer 0,Math (GSM8K),0.08891889314188782
-LoRA-16,Layer 0,Math (GSM8K),0.09226861892766909
-LoRA-16,Layer 0,Math (GSM8K),0.09917672345498645
-LoRA-16,Layer 0,Math (GSM8K),0.06630276915724054
-LoRA-16,Layer 0,Math (GSM8K),0.09644881007589506
-LoRA-16,Layer 0,Math (GSM8K),0.09885153333770268
-LoRA-16,Layer 0,Math (GSM8K),0.10821930653173241
-LoRA-16,Layer 0,Math (GSM8K),0.11093311913085453
-LoRA-16,Layer 0,Math (GSM8K),0.06783074483646784
-LoRA-16,Layer 0,Math (GSM8K),0.0816775402257433
-LoRA-16,Layer 0,Math (GSM8K),0.08388071095632203
-LoRA-16,Layer 0,Math (GSM8K),0.06642216040881968
-LoRA-16,Layer 0,Math (GSM8K),0.08625141807309838
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07038245886556235
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07100776054234166
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07183404582739888
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.08514844393875215
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.08259140915861146
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.08697100564023562
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.09454462163247501
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.06322738825754545
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.06798878042176396
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.06690933353121663
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.06828160294922966
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.08368471963311194
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.08218137672174672
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.09183317736894384
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07591297752639446
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.06564604640145019
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.06358796912963262
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07450427142595709
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.06183994675509204
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.08487483755162656
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.06261653843598343
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07510147773120796
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.0770638533495907
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07042519565361105
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.0720438355090428
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07094449979163645
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.08280080281111511
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07322951325888016
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07811170082572304
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07008784757929931
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.07131396834869407
-LoRA-16,Layer 0,Non-Math (HellaSwag),0.08926039299177972
-LoRA-16,Layer 13,Math (GSM8K),0.12204635391547973
-LoRA-16,Layer 13,Math (GSM8K),0.10782436621972344
-LoRA-16,Layer 13,Math (GSM8K),0.10862350481604377
-LoRA-16,Layer 13,Math (GSM8K),0.07900279091978481
-LoRA-16,Layer 13,Math (GSM8K),0.10582396866362272
-LoRA-16,Layer 13,Math (GSM8K),0.0979609305431038
-LoRA-16,Layer 13,Math (GSM8K),0.10578591456395757
-LoRA-16,Layer 13,Math (GSM8K),0.10896212464087911
-LoRA-16,Layer 13,Math (GSM8K),0.1147445380621262
-LoRA-16,Layer 13,Math (GSM8K),0.13457845273072483
-LoRA-16,Layer 13,Math (GSM8K),0.10851025676274541
-LoRA-16,Layer 13,Math (GSM8K),0.1145622560253291
-LoRA-16,Layer 13,Math (GSM8K),0.1185319535964117
-LoRA-16,Layer 13,Math (GSM8K),0.10998419781440763
-LoRA-16,Layer 13,Math (GSM8K),0.11208620231725246
-LoRA-16,Layer 13,Math (GSM8K),0.10460710226862636
-LoRA-16,Layer 13,Math (GSM8K),0.11058508838211667
-LoRA-16,Layer 13,Math (GSM8K),0.09938682244502992
-LoRA-16,Layer 13,Math (GSM8K),0.11032419535986204
-LoRA-16,Layer 13,Math (GSM8K),0.10001935602925813
-LoRA-16,Layer 13,Math (GSM8K),0.10432364762939136
-LoRA-16,Layer 13,Math (GSM8K),0.11746280186519363
-LoRA-16,Layer 13,Math (GSM8K),0.11698878004722942
-LoRA-16,Layer 13,Math (GSM8K),0.09866842737928352
-LoRA-16,Layer 13,Math (GSM8K),0.11575494661546334
-LoRA-16,Layer 13,Math (GSM8K),0.10414631085828009
-LoRA-16,Layer 13,Math (GSM8K),0.10684026175280764
-LoRA-16,Layer 13,Math (GSM8K),0.1024954092915613
-LoRA-16,Layer 13,Math (GSM8K),0.11977850288111666
-LoRA-16,Layer 13,Math (GSM8K),0.10222042475505463
-LoRA-16,Layer 13,Math (GSM8K),0.12691751535843554
-LoRA-16,Layer 13,Math (GSM8K),0.09176026872849836
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08519032001498207
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08580695714338102
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.09239098015397665
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.1061257439272848
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08729136588436327
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.0768431207362292
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08898783784642805
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.09095195220050742
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.10617375325951633
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08806431623692842
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08937016935309659
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.1047364115740943
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08885871295537665
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.10388208611984037
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08428169330542148
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.10110820664748699
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.09927559757392472
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.09143244347894695
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.0832760628355845
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.09189557144022979
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08907558344150929
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.09313112910297465
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.0877013820366709
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.07824281378017411
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.09598799245249448
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.09163895250333585
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08013636664797957
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.09676035851489692
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.09195126274661222
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.08591670461143643
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.087552634668333
-LoRA-16,Layer 13,Non-Math (HellaSwag),0.10496436109411598
-LoRA-16,Layer 27,Math (GSM8K),0.12133314214076879
-LoRA-16,Layer 27,Math (GSM8K),0.12079642080768435
-LoRA-16,Layer 27,Math (GSM8K),0.1257392672848879
-LoRA-16,Layer 27,Math (GSM8K),0.13576672134021264
-LoRA-16,Layer 27,Math (GSM8K),0.12594713275203057
-LoRA-16,Layer 27,Math (GSM8K),0.127665197969304
-LoRA-16,Layer 27,Math (GSM8K),0.10538429291382573
-LoRA-16,Layer 27,Math (GSM8K),0.11748625813023501
-LoRA-16,Layer 27,Math (GSM8K),0.1445650258482961
-LoRA-16,Layer 27,Math (GSM8K),0.12358210698081094
-LoRA-16,Layer 27,Math (GSM8K),0.139440437539065
-LoRA-16,Layer 27,Math (GSM8K),0.1317074663312328
-LoRA-16,Layer 27,Math (GSM8K),0.12323499044506406
-LoRA-16,Layer 27,Math (GSM8K),0.13063365486574205
-LoRA-16,Layer 27,Math (GSM8K),0.12479173067094994
-LoRA-16,Layer 27,Math (GSM8K),0.11234529990531948
-LoRA-16,Layer 27,Math (GSM8K),0.12710011447717595
-LoRA-16,Layer 27,Math (GSM8K),0.12877179812718467
-LoRA-16,Layer 27,Math (GSM8K),0.1372819941053062
-LoRA-16,Layer 27,Math (GSM8K),0.13788362599366344
-LoRA-16,Layer 27,Math (GSM8K),0.12674904511461718
-LoRA-16,Layer 27,Math (GSM8K),0.13870870854984435
-LoRA-16,Layer 27,Math (GSM8K),0.1368923075143732
-LoRA-16,Layer 27,Math (GSM8K),0.1327592259644797
-LoRA-16,Layer 27,Math (GSM8K),0.1326189573578997
-LoRA-16,Layer 27,Math (GSM8K),0.12499207991393249
-LoRA-16,Layer 27,Math (GSM8K),0.12389180947861629
-LoRA-16,Layer 27,Math (GSM8K),0.11229224611245536
-LoRA-16,Layer 27,Math (GSM8K),0.1481035170480228
-LoRA-16,Layer 27,Math (GSM8K),0.14903931338194232
-LoRA-16,Layer 27,Math (GSM8K),0.10633275366017148
-LoRA-16,Layer 27,Math (GSM8K),0.14090422292575672
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10451522109156737
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.11808821900130632
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.09406444922834405
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10487780531001271
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.09851979993682572
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10993576510990677
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.11606329896469128
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.11296219544918508
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.09650132633890093
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10646180323906408
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10689979147790721
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.0967488771236263
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.12033698896826489
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10718917554668962
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.09460566679342203
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.11885444212329249
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10839041946769526
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.12259071203848734
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.11227000681198053
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.1148246669256812
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.11362312793316343
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.11397249552091648
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10498797430435591
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.11389727326889258
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.09089276311200067
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10043460730142213
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.09392752288708896
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10881618778283113
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.10865957203240523
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.1067992249094478
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.0960578210560025
-LoRA-16,Layer 27,Non-Math (HellaSwag),0.1124829741062877
-OPLoRA-16,Layer 0,Math (GSM8K),0.10517813545311529
-OPLoRA-16,Layer 0,Math (GSM8K),0.06531789034004377
-OPLoRA-16,Layer 0,Math (GSM8K),0.0904666580804829
-OPLoRA-16,Layer 0,Math (GSM8K),0.09633600314770924
-OPLoRA-16,Layer 0,Math (GSM8K),0.0864174932331742
-OPLoRA-16,Layer 0,Math (GSM8K),0.08517742788942453
-OPLoRA-16,Layer 0,Math (GSM8K),0.07875633311788899
-OPLoRA-16,Layer 0,Math (GSM8K),0.09181851596243738
-OPLoRA-16,Layer 0,Math (GSM8K),0.07523083236055526
-OPLoRA-16,Layer 0,Math (GSM8K),0.07589958547537237
-OPLoRA-16,Layer 0,Math (GSM8K),0.10169800288598901
-OPLoRA-16,Layer 0,Math (GSM8K),0.09302746686507117
-OPLoRA-16,Layer 0,Math (GSM8K),0.09991623128090216
-OPLoRA-16,Layer 0,Math (GSM8K),0.10426289285564977
-OPLoRA-16,Layer 0,Math (GSM8K),0.08283522606040084
-OPLoRA-16,Layer 0,Math (GSM8K),0.054259927023637855
-OPLoRA-16,Layer 0,Math (GSM8K),0.08595846630700213
-OPLoRA-16,Layer 0,Math (GSM8K),0.09141512605605297
-OPLoRA-16,Layer 0,Math (GSM8K),0.07906365658360925
-OPLoRA-16,Layer 0,Math (GSM8K),0.10081195643474472
-OPLoRA-16,Layer 0,Math (GSM8K),0.10074703441435648
-OPLoRA-16,Layer 0,Math (GSM8K),0.08815729751003777
-OPLoRA-16,Layer 0,Math (GSM8K),0.08170517192324298
-OPLoRA-16,Layer 0,Math (GSM8K),0.08719240053058208
-OPLoRA-16,Layer 0,Math (GSM8K),0.07882306120824986
-OPLoRA-16,Layer 0,Math (GSM8K),0.10468879479926843
-OPLoRA-16,Layer 0,Math (GSM8K),0.09966137510797517
-OPLoRA-16,Layer 0,Math (GSM8K),0.10281709014389025
-OPLoRA-16,Layer 0,Math (GSM8K),0.092075661425859
-OPLoRA-16,Layer 0,Math (GSM8K),0.0933290994342379
-OPLoRA-16,Layer 0,Math (GSM8K),0.07830065238316158
-OPLoRA-16,Layer 0,Math (GSM8K),0.11047042763019446
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.02765462235142223
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.0500774703731765
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.04045857129804875
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.05073983999746931
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.04662881402504387
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.037947728641451475
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.05102681672438045
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.028511926009393097
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.030212862221816225
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.0301117179788677
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.034445623829205296
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.036495250183069004
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.0442846115400268
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.05544225695451001
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.04740943602145384
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.03546469809419056
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.032127648210570924
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.03715343409666548
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.023053655253421377
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.04028511460285673
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.03739997135311933
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.024418357324266317
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.031005732113292207
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.033330137386039786
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.02927100361815528
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.032568070348591535
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.030085830083587742
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.04088654583524041
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.045990754943525586
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.035910047477757445
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.017627027922388537
-OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.030965794967284042
-OPLoRA-16,Layer 13,Math (GSM8K),0.11895827540740637
-OPLoRA-16,Layer 13,Math (GSM8K),0.11188221243090615
-OPLoRA-16,Layer 13,Math (GSM8K),0.10263484995846693
-OPLoRA-16,Layer 13,Math (GSM8K),0.11038216409494743
-OPLoRA-16,Layer 13,Math (GSM8K),0.1256741447486201
-OPLoRA-16,Layer 13,Math (GSM8K),0.08709894200991306
-OPLoRA-16,Layer 13,Math (GSM8K),0.09741674570103259
-OPLoRA-16,Layer 13,Math (GSM8K),0.08471774762536455
-OPLoRA-16,Layer 13,Math (GSM8K),0.10462782913240604
-OPLoRA-16,Layer 13,Math (GSM8K),0.10882038203908467
-OPLoRA-16,Layer 13,Math (GSM8K),0.08691540195732758
-OPLoRA-16,Layer 13,Math (GSM8K),0.10126796615153888
-OPLoRA-16,Layer 13,Math (GSM8K),0.09439185934164765
-OPLoRA-16,Layer 13,Math (GSM8K),0.09887700096394389
-OPLoRA-16,Layer 13,Math (GSM8K),0.10548401135319893
-OPLoRA-16,Layer 13,Math (GSM8K),0.09219662244537462
-OPLoRA-16,Layer 13,Math (GSM8K),0.07999445724283646
-OPLoRA-16,Layer 13,Math (GSM8K),0.13026383142175174
-OPLoRA-16,Layer 13,Math (GSM8K),0.10985741969089974
-OPLoRA-16,Layer 13,Math (GSM8K),0.11062288553370694
-OPLoRA-16,Layer 13,Math (GSM8K),0.10439082409637382
-OPLoRA-16,Layer 13,Math (GSM8K),0.095228056214265
-OPLoRA-16,Layer 13,Math (GSM8K),0.11614045788911088
-OPLoRA-16,Layer 13,Math (GSM8K),0.08860857708651748
-OPLoRA-16,Layer 13,Math (GSM8K),0.1133161577306309
-OPLoRA-16,Layer 13,Math (GSM8K),0.08941486712258433
-OPLoRA-16,Layer 13,Math (GSM8K),0.11524593487213386
-OPLoRA-16,Layer 13,Math (GSM8K),0.08289895670811137
-OPLoRA-16,Layer 13,Math (GSM8K),0.10567598632753346
-OPLoRA-16,Layer 13,Math (GSM8K),0.10276374162511452
-OPLoRA-16,Layer 13,Math (GSM8K),0.10768018119078825
-OPLoRA-16,Layer 13,Math (GSM8K),0.11018025070686123
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04228214901174398
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.05443379494237359
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04545823691022681
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04883481970402982
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.040914883074410935
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.05318638357016127
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04292813412691702
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.06473103311672215
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.0422774223714767
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.051332944519748
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.03118778783623511
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.05776843689872292
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.03784787508663978
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.03857897497149687
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.0413736352116315
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.0554461514731381
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.050034040056726674
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.0342236068069579
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.03138075796937505
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04326180229792938
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.03348781622544162
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.046822780828928226
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.05908468041449499
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.038610183865917594
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04281268477869359
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.05286813592730313
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.02984209173950645
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.03378261432711872
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.03586207541202848
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.050460622583062886
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04678316861305435
-OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.05028149890616466
-OPLoRA-16,Layer 27,Math (GSM8K),0.1345436978389388
-OPLoRA-16,Layer 27,Math (GSM8K),0.12713629249504302
-OPLoRA-16,Layer 27,Math (GSM8K),0.11918084732479858
-OPLoRA-16,Layer 27,Math (GSM8K),0.11874181347647568
-OPLoRA-16,Layer 27,Math (GSM8K),0.116478426764996
-OPLoRA-16,Layer 27,Math (GSM8K),0.12967132328381908
-OPLoRA-16,Layer 27,Math (GSM8K),0.13260294626778066
-OPLoRA-16,Layer 27,Math (GSM8K),0.13034990444615896
-OPLoRA-16,Layer 27,Math (GSM8K),0.1098080622212121
-OPLoRA-16,Layer 27,Math (GSM8K),0.1293813394218094
-OPLoRA-16,Layer 27,Math (GSM8K),0.09521603082468823
-OPLoRA-16,Layer 27,Math (GSM8K),0.1407020402724347
-OPLoRA-16,Layer 27,Math (GSM8K),0.11243451449003511
-OPLoRA-16,Layer 27,Math (GSM8K),0.11366243114061159
-OPLoRA-16,Layer 27,Math (GSM8K),0.11590982739455231
-OPLoRA-16,Layer 27,Math (GSM8K),0.10716796652450092
-OPLoRA-16,Layer 27,Math (GSM8K),0.12851699162504293
-OPLoRA-16,Layer 27,Math (GSM8K),0.11479076995526052
-OPLoRA-16,Layer 27,Math (GSM8K),0.1177899036806612
-OPLoRA-16,Layer 27,Math (GSM8K),0.14005580875395288
-OPLoRA-16,Layer 27,Math (GSM8K),0.10666813623610116
-OPLoRA-16,Layer 27,Math (GSM8K),0.14068255962595974
-OPLoRA-16,Layer 27,Math (GSM8K),0.10418095223327928
-OPLoRA-16,Layer 27,Math (GSM8K),0.14996810476969766
-OPLoRA-16,Layer 27,Math (GSM8K),0.10385130396416489
-OPLoRA-16,Layer 27,Math (GSM8K),0.12743502539080007
-OPLoRA-16,Layer 27,Math (GSM8K),0.10819189999222392
-OPLoRA-16,Layer 27,Math (GSM8K),0.12582627103059899
-OPLoRA-16,Layer 27,Math (GSM8K),0.1119446198576611
-OPLoRA-16,Layer 27,Math (GSM8K),0.12767328363615987
-OPLoRA-16,Layer 27,Math (GSM8K),0.12720805833675264
-OPLoRA-16,Layer 27,Math (GSM8K),0.11271016319281345
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.06503809602054321
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.0605714561272909
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05003853274322218
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.043138451148933325
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.038837883040063755
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.03829081289126658
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05819737818709202
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.07612593234155027
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.044129890350839224
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05602332264664286
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.06994273017628368
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05198153506799675
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.059557885379429965
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.0498875704732007
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04990804478955862
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.06971511364497303
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04611402909453197
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04704930546809558
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.06837812960403145
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04623815165699728
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.057297891725802345
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05926951079428475
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.037222898727023106
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.0400734813042386
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.06350967642538521
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.0710512570335966
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.06084556753658199
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04520126416037761
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.051061043090999784
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04376327413080788
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05411805615258939
-OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05991878450652757
+Full FT Midpoint,Layer 0,Math (GSM8K),0.06568170171916124
+Full FT Midpoint,Layer 0,Math (GSM8K),0.06786842257951803
+Full FT Midpoint,Layer 0,Math (GSM8K),0.05914656903919393
+Full FT Midpoint,Layer 0,Math (GSM8K),0.05614975653979967
+Full FT Midpoint,Layer 0,Math (GSM8K),0.07650581190712011
+Full FT Midpoint,Layer 0,Math (GSM8K),0.07464774643299456
+Full FT Midpoint,Layer 0,Math (GSM8K),0.06725526158308301
+Full FT Midpoint,Layer 0,Math (GSM8K),0.05472513728738865
+Full FT Midpoint,Layer 0,Math (GSM8K),0.053729174740022465
+Full FT Midpoint,Layer 0,Math (GSM8K),0.05078468979835153
+Full FT Midpoint,Layer 0,Math (GSM8K),0.043924946431715066
+Full FT Midpoint,Layer 0,Math (GSM8K),0.0704544323290098
+Full FT Midpoint,Layer 0,Math (GSM8K),0.07436177286605083
+Full FT Midpoint,Layer 0,Math (GSM8K),0.06420687014528664
+Full FT Midpoint,Layer 0,Math (GSM8K),0.0729907839989777
+Full FT Midpoint,Layer 0,Math (GSM8K),0.07748487604771692
+Full FT Midpoint,Layer 0,Math (GSM8K),0.06550266073371147
+Full FT Midpoint,Layer 0,Math (GSM8K),0.057333969559592565
+Full FT Midpoint,Layer 0,Math (GSM8K),0.057844287866693635
+Full FT Midpoint,Layer 0,Math (GSM8K),0.0558362211861988
+Full FT Midpoint,Layer 0,Math (GSM8K),0.040368804079332486
+Full FT Midpoint,Layer 0,Math (GSM8K),0.05116772916917413
+Full FT Midpoint,Layer 0,Math (GSM8K),0.035594700437311735
+Full FT Midpoint,Layer 0,Math (GSM8K),0.037578700168939716
+Full FT Midpoint,Layer 0,Math (GSM8K),0.052033579560025814
+Full FT Midpoint,Layer 0,Math (GSM8K),0.054577439284905827
+Full FT Midpoint,Layer 0,Math (GSM8K),0.07060051727811625
+Full FT Midpoint,Layer 0,Math (GSM8K),0.048337969206700616
+Full FT Midpoint,Layer 0,Math (GSM8K),0.0825302383346323
+Full FT Midpoint,Layer 0,Math (GSM8K),0.06657452948787587
+Full FT Midpoint,Layer 0,Math (GSM8K),0.06001154321843898
+Full FT Midpoint,Layer 0,Math (GSM8K),0.06381811763081739
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04992737365861395
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.056614077551673206
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.050759911323417624
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.057492240775506
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.049315676178347444
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.062146332190455275
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.0539101633110502
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04766950949639906
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.045335988419427056
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.048321884924810564
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05284254688531525
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05120682386298349
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04888252278990476
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.03415486040568103
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06031553477974156
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06640894292830142
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05099192690833383
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05673081725353322
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.04819910001708703
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05526473080272466
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05938347200166308
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05878436021526721
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.03892605429796368
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05149248899309576
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.0519821434810842
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06285943162038454
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06696690818963702
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06269274914835368
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.05402504209194011
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.0565452983119838
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.053692373104057806
+Full FT Midpoint,Layer 0,Non-Math (HellaSwag),0.06171674205259322
+Full FT Midpoint,Layer 13,Math (GSM8K),0.07453446872131017
+Full FT Midpoint,Layer 13,Math (GSM8K),0.0693883751716136
+Full FT Midpoint,Layer 13,Math (GSM8K),0.07286289188561043
+Full FT Midpoint,Layer 13,Math (GSM8K),0.06934954607878806
+Full FT Midpoint,Layer 13,Math (GSM8K),0.05850328873986882
+Full FT Midpoint,Layer 13,Math (GSM8K),0.07910363644988565
+Full FT Midpoint,Layer 13,Math (GSM8K),0.06009154626202301
+Full FT Midpoint,Layer 13,Math (GSM8K),0.05071105021669402
+Full FT Midpoint,Layer 13,Math (GSM8K),0.08343076863313906
+Full FT Midpoint,Layer 13,Math (GSM8K),0.07329878737727429
+Full FT Midpoint,Layer 13,Math (GSM8K),0.06726840599841138
+Full FT Midpoint,Layer 13,Math (GSM8K),0.07140903566084598
+Full FT Midpoint,Layer 13,Math (GSM8K),0.06274041764590484
+Full FT Midpoint,Layer 13,Math (GSM8K),0.06530504391568906
+Full FT Midpoint,Layer 13,Math (GSM8K),0.06428750862247483
+Full FT Midpoint,Layer 13,Math (GSM8K),0.0959450460131237
+Full FT Midpoint,Layer 13,Math (GSM8K),0.06130520662301153
+Full FT Midpoint,Layer 13,Math (GSM8K),0.08516712206369167
+Full FT Midpoint,Layer 13,Math (GSM8K),0.06441514712772568
+Full FT Midpoint,Layer 13,Math (GSM8K),0.056633293232800835
+Full FT Midpoint,Layer 13,Math (GSM8K),0.061976715280743375
+Full FT Midpoint,Layer 13,Math (GSM8K),0.08801104717691742
+Full FT Midpoint,Layer 13,Math (GSM8K),0.05709979482963573
+Full FT Midpoint,Layer 13,Math (GSM8K),0.0919550575357064
+Full FT Midpoint,Layer 13,Math (GSM8K),0.06410353382550325
+Full FT Midpoint,Layer 13,Math (GSM8K),0.05463069437323368
+Full FT Midpoint,Layer 13,Math (GSM8K),0.05332923189817028
+Full FT Midpoint,Layer 13,Math (GSM8K),0.07280656375215304
+Full FT Midpoint,Layer 13,Math (GSM8K),0.09969674698242915
+Full FT Midpoint,Layer 13,Math (GSM8K),0.08247885424496605
+Full FT Midpoint,Layer 13,Math (GSM8K),0.06616735893057271
+Full FT Midpoint,Layer 13,Math (GSM8K),0.0531769484227612
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06239004407338122
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.08566381200912798
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.05219063138850101
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06675703037540465
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06248712231457688
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.0686692729596135
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06735327095736769
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.057887389826048505
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07195958461417588
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.05264603774664686
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07288888497523602
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06241377034343524
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06302897607463695
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.061805226530452825
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.05548541241223406
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.05821498896443377
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07530364841767827
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06284178583469215
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.05847726986877574
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.0661905678107036
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06511243910613679
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07783438949529284
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.046998027101194495
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06577611094970395
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06853425220683573
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06500923555403776
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.04458264118458565
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.06467339612547277
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.057862127036387975
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07367045513246104
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07285198846493753
+Full FT Midpoint,Layer 13,Non-Math (HellaSwag),0.07683906869986129
+Full FT Midpoint,Layer 27,Math (GSM8K),0.090801167651193
+Full FT Midpoint,Layer 27,Math (GSM8K),0.09457108159131802
+Full FT Midpoint,Layer 27,Math (GSM8K),0.09334843118779235
+Full FT Midpoint,Layer 27,Math (GSM8K),0.06933495542363194
+Full FT Midpoint,Layer 27,Math (GSM8K),0.08052883795418248
+Full FT Midpoint,Layer 27,Math (GSM8K),0.10894581954822445
+Full FT Midpoint,Layer 27,Math (GSM8K),0.08924050936312669
+Full FT Midpoint,Layer 27,Math (GSM8K),0.08876942359338942
+Full FT Midpoint,Layer 27,Math (GSM8K),0.07256107575103934
+Full FT Midpoint,Layer 27,Math (GSM8K),0.0722928790676565
+Full FT Midpoint,Layer 27,Math (GSM8K),0.08329160162889307
+Full FT Midpoint,Layer 27,Math (GSM8K),0.07615043021093201
+Full FT Midpoint,Layer 27,Math (GSM8K),0.07113280918592887
+Full FT Midpoint,Layer 27,Math (GSM8K),0.07890471195738297
+Full FT Midpoint,Layer 27,Math (GSM8K),0.09355201275963597
+Full FT Midpoint,Layer 27,Math (GSM8K),0.09636274251260186
+Full FT Midpoint,Layer 27,Math (GSM8K),0.07549554851564345
+Full FT Midpoint,Layer 27,Math (GSM8K),0.07433774722219852
+Full FT Midpoint,Layer 27,Math (GSM8K),0.07708653677619476
+Full FT Midpoint,Layer 27,Math (GSM8K),0.07459083336392958
+Full FT Midpoint,Layer 27,Math (GSM8K),0.10228273591899169
+Full FT Midpoint,Layer 27,Math (GSM8K),0.08045618370349918
+Full FT Midpoint,Layer 27,Math (GSM8K),0.08342963812352441
+Full FT Midpoint,Layer 27,Math (GSM8K),0.09559861582966886
+Full FT Midpoint,Layer 27,Math (GSM8K),0.09188244366372629
+Full FT Midpoint,Layer 27,Math (GSM8K),0.07084661054368291
+Full FT Midpoint,Layer 27,Math (GSM8K),0.10476043386508613
+Full FT Midpoint,Layer 27,Math (GSM8K),0.09497306176207648
+Full FT Midpoint,Layer 27,Math (GSM8K),0.0850812799995845
+Full FT Midpoint,Layer 27,Math (GSM8K),0.08383317227421047
+Full FT Midpoint,Layer 27,Math (GSM8K),0.09778776327026753
+Full FT Midpoint,Layer 27,Math (GSM8K),0.0730692818024442
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08431330043314687
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.0653946402729777
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07795090226348954
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08627932847927243
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06997454915877924
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.0709563260193503
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06251882497590766
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.0691864763633783
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.0853971100363224
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07785596635229769
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06982379918453753
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08394047125127752
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08019000422826726
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06624020130813857
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07643937943422154
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.05581655637110887
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.10471090554734387
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07831495237102452
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06804243762392201
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08041339336612413
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07367037734301513
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.073038773845039
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07815464068116391
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.080552387088402
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08110294933706663
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.08209270732895399
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.09040664441271154
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06281993314343354
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.0774205160972352
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.07976165955657502
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.10095698129945836
+Full FT Midpoint,Layer 27,Non-Math (HellaSwag),0.06862984077704268
+Full FT Final,Layer 0,Math (GSM8K),0.12341517103799099
+Full FT Final,Layer 0,Math (GSM8K),0.15405168125140514
+Full FT Final,Layer 0,Math (GSM8K),0.15222101277460243
+Full FT Final,Layer 0,Math (GSM8K),0.13457238454908424
+Full FT Final,Layer 0,Math (GSM8K),0.1438950020194784
+Full FT Final,Layer 0,Math (GSM8K),0.13895457573626602
+Full FT Final,Layer 0,Math (GSM8K),0.13320027350525085
+Full FT Final,Layer 0,Math (GSM8K),0.14249566198942945
+Full FT Final,Layer 0,Math (GSM8K),0.15746992041304045
+Full FT Final,Layer 0,Math (GSM8K),0.1556528673614951
+Full FT Final,Layer 0,Math (GSM8K),0.1422963591180712
+Full FT Final,Layer 0,Math (GSM8K),0.1344382709539399
+Full FT Final,Layer 0,Math (GSM8K),0.15055274379968187
+Full FT Final,Layer 0,Math (GSM8K),0.15255854254462886
+Full FT Final,Layer 0,Math (GSM8K),0.13572263588945072
+Full FT Final,Layer 0,Math (GSM8K),0.1429339335004718
+Full FT Final,Layer 0,Math (GSM8K),0.15136883861691117
+Full FT Final,Layer 0,Math (GSM8K),0.14713204892973084
+Full FT Final,Layer 0,Math (GSM8K),0.15840889411966455
+Full FT Final,Layer 0,Math (GSM8K),0.1528780392533593
+Full FT Final,Layer 0,Math (GSM8K),0.13163845139116312
+Full FT Final,Layer 0,Math (GSM8K),0.12435218830102876
+Full FT Final,Layer 0,Math (GSM8K),0.1423254187498151
+Full FT Final,Layer 0,Math (GSM8K),0.14378308713843183
+Full FT Final,Layer 0,Math (GSM8K),0.1593123939245344
+Full FT Final,Layer 0,Math (GSM8K),0.1519113723792702
+Full FT Final,Layer 0,Math (GSM8K),0.12425303849925888
+Full FT Final,Layer 0,Math (GSM8K),0.12350397097863139
+Full FT Final,Layer 0,Math (GSM8K),0.1540652868614217
+Full FT Final,Layer 0,Math (GSM8K),0.16837533884956202
+Full FT Final,Layer 0,Math (GSM8K),0.14280434701080744
+Full FT Final,Layer 0,Math (GSM8K),0.1372920988642215
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.1361594706113331
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14642004015314236
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14807871614056647
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.12763837740584894
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.1426461604569112
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.12759869640970273
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14405623006985743
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.12994161233541984
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.12684298735432667
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.1360302816368643
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.13974613505601743
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.13738175114774867
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14200837250304055
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.15870014638385632
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14086302154648303
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.13346714637224508
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.12692593242593342
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.13634951024703534
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14169232276106355
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14385840647053252
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.13627604973794827
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.15570181177372724
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.13001568605350722
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.12848687282574733
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14215837501916678
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.1325269622118996
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14920236238970983
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.1432029537016511
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.13268760722373427
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14452559503592813
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.14401262209311635
+Full FT Final,Layer 0,Non-Math (HellaSwag),0.12782276832509268
+Full FT Final,Layer 13,Math (GSM8K),0.1864390874428489
+Full FT Final,Layer 13,Math (GSM8K),0.205514816929227
+Full FT Final,Layer 13,Math (GSM8K),0.18351765665241931
+Full FT Final,Layer 13,Math (GSM8K),0.1643327822768975
+Full FT Final,Layer 13,Math (GSM8K),0.1781676191869937
+Full FT Final,Layer 13,Math (GSM8K),0.1627825678227485
+Full FT Final,Layer 13,Math (GSM8K),0.1753648420011767
+Full FT Final,Layer 13,Math (GSM8K),0.18271850791941885
+Full FT Final,Layer 13,Math (GSM8K),0.15386415455511826
+Full FT Final,Layer 13,Math (GSM8K),0.17969976240364932
+Full FT Final,Layer 13,Math (GSM8K),0.18438312782997066
+Full FT Final,Layer 13,Math (GSM8K),0.17612825324123924
+Full FT Final,Layer 13,Math (GSM8K),0.17791496408272814
+Full FT Final,Layer 13,Math (GSM8K),0.1754133568770281
+Full FT Final,Layer 13,Math (GSM8K),0.17275511158594248
+Full FT Final,Layer 13,Math (GSM8K),0.1561483067230441
+Full FT Final,Layer 13,Math (GSM8K),0.16578362466156796
+Full FT Final,Layer 13,Math (GSM8K),0.15043937215196143
+Full FT Final,Layer 13,Math (GSM8K),0.1522529892422925
+Full FT Final,Layer 13,Math (GSM8K),0.17074153406485187
+Full FT Final,Layer 13,Math (GSM8K),0.14924703165971256
+Full FT Final,Layer 13,Math (GSM8K),0.17114556687313295
+Full FT Final,Layer 13,Math (GSM8K),0.17234451608680593
+Full FT Final,Layer 13,Math (GSM8K),0.1600090532726216
+Full FT Final,Layer 13,Math (GSM8K),0.17079721475840628
+Full FT Final,Layer 13,Math (GSM8K),0.15980793262622942
+Full FT Final,Layer 13,Math (GSM8K),0.16379676690216838
+Full FT Final,Layer 13,Math (GSM8K),0.14890076561401275
+Full FT Final,Layer 13,Math (GSM8K),0.18194756208776805
+Full FT Final,Layer 13,Math (GSM8K),0.16074630964062658
+Full FT Final,Layer 13,Math (GSM8K),0.17006851970904774
+Full FT Final,Layer 13,Math (GSM8K),0.20414539646903315
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.1539706895408242
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.15006605709068824
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.15982934943704385
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16489730093217222
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.17092144580411875
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16564801609156668
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16786564896888997
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16622984112765068
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.17273635808013277
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16704084226536653
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16917545420235164
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.1793027873395075
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.17385613169807657
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.1651104182024443
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.15956450054711813
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16224069075187014
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.1798456256976949
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.15611253675263911
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.1518273865539089
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.15484472256081494
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.18106798418466657
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.17662337098487157
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.17720937804880044
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.1542229407113168
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.1568228738314488
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.1485307068873135
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.1753624440489076
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.1703835862958442
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16385404762452652
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16665592753077638
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16585209004010557
+Full FT Final,Layer 13,Non-Math (HellaSwag),0.16684872480944501
+Full FT Final,Layer 27,Math (GSM8K),0.20105190090424302
+Full FT Final,Layer 27,Math (GSM8K),0.20123631899899025
+Full FT Final,Layer 27,Math (GSM8K),0.19631411540385496
+Full FT Final,Layer 27,Math (GSM8K),0.20932934422452276
+Full FT Final,Layer 27,Math (GSM8K),0.1949169085859747
+Full FT Final,Layer 27,Math (GSM8K),0.195613913891808
+Full FT Final,Layer 27,Math (GSM8K),0.19540724141690882
+Full FT Final,Layer 27,Math (GSM8K),0.20768983329387886
+Full FT Final,Layer 27,Math (GSM8K),0.19631526304637537
+Full FT Final,Layer 27,Math (GSM8K),0.18878545866299085
+Full FT Final,Layer 27,Math (GSM8K),0.18958872041208513
+Full FT Final,Layer 27,Math (GSM8K),0.18753416698302897
+Full FT Final,Layer 27,Math (GSM8K),0.2109199642853615
+Full FT Final,Layer 27,Math (GSM8K),0.20094222781142246
+Full FT Final,Layer 27,Math (GSM8K),0.21484415976489055
+Full FT Final,Layer 27,Math (GSM8K),0.20217731856034207
+Full FT Final,Layer 27,Math (GSM8K),0.22858294675639898
+Full FT Final,Layer 27,Math (GSM8K),0.20497532825656645
+Full FT Final,Layer 27,Math (GSM8K),0.2127901960273845
+Full FT Final,Layer 27,Math (GSM8K),0.19876642128158714
+Full FT Final,Layer 27,Math (GSM8K),0.20082601685821788
+Full FT Final,Layer 27,Math (GSM8K),0.21849994074624607
+Full FT Final,Layer 27,Math (GSM8K),0.20415410920756868
+Full FT Final,Layer 27,Math (GSM8K),0.20588263988874358
+Full FT Final,Layer 27,Math (GSM8K),0.2250475242286869
+Full FT Final,Layer 27,Math (GSM8K),0.17855008197698485
+Full FT Final,Layer 27,Math (GSM8K),0.20061602298030937
+Full FT Final,Layer 27,Math (GSM8K),0.20110650814148226
+Full FT Final,Layer 27,Math (GSM8K),0.21373028413854145
+Full FT Final,Layer 27,Math (GSM8K),0.21276936172308708
+Full FT Final,Layer 27,Math (GSM8K),0.19736251201228894
+Full FT Final,Layer 27,Math (GSM8K),0.21945529739387448
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.20902577180263
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1970080701568526
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1972502665460547
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.17683133113661034
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1902022918253117
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.18927780559645557
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.17337149945066788
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.18456284923524796
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.19728222382589752
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.18779830175278817
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1887264740717698
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1900718057135294
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1818351949235171
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.20564926266938957
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.18885557105801476
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.2025967716040416
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.19657010043466697
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.19284928569635218
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.19607195689648577
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1876870198343385
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.20283134773798098
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.18813116335221367
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.18325326803674663
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.19378708521175958
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.21450758538006431
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.18496775145832173
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1888145511510423
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1989251915711618
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1925674497701124
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.1788507868713237
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.2011453554315508
+Full FT Final,Layer 27,Non-Math (HellaSwag),0.19873936530689015
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.07347524972981784
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.06094151340638497
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.05974560758451071
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.06658680683039774
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.05570269884174503
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.06609344998044245
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.07877277889513591
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.0998436014583553
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.06392923234713586
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.061981723948400215
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.09315369280010297
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.0741596530244304
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.0946628195045276
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.07962383609275069
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.1001323519507748
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.07387627957215065
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.050262308667543526
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.04322990660666779
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.06483429308455507
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.06970178182097848
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.09405258808920935
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.07775091582673727
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.09302575472814568
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.05068337381810819
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.06657487209750568
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.08386359618972722
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.07724365371518133
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.0770390367518317
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.06872028924837843
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.0726282469970772
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.08418722723311069
+Full FT + L2-SP,Layer 0,Math (GSM8K),0.07592353292256233
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.06354061455510117
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.03891513102328657
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.056729090631223264
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.0672711495567497
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04450390789568755
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05490305670092196
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.042768105736618704
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.034809466469500984
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.0625528441595798
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.054457775285072015
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04493348466523951
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.06740478331280422
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.06387288278296518
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.055635699577864045
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05568416949007157
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04120396937809513
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.047025399985217105
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.038949867783800204
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04741673856062467
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05579166515257985
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05575911110177356
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.049862519703349116
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04144051866655542
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.053967011587183776
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04123839782355753
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.048861172922303533
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05344682239799817
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05064628925491203
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.05125384947135619
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.03633883126751605
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.044775510809775224
+Full FT + L2-SP,Layer 0,Non-Math (HellaSwag),0.04233016859431228
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08609904039785105
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.10125799041542279
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08118018235146623
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.07851506929950688
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.09592406010761068
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08516655340063002
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.09933769207808904
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08418088686301223
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.07963755240783303
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.10027034638481908
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08325953203894038
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08630818571346245
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.0815893824104452
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.09814937757227782
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08865566424398022
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.09561593193136696
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08282265234733861
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.10225398844040126
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.09187918931257294
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08196217545249192
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.09216683167757046
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.09800497223354306
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.10464875448290598
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.07678478100438364
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08103300039819433
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08963880781383475
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.07128800018366016
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08160525778371885
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.10072788384696821
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.09759602588200626
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.06796362630940958
+Full FT + L2-SP,Layer 13,Math (GSM8K),0.08329544904088389
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05399883695032057
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06253996611630494
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.056592478941569484
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05045726156599195
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.062490806778047796
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05381144063520234
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.0726607509197218
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.0540078978972326
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.03681940742677113
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06347619564758927
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.041003855119370394
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05615629786291897
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.07063508272413682
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.07676965953414196
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06589900030510061
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.0599844324465804
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.0806537217741745
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05369539969919791
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.08086958451864723
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06242746151476897
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.04509948216849531
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.04916857856797828
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.057466710654696954
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06988609910051297
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06699530155490413
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05003963496819443
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.0791392273240372
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06601580358750578
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.05545697024557324
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.07904363781920981
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06555341888106109
+Full FT + L2-SP,Layer 13,Non-Math (HellaSwag),0.06440060333464744
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10558963222118878
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.12470100975793613
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.08294847150265142
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10173428441261231
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10014376454424494
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10925334981918355
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10573166881894099
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10470855893551242
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.09231535093195996
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.11612483913604382
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.09423136929190226
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.11981343615514556
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10079320025835807
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.09827469826405308
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.0923792692798406
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.09490570232397849
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.0997994998320308
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.07362549643036329
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.09863534545216604
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.09716960593757891
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10896803034040992
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10313847166151953
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10014142338343635
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.11684224169514411
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.09036528620840584
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.13368870452514187
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10452018884734124
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.12439198758101683
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.10134435776669705
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.08483848814581901
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.09354497110083321
+Full FT + L2-SP,Layer 27,Math (GSM8K),0.09176027591510291
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.05956433809054987
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.05805788266714995
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07365078693981761
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07902081425375193
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.0784713785520576
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07123170813170254
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06867000198809077
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06013340346423546
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07136928576032589
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.061127260201472945
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.0805474060207913
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07543290912045225
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07319954293502631
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.059034341691037974
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.08272010505401191
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06623727084809179
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.0697868977336536
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06963056669114522
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.0757053556413152
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.059496548088929485
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.08522664582407435
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07598357485230907
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.0851702069928441
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07444577575444256
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06735053378507382
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.05335481563377711
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.08699831397937025
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.05994149340943894
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.07618565465918213
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06301366332934752
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.06801823423866493
+Full FT + L2-SP,Layer 27,Non-Math (HellaSwag),0.057583528729178546
+LoRA-4,Layer 0,Math (GSM8K),0.029111153048984203
+LoRA-4,Layer 0,Math (GSM8K),0.059136005723606694
+LoRA-4,Layer 0,Math (GSM8K),0.0568057649853324
+LoRA-4,Layer 0,Math (GSM8K),0.045812322635316496
+LoRA-4,Layer 0,Math (GSM8K),0.06824287326625171
+LoRA-4,Layer 0,Math (GSM8K),0.04223151333582628
+LoRA-4,Layer 0,Math (GSM8K),0.04123009411891867
+LoRA-4,Layer 0,Math (GSM8K),0.053800469864252964
+LoRA-4,Layer 0,Math (GSM8K),0.02677654804505384
+LoRA-4,Layer 0,Math (GSM8K),0.03357589561546945
+LoRA-4,Layer 0,Math (GSM8K),0.07167453616590379
+LoRA-4,Layer 0,Math (GSM8K),0.07473245032566833
+LoRA-4,Layer 0,Math (GSM8K),0.03257673437955628
+LoRA-4,Layer 0,Math (GSM8K),0.05769972755043479
+LoRA-4,Layer 0,Math (GSM8K),0.017066574554438052
+LoRA-4,Layer 0,Math (GSM8K),0.045422804045262256
+LoRA-4,Layer 0,Math (GSM8K),0.03786925503781967
+LoRA-4,Layer 0,Math (GSM8K),0.07393454342075549
+LoRA-4,Layer 0,Math (GSM8K),0.05223655313868698
+LoRA-4,Layer 0,Math (GSM8K),0.0698467051618568
+LoRA-4,Layer 0,Math (GSM8K),0.06094468753008183
+LoRA-4,Layer 0,Math (GSM8K),0.043702753623299236
+LoRA-4,Layer 0,Math (GSM8K),0.03989681155369421
+LoRA-4,Layer 0,Math (GSM8K),0.051757782234763024
+LoRA-4,Layer 0,Math (GSM8K),0.030511637500095754
+LoRA-4,Layer 0,Math (GSM8K),0.05169324251681298
+LoRA-4,Layer 0,Math (GSM8K),0.057298401094529834
+LoRA-4,Layer 0,Math (GSM8K),0.06321731018678158
+LoRA-4,Layer 0,Math (GSM8K),0.04289841637385774
+LoRA-4,Layer 0,Math (GSM8K),0.030124060631687554
+LoRA-4,Layer 0,Math (GSM8K),0.044150330721157115
+LoRA-4,Layer 0,Math (GSM8K),0.05914031069700969
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.03383714537407651
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.04673726289487698
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.026341260859846533
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.027053123268768887
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.023402503668191032
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.03571877252692957
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.0320482408531327
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.050021295479067834
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.028544056595972048
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.02315524160753568
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.04654838238974472
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.0313182238546891
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.043187474143419474
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.03655776608545278
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.03840330503138153
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.01836708560259022
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.03245449950491608
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.02769972741790098
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.031573565972839605
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.026139233787117206
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.021024847213474925
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.029910376187538893
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.029249966976153303
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.019697023687884115
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.030366774674379447
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.03434484532086272
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.03612484546595862
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.02559715375457297
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.029611374700881984
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.014943105029356207
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.023648634181643605
+LoRA-4,Layer 0,Non-Math (HellaSwag),0.023996304533804264
+LoRA-4,Layer 13,Math (GSM8K),0.05957792461287046
+LoRA-4,Layer 13,Math (GSM8K),0.046720185160066874
+LoRA-4,Layer 13,Math (GSM8K),0.0520057333740558
+LoRA-4,Layer 13,Math (GSM8K),0.0677078904624548
+LoRA-4,Layer 13,Math (GSM8K),0.0641421441988799
+LoRA-4,Layer 13,Math (GSM8K),0.06445162783445117
+LoRA-4,Layer 13,Math (GSM8K),0.055188666981970155
+LoRA-4,Layer 13,Math (GSM8K),0.06458964082676888
+LoRA-4,Layer 13,Math (GSM8K),0.0675038121470365
+LoRA-4,Layer 13,Math (GSM8K),0.07133913437477596
+LoRA-4,Layer 13,Math (GSM8K),0.06302716282833906
+LoRA-4,Layer 13,Math (GSM8K),0.059618856344901584
+LoRA-4,Layer 13,Math (GSM8K),0.0430885409414902
+LoRA-4,Layer 13,Math (GSM8K),0.0629771097258839
+LoRA-4,Layer 13,Math (GSM8K),0.06174392648583718
+LoRA-4,Layer 13,Math (GSM8K),0.06005788459477796
+LoRA-4,Layer 13,Math (GSM8K),0.06241639984752513
+LoRA-4,Layer 13,Math (GSM8K),0.04881253597122289
+LoRA-4,Layer 13,Math (GSM8K),0.055981397332203246
+LoRA-4,Layer 13,Math (GSM8K),0.057915522814437174
+LoRA-4,Layer 13,Math (GSM8K),0.07441072661182499
+LoRA-4,Layer 13,Math (GSM8K),0.0515722547151921
+LoRA-4,Layer 13,Math (GSM8K),0.06580263997878515
+LoRA-4,Layer 13,Math (GSM8K),0.06338797977903465
+LoRA-4,Layer 13,Math (GSM8K),0.06921622405860245
+LoRA-4,Layer 13,Math (GSM8K),0.05994422518502019
+LoRA-4,Layer 13,Math (GSM8K),0.07549728418995386
+LoRA-4,Layer 13,Math (GSM8K),0.05494651863898673
+LoRA-4,Layer 13,Math (GSM8K),0.033398361493007886
+LoRA-4,Layer 13,Math (GSM8K),0.05313782899010777
+LoRA-4,Layer 13,Math (GSM8K),0.038554118850384275
+LoRA-4,Layer 13,Math (GSM8K),0.047812092273465584
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.03763076760687539
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.04571625974447388
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.041979214477690985
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.0427259466205992
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.03347069031404392
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.022175088270737133
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.03949613220979942
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.04556373538185308
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.04629269658941076
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.03142476613949207
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.022159669857116912
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.018826144996048934
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.03348867706532607
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.04613769917081286
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.034571732563532805
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.03601403042978399
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.03820383397525227
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.045553438846544184
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.039963003915643294
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.0579051585049908
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.050146451988437174
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.04165226286593249
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.040977506088981076
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.039888167475213926
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.03920360341774379
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.020543460399085858
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.04064198956691628
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.03023825716981497
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.02490767218300967
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.04699882834213714
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.05333350061512106
+LoRA-4,Layer 13,Non-Math (HellaSwag),0.05038800796323546
+LoRA-4,Layer 27,Math (GSM8K),0.05460011825305908
+LoRA-4,Layer 27,Math (GSM8K),0.05478758866856993
+LoRA-4,Layer 27,Math (GSM8K),0.05607366515790297
+LoRA-4,Layer 27,Math (GSM8K),0.08564039253227014
+LoRA-4,Layer 27,Math (GSM8K),0.05703541998358451
+LoRA-4,Layer 27,Math (GSM8K),0.07317285555913024
+LoRA-4,Layer 27,Math (GSM8K),0.06216815067043597
+LoRA-4,Layer 27,Math (GSM8K),0.04586551172124527
+LoRA-4,Layer 27,Math (GSM8K),0.05726136147751779
+LoRA-4,Layer 27,Math (GSM8K),0.06973999642098377
+LoRA-4,Layer 27,Math (GSM8K),0.055768465502931956
+LoRA-4,Layer 27,Math (GSM8K),0.06442537270341171
+LoRA-4,Layer 27,Math (GSM8K),0.05177582287134169
+LoRA-4,Layer 27,Math (GSM8K),0.08276156200733799
+LoRA-4,Layer 27,Math (GSM8K),0.05183179044723185
+LoRA-4,Layer 27,Math (GSM8K),0.06389785862176878
+LoRA-4,Layer 27,Math (GSM8K),0.09241182021193771
+LoRA-4,Layer 27,Math (GSM8K),0.07885078664169394
+LoRA-4,Layer 27,Math (GSM8K),0.056603447165647205
+LoRA-4,Layer 27,Math (GSM8K),0.0629525628874822
+LoRA-4,Layer 27,Math (GSM8K),0.07551203331609208
+LoRA-4,Layer 27,Math (GSM8K),0.07844127304812411
+LoRA-4,Layer 27,Math (GSM8K),0.06260396206444406
+LoRA-4,Layer 27,Math (GSM8K),0.0681234817682631
+LoRA-4,Layer 27,Math (GSM8K),0.07053351504077049
+LoRA-4,Layer 27,Math (GSM8K),0.06348284348884757
+LoRA-4,Layer 27,Math (GSM8K),0.04954913155878426
+LoRA-4,Layer 27,Math (GSM8K),0.07240361684974242
+LoRA-4,Layer 27,Math (GSM8K),0.08146263494502022
+LoRA-4,Layer 27,Math (GSM8K),0.05588395177187429
+LoRA-4,Layer 27,Math (GSM8K),0.07443328076802025
+LoRA-4,Layer 27,Math (GSM8K),0.08447344688637823
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.07717926043706266
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.0495652290451044
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.04543789263378129
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.04472680590489294
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.03634598581832428
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.04217666278186238
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.041176234311279855
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.04810116509459466
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.05766963769476612
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.04079330181696475
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.03178876001532221
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.04536967351844543
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.037432741085427046
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.05075824018841435
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.024042233861915584
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.02909358251587116
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.03957752691551249
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.039731999941490445
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.0487983221440377
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.04073140423716476
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.0422579277958263
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.0515913347400695
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.04427983187794152
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.0269831251672012
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.06303530489110189
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.05576872880140164
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.05122682085402708
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.041931369674690765
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.04037182675119078
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.04529333344605949
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.05269184669612858
+LoRA-4,Layer 27,Non-Math (HellaSwag),0.036048286468461206
+LoRA-16,Layer 0,Math (GSM8K),0.0895457076730792
+LoRA-16,Layer 0,Math (GSM8K),0.08081122482512308
+LoRA-16,Layer 0,Math (GSM8K),0.10085720029452219
+LoRA-16,Layer 0,Math (GSM8K),0.07862023005399606
+LoRA-16,Layer 0,Math (GSM8K),0.08993840412807086
+LoRA-16,Layer 0,Math (GSM8K),0.08449253104216767
+LoRA-16,Layer 0,Math (GSM8K),0.10327850237244372
+LoRA-16,Layer 0,Math (GSM8K),0.07281032337548064
+LoRA-16,Layer 0,Math (GSM8K),0.10219459934419957
+LoRA-16,Layer 0,Math (GSM8K),0.09638497345019245
+LoRA-16,Layer 0,Math (GSM8K),0.08201793190820389
+LoRA-16,Layer 0,Math (GSM8K),0.09438131344859065
+LoRA-16,Layer 0,Math (GSM8K),0.07618149118901359
+LoRA-16,Layer 0,Math (GSM8K),0.09892125056834779
+LoRA-16,Layer 0,Math (GSM8K),0.0876074190348354
+LoRA-16,Layer 0,Math (GSM8K),0.11014842358553578
+LoRA-16,Layer 0,Math (GSM8K),0.10216165052575
+LoRA-16,Layer 0,Math (GSM8K),0.09102901697382634
+LoRA-16,Layer 0,Math (GSM8K),0.07997130504907549
+LoRA-16,Layer 0,Math (GSM8K),0.06588596847610469
+LoRA-16,Layer 0,Math (GSM8K),0.08248820097269106
+LoRA-16,Layer 0,Math (GSM8K),0.10263870018092996
+LoRA-16,Layer 0,Math (GSM8K),0.08729820344742446
+LoRA-16,Layer 0,Math (GSM8K),0.0931383405771774
+LoRA-16,Layer 0,Math (GSM8K),0.08357613590372193
+LoRA-16,Layer 0,Math (GSM8K),0.10386383708929367
+LoRA-16,Layer 0,Math (GSM8K),0.11981131483969085
+LoRA-16,Layer 0,Math (GSM8K),0.08756899548304907
+LoRA-16,Layer 0,Math (GSM8K),0.10299428584053048
+LoRA-16,Layer 0,Math (GSM8K),0.09936300380023025
+LoRA-16,Layer 0,Math (GSM8K),0.09124582902811973
+LoRA-16,Layer 0,Math (GSM8K),0.091602912646748
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.06360087435809023
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.08106329931676155
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07626198252514434
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07081057639811217
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.08987827932160702
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.055196709047019295
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.05844233562166219
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07345024516562434
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.08829707659988566
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.08941156306524611
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07255361612807194
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.08327124820874762
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.06604456392007849
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07786359562078661
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07472263056576005
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.0884304609521865
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.08377285520007952
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.0735634301831123
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.0778509126888296
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07086450690101964
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07796805854701788
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.06937166602727113
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.06513937546280964
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.06810000403372313
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07669753894134607
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07673699110856211
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07888872026664628
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.06479993206591152
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.09050353090256161
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.0979907767188801
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.07999846840781398
+LoRA-16,Layer 0,Non-Math (HellaSwag),0.08592931478836252
+LoRA-16,Layer 13,Math (GSM8K),0.10748174750048366
+LoRA-16,Layer 13,Math (GSM8K),0.10535414389436903
+LoRA-16,Layer 13,Math (GSM8K),0.12795351264885535
+LoRA-16,Layer 13,Math (GSM8K),0.11525792015524965
+LoRA-16,Layer 13,Math (GSM8K),0.1029966649900285
+LoRA-16,Layer 13,Math (GSM8K),0.11475699162805791
+LoRA-16,Layer 13,Math (GSM8K),0.11257580275587024
+LoRA-16,Layer 13,Math (GSM8K),0.09856741084983695
+LoRA-16,Layer 13,Math (GSM8K),0.07771796433807238
+LoRA-16,Layer 13,Math (GSM8K),0.09284354912059567
+LoRA-16,Layer 13,Math (GSM8K),0.11511926831562135
+LoRA-16,Layer 13,Math (GSM8K),0.09752987566986193
+LoRA-16,Layer 13,Math (GSM8K),0.09265005834314619
+LoRA-16,Layer 13,Math (GSM8K),0.1062061960279151
+LoRA-16,Layer 13,Math (GSM8K),0.10431200534139529
+LoRA-16,Layer 13,Math (GSM8K),0.10695940180381674
+LoRA-16,Layer 13,Math (GSM8K),0.07770446778401943
+LoRA-16,Layer 13,Math (GSM8K),0.1138750905454925
+LoRA-16,Layer 13,Math (GSM8K),0.11051817739454588
+LoRA-16,Layer 13,Math (GSM8K),0.12117410869401771
+LoRA-16,Layer 13,Math (GSM8K),0.12446095175231559
+LoRA-16,Layer 13,Math (GSM8K),0.12709717534092474
+LoRA-16,Layer 13,Math (GSM8K),0.13150233457369553
+LoRA-16,Layer 13,Math (GSM8K),0.10096740417338779
+LoRA-16,Layer 13,Math (GSM8K),0.12454397367437339
+LoRA-16,Layer 13,Math (GSM8K),0.09599586993300861
+LoRA-16,Layer 13,Math (GSM8K),0.1280196516191892
+LoRA-16,Layer 13,Math (GSM8K),0.0877817606467896
+LoRA-16,Layer 13,Math (GSM8K),0.12167829501441463
+LoRA-16,Layer 13,Math (GSM8K),0.12038050166599495
+LoRA-16,Layer 13,Math (GSM8K),0.09935019421902976
+LoRA-16,Layer 13,Math (GSM8K),0.12734674385414918
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09458629396648274
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.08198266758860956
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.0911540670809789
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09118928667647887
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.0785267304806762
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09351002845724722
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09021345698841825
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.08222155360586855
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.10408898481811259
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09990566564904348
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.10120598250715405
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.08624687205954201
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.08986354846850045
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.10189787113198522
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09514598808727422
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.08941862148576216
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.10047632761798041
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.08870081868721001
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.1016798267605569
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09350196880774041
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.0940079088016618
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.10794084456915023
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.08341946033067273
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09151744476941796
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.0998128097379036
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09254867460000885
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.08149077287323106
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.0957785726731744
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09925390953663638
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.07873065058281689
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.09990157240591191
+LoRA-16,Layer 13,Non-Math (HellaSwag),0.11277137547202135
+LoRA-16,Layer 27,Math (GSM8K),0.12180942354462829
+LoRA-16,Layer 27,Math (GSM8K),0.13011985650700994
+LoRA-16,Layer 27,Math (GSM8K),0.13041341314473281
+LoRA-16,Layer 27,Math (GSM8K),0.12778308978403177
+LoRA-16,Layer 27,Math (GSM8K),0.13955733279642243
+LoRA-16,Layer 27,Math (GSM8K),0.12813640660741535
+LoRA-16,Layer 27,Math (GSM8K),0.1340094189927485
+LoRA-16,Layer 27,Math (GSM8K),0.12673862922190948
+LoRA-16,Layer 27,Math (GSM8K),0.11924312496441056
+LoRA-16,Layer 27,Math (GSM8K),0.12770190740644144
+LoRA-16,Layer 27,Math (GSM8K),0.13140428562209513
+LoRA-16,Layer 27,Math (GSM8K),0.11917742938503982
+LoRA-16,Layer 27,Math (GSM8K),0.11181021308907638
+LoRA-16,Layer 27,Math (GSM8K),0.1285740043378011
+LoRA-16,Layer 27,Math (GSM8K),0.13522677633832783
+LoRA-16,Layer 27,Math (GSM8K),0.11856135636876065
+LoRA-16,Layer 27,Math (GSM8K),0.13733680210165383
+LoRA-16,Layer 27,Math (GSM8K),0.1214322859701508
+LoRA-16,Layer 27,Math (GSM8K),0.1381628962945096
+LoRA-16,Layer 27,Math (GSM8K),0.12176568135778632
+LoRA-16,Layer 27,Math (GSM8K),0.11280393721263657
+LoRA-16,Layer 27,Math (GSM8K),0.1269297265820987
+LoRA-16,Layer 27,Math (GSM8K),0.1306938816594127
+LoRA-16,Layer 27,Math (GSM8K),0.12919027788605886
+LoRA-16,Layer 27,Math (GSM8K),0.13131122824026784
+LoRA-16,Layer 27,Math (GSM8K),0.13763163564715689
+LoRA-16,Layer 27,Math (GSM8K),0.14570247919315915
+LoRA-16,Layer 27,Math (GSM8K),0.12355613245671467
+LoRA-16,Layer 27,Math (GSM8K),0.15114817366898634
+LoRA-16,Layer 27,Math (GSM8K),0.14354312956276288
+LoRA-16,Layer 27,Math (GSM8K),0.13831148232569032
+LoRA-16,Layer 27,Math (GSM8K),0.13108206173515133
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.09556984254812212
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.07845771523792584
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10458103927548215
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.11209747849420033
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.08351790733696575
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.11242544185103484
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.1095936189615441
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10190400700492842
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.11631142596436503
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.12260382159969355
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10007066012149368
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.11385468083021852
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10055990996906737
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10432899503797222
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.0929674330668269
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.0955522387173112
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10677682140082959
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10326019363552122
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10708060368680682
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.12216688468363546
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10533918320085008
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.11376024650273436
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.0967495048117601
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.11751806132755932
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.12064800774759621
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10714868279535983
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.11162486908100666
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10329522180802733
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10761408707526679
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.11754672883294026
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.10221852283289311
+LoRA-16,Layer 27,Non-Math (HellaSwag),0.11049848435665098
+OPLoRA-16,Layer 0,Math (GSM8K),0.08190068830312691
+OPLoRA-16,Layer 0,Math (GSM8K),0.08286614421692345
+OPLoRA-16,Layer 0,Math (GSM8K),0.08237482525168945
+OPLoRA-16,Layer 0,Math (GSM8K),0.0889432594466044
+OPLoRA-16,Layer 0,Math (GSM8K),0.09403220814648253
+OPLoRA-16,Layer 0,Math (GSM8K),0.10496186102764875
+OPLoRA-16,Layer 0,Math (GSM8K),0.08588665073477005
+OPLoRA-16,Layer 0,Math (GSM8K),0.09035133817734795
+OPLoRA-16,Layer 0,Math (GSM8K),0.07459928964138106
+OPLoRA-16,Layer 0,Math (GSM8K),0.08022687519011634
+OPLoRA-16,Layer 0,Math (GSM8K),0.09542574864623074
+OPLoRA-16,Layer 0,Math (GSM8K),0.06265499348888268
+OPLoRA-16,Layer 0,Math (GSM8K),0.08101050490783561
+OPLoRA-16,Layer 0,Math (GSM8K),0.08866498585420149
+OPLoRA-16,Layer 0,Math (GSM8K),0.07937232004824045
+OPLoRA-16,Layer 0,Math (GSM8K),0.09437918239477765
+OPLoRA-16,Layer 0,Math (GSM8K),0.07450920817500713
+OPLoRA-16,Layer 0,Math (GSM8K),0.0906086692385882
+OPLoRA-16,Layer 0,Math (GSM8K),0.05813816511978345
+OPLoRA-16,Layer 0,Math (GSM8K),0.08694597249146596
+OPLoRA-16,Layer 0,Math (GSM8K),0.08838349856879282
+OPLoRA-16,Layer 0,Math (GSM8K),0.09190202824442825
+OPLoRA-16,Layer 0,Math (GSM8K),0.08221753436514379
+OPLoRA-16,Layer 0,Math (GSM8K),0.08362205848433406
+OPLoRA-16,Layer 0,Math (GSM8K),0.08063832268702462
+OPLoRA-16,Layer 0,Math (GSM8K),0.07569336363225379
+OPLoRA-16,Layer 0,Math (GSM8K),0.08980502017968119
+OPLoRA-16,Layer 0,Math (GSM8K),0.07988940614709655
+OPLoRA-16,Layer 0,Math (GSM8K),0.09851243301943083
+OPLoRA-16,Layer 0,Math (GSM8K),0.07150083336753953
+OPLoRA-16,Layer 0,Math (GSM8K),0.10158652429990732
+OPLoRA-16,Layer 0,Math (GSM8K),0.0941121204610274
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.04885567522362173
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.03327000771938635
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.029295427892743454
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.057383892094325525
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.030124052502950548
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.04373236368260678
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.05326757494900439
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.038611519657305964
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.05161821501977221
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.02885318616093671
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.06362818596989742
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.03030679128000529
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.05072317066421024
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.03426817470505365
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.025233703937157667
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.039722709237364186
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.028559175888350802
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.030331855958353554
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.025263742829764305
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.02965151424188521
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.0428518417276002
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.032729009397939525
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.032413036306697916
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.046407208319213
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.044670230452045025
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.041359151457496315
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.039516169348034695
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.03193441372100085
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.03168151409525404
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.04804311950436598
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.03693785312261801
+OPLoRA-16,Layer 0,Non-Math (HellaSwag),0.023578375760943023
+OPLoRA-16,Layer 13,Math (GSM8K),0.08357659778151895
+OPLoRA-16,Layer 13,Math (GSM8K),0.11031337651850393
+OPLoRA-16,Layer 13,Math (GSM8K),0.13569601662753797
+OPLoRA-16,Layer 13,Math (GSM8K),0.10401678228516129
+OPLoRA-16,Layer 13,Math (GSM8K),0.10066785952362044
+OPLoRA-16,Layer 13,Math (GSM8K),0.0971044202732756
+OPLoRA-16,Layer 13,Math (GSM8K),0.08986947596569189
+OPLoRA-16,Layer 13,Math (GSM8K),0.09385649714690898
+OPLoRA-16,Layer 13,Math (GSM8K),0.09826449136668154
+OPLoRA-16,Layer 13,Math (GSM8K),0.09988310414886487
+OPLoRA-16,Layer 13,Math (GSM8K),0.10671751619360731
+OPLoRA-16,Layer 13,Math (GSM8K),0.10063266549026836
+OPLoRA-16,Layer 13,Math (GSM8K),0.08865521344892044
+OPLoRA-16,Layer 13,Math (GSM8K),0.10924598121138848
+OPLoRA-16,Layer 13,Math (GSM8K),0.10760606958247095
+OPLoRA-16,Layer 13,Math (GSM8K),0.12511562303170276
+OPLoRA-16,Layer 13,Math (GSM8K),0.11754798843493271
+OPLoRA-16,Layer 13,Math (GSM8K),0.07571313625067835
+OPLoRA-16,Layer 13,Math (GSM8K),0.0974145745739454
+OPLoRA-16,Layer 13,Math (GSM8K),0.105544947641722
+OPLoRA-16,Layer 13,Math (GSM8K),0.09031566390963068
+OPLoRA-16,Layer 13,Math (GSM8K),0.1161177525466833
+OPLoRA-16,Layer 13,Math (GSM8K),0.1157574265320942
+OPLoRA-16,Layer 13,Math (GSM8K),0.12312545947401515
+OPLoRA-16,Layer 13,Math (GSM8K),0.11532592551187892
+OPLoRA-16,Layer 13,Math (GSM8K),0.10297263143479968
+OPLoRA-16,Layer 13,Math (GSM8K),0.12318314690328958
+OPLoRA-16,Layer 13,Math (GSM8K),0.09105022632631286
+OPLoRA-16,Layer 13,Math (GSM8K),0.1252024049023553
+OPLoRA-16,Layer 13,Math (GSM8K),0.08322897948315308
+OPLoRA-16,Layer 13,Math (GSM8K),0.11721865519530111
+OPLoRA-16,Layer 13,Math (GSM8K),0.09642935747245927
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04844274253537209
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.025111003446336804
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.0521505535361613
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.05352588549948056
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.035622637654944125
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04905506734450912
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.03249691516505761
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04456304063139867
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.029688053433617974
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04765045673647615
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.053000142141162304
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.03726911606922431
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.033351382072996816
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04630860359436153
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.05487774638664122
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.0464087875934417
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.030913484636822933
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.030637433751258228
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.0405827830794773
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04354882498263514
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04842704094328726
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.051797854492039545
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.05544041533904058
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04754690110551646
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.027130643838167812
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.0481731920619865
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.03921939821529503
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.050499784153984976
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.026305109379496306
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.06833205880122109
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.05325674019238209
+OPLoRA-16,Layer 13,Non-Math (HellaSwag),0.04991667633875596
+OPLoRA-16,Layer 27,Math (GSM8K),0.13577131690765235
+OPLoRA-16,Layer 27,Math (GSM8K),0.12757046533440797
+OPLoRA-16,Layer 27,Math (GSM8K),0.0954437048407448
+OPLoRA-16,Layer 27,Math (GSM8K),0.12656642920386196
+OPLoRA-16,Layer 27,Math (GSM8K),0.11782427303110805
+OPLoRA-16,Layer 27,Math (GSM8K),0.12105678242959801
+OPLoRA-16,Layer 27,Math (GSM8K),0.11791411928546644
+OPLoRA-16,Layer 27,Math (GSM8K),0.13240667130130623
+OPLoRA-16,Layer 27,Math (GSM8K),0.1080022944004703
+OPLoRA-16,Layer 27,Math (GSM8K),0.13536264994921135
+OPLoRA-16,Layer 27,Math (GSM8K),0.12308658766252525
+OPLoRA-16,Layer 27,Math (GSM8K),0.1103541272205451
+OPLoRA-16,Layer 27,Math (GSM8K),0.12569228887040607
+OPLoRA-16,Layer 27,Math (GSM8K),0.1479844843415257
+OPLoRA-16,Layer 27,Math (GSM8K),0.12709957020080562
+OPLoRA-16,Layer 27,Math (GSM8K),0.09803453073549573
+OPLoRA-16,Layer 27,Math (GSM8K),0.11761062887063495
+OPLoRA-16,Layer 27,Math (GSM8K),0.11734685166225862
+OPLoRA-16,Layer 27,Math (GSM8K),0.1215962745146831
+OPLoRA-16,Layer 27,Math (GSM8K),0.1259341838676645
+OPLoRA-16,Layer 27,Math (GSM8K),0.13313747737560697
+OPLoRA-16,Layer 27,Math (GSM8K),0.14706718306846675
+OPLoRA-16,Layer 27,Math (GSM8K),0.11122522781881458
+OPLoRA-16,Layer 27,Math (GSM8K),0.1142729408674235
+OPLoRA-16,Layer 27,Math (GSM8K),0.12475689353753809
+OPLoRA-16,Layer 27,Math (GSM8K),0.11287185991535892
+OPLoRA-16,Layer 27,Math (GSM8K),0.12544515730316227
+OPLoRA-16,Layer 27,Math (GSM8K),0.1384047308807525
+OPLoRA-16,Layer 27,Math (GSM8K),0.11080389603047587
+OPLoRA-16,Layer 27,Math (GSM8K),0.13828333443415775
+OPLoRA-16,Layer 27,Math (GSM8K),0.1431383784493522
+OPLoRA-16,Layer 27,Math (GSM8K),0.1292307333602643
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.06559634572062652
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05436733846504233
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04341093701690182
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.038339386866972545
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05234634847534666
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04731275546631345
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.051326903629149136
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.061101998427786464
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.050229586849729155
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.057183606926482014
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04121079324954397
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.0482158305696436
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.03455059599028277
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05558161456389667
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.03523478017714278
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.062047959133263296
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.06996340990573119
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.03428969699314392
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04707742379906289
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.050192670957701836
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.049537991322845684
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04038452923188928
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05800154741439103
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04510800876906483
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04697574809301227
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.06498301028781844
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.062007439118547995
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05525341501824277
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04317044418560854
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05275575279846608
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.05724016755328116
+OPLoRA-16,Layer 27,Non-Math (HellaSwag),0.04976290115888538

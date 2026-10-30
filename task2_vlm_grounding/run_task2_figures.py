@@ -24,8 +24,17 @@ plt.rcParams["font.sans-serif"] = ["DejaVu Sans", "Arial", "Helvetica"]
 plt.rcParams["axes.edgecolor"] = "#333333"
 plt.rcParams["axes.linewidth"] = 0.9
 
-OUT_DIR = "task2_vlm_grounding/results"
-FIG_DIR = os.path.join(OUT_DIR, "figures")
+script_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.abspath(os.path.join(script_dir, '..'))
+if repo_root not in sys.path:
+    sys.path.insert(0, repo_root)
+if script_dir not in sys.path:
+    sys.path.insert(0, script_dir)
+if os.getcwd() not in sys.path:
+    sys.path.insert(0, os.getcwd())
+
+OUT_DIR = os.path.join(script_dir, 'results')
+FIG_DIR = os.path.join(OUT_DIR, 'figures')
 os.makedirs(FIG_DIR, exist_ok=True)
 
 def generate_curriculum_curves():
@@ -276,3 +285,4 @@ if __name__ == "__main__":
     generate_compression_ablation_figure()
     generate_qualitative_audit_table()
     print("Task 2 figure generation complete! All figures saved in task2_vlm_grounding/results/figures/")
+

@@ -4,7 +4,14 @@ ensuring all publication-ready figures are generated and saved to results/figure
 """
 import os, sys, math, json
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
-sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), '..')))
+script_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.abspath(os.path.join(script_dir, '..'))
+if repo_root not in sys.path:
+    sys.path.insert(0, repo_root)
+if script_dir not in sys.path:
+    sys.path.insert(0, script_dir)
+if os.getcwd() not in sys.path:
+    sys.path.insert(0, os.getcwd())
 
 import numpy as np
 import pandas as pd
@@ -17,9 +24,10 @@ from shared.src.plotting import set_style
 set_seed(6304)
 set_style()
 
-os.makedirs('results/figures', exist_ok=True)
-os.makedirs('results', exist_ok=True)
-os.makedirs('splits', exist_ok=True)
+RESULTS_DIR = os.path.join(script_dir, 'results')
+FIG_DIR = os.path.join(RESULTS_DIR, 'figures')
+os.makedirs(FIG_DIR, exist_ok=True)
+os.makedirs(RESULTS_DIR, exist_ok=True)
 
 print("=== Generating Task 1 Visuals & Results Tables ===")
 
@@ -52,7 +60,7 @@ ax2.set_ylabel('Density / Frequency', fontsize=11)
 ax2.legend(loc='upper right', fontsize=10)
 ax2.grid(True, linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('results/figures/task1_1_data_filtering_and_lengths.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_1_data_filtering_and_lengths.png', dpi=300)
 plt.close()
 
 # --- 1.1 Loss Masking Matrix ---
@@ -70,7 +78,7 @@ ax.set_xticklabels(all_tokens, rotation=70, ha='right', fontsize=9)
 ax.set_yticks([])
 ax.set_title('Cross-Entropy Supervision Mask Matrix: Prompt/Padding (-100, Red) vs. Assistant Target (Active, Green)', fontsize=12, fontweight='bold')
 plt.tight_layout()
-plt.savefig('results/figures/task1_1_loss_masking_visualization.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_1_loss_masking_visualization.png', dpi=300)
 plt.close()
 
 # --- 1.1 Baseline Radar ---
@@ -92,7 +100,7 @@ ax.grid(True, linestyle='--', alpha=0.7)
 for angle, score in zip(angles, scores):
     ax.text(angle, score + 7, f'{score:.1f}%', ha='center', va='center', fontsize=10, fontweight='bold', color='#1D3557')
 plt.tight_layout()
-plt.savefig('results/figures/task1_1_baseline_radar.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_1_baseline_radar.png', dpi=300)
 plt.close()
 
 # --- 1.2 Learning Curves ---
@@ -147,7 +155,7 @@ ax2.set_yscale('log')
 ax2.legend(loc='lower left', fontsize=10)
 ax2.grid(True, linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('results/figures/task1_2_sft_learning_curves.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_2_sft_learning_curves.png', dpi=300)
 plt.close()
 
 # --- 1.2 Parameter Displacement ---
@@ -178,7 +186,7 @@ for bar in rects1:
 for bar in rects2:
     ax2.text(bar.get_x() + bar.get_width()/2.0, bar.get_height() + 0.3, f"{bar.get_height():.1f}", ha='center', va='bottom', fontsize=8.5, fontweight='bold')
 plt.tight_layout()
-plt.savefig('results/figures/task1_2_parameter_displacement.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_2_parameter_displacement.png', dpi=300)
 plt.close()
 
 # --- 1.2 Resource Footprints ---
@@ -189,7 +197,7 @@ res_df = pd.DataFrame([
     {"Method": "LoRA-16", "Trainable Params (M)": 8.83, "Peak GPU Mem (MB)": 4650, "Training Time (min)": 74.8, "Checkpoint Size (MB)": 35.3},
     {"Method": "OPLoRA-16", "Trainable Params (M)": 8.83, "Peak GPU Mem (MB)": 4890, "Training Time (min)": 79.4, "Checkpoint Size (MB)": 35.3},
 ])
-res_df.to_csv('results/training_resource_summary.csv', index=False)
+res_df.to_csv(f'{RESULTS_DIR}/training_resource_summary.csv', index=False)
 
 fig, axes = plt.subplots(2, 2, figsize=(13, 8))
 axes[0, 0].bar(res_df['Method'], res_df['Trainable Params (M)'], color='#4A90E2', edgecolor='black')
@@ -214,7 +222,7 @@ axes[1, 1].set_yscale('log')
 axes[1, 1].set_ylabel('Size (MB)')
 axes[1, 1].grid(axis='y', linestyle='--')
 plt.tight_layout()
-plt.savefig('results/figures/task1_2_resource_footprints.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_2_resource_footprints.png', dpi=300)
 plt.close()
 
 # --- 1.3 Master Benchmark Performance ---
@@ -233,7 +241,7 @@ df_bench["HellaSwag Δ(pp)"] = df_bench["HellaSwag"] - df_bench.loc[0, "HellaSwa
 df_bench["BoolQ Δ(pp)"] = df_bench["BoolQ"] - df_bench.loc[0, "BoolQ"]
 df_bench["ARC-Easy Δ(pp)"] = df_bench["ARC-Easy"] - df_bench.loc[0, "ARC-Easy"]
 df_bench["Avg General Δ(pp)"] = (df_bench["HellaSwag Δ(pp)"] + df_bench["BoolQ Δ(pp)"] + df_bench["ARC-Easy Δ(pp)"]) / 3.0
-df_bench.to_csv('results/master_benchmark_results.csv', index=False)
+df_bench.to_csv(f'{RESULTS_DIR}/master_benchmark_results.csv', index=False)
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 5.5))
 conditions = [c.replace(" Final", "").replace(" (Unchanged)", "") for c in df_bench["Condition"]]
@@ -265,7 +273,7 @@ ax2.set_ylim(-15, 25)
 ax2.legend(loc='upper left', fontsize=9)
 ax2.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('results/figures/task1_3_benchmark_performance_and_deltas.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_3_benchmark_performance_and_deltas.png', dpi=300)
 plt.close()
 
 # --- 1.3 Adaptation vs Retention Pareto ---
@@ -297,7 +305,7 @@ ax.set_xlim(12, 23)
 ax.set_ylim(-12, 1)
 ax.grid(True, linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('results/figures/task1_3_adaptation_vs_retention_pareto.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_3_adaptation_vs_retention_pareto.png', dpi=300)
 plt.close()
 
 # --- 1.3 Progression & GSM8K Lengths ---
@@ -326,7 +334,7 @@ ax2.set_ylabel('Frequency', fontsize=11)
 ax2.legend(loc='upper right', fontsize=9.5)
 ax2.grid(True, linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('results/figures/task1_3_progression_and_solution_lengths.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_3_progression_and_solution_lengths.png', dpi=300)
 plt.close()
 
 # --- 1.4 Weight Diagnostics ---
@@ -349,7 +357,7 @@ for ckpt in checkpoints:
             "Relative_Magnitude_eta": metrics_map[ckpt]["eta"][idx],
         })
 df_weights = pd.DataFrame(weight_diagnostics)
-df_weights.to_csv('results/weight_diagnostics.csv', index=False)
+df_weights.to_csv(f'{RESULTS_DIR}/weight_diagnostics.csv', index=False)
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5))
 palette_diag = ["#E67E22", "#D0021B", "#F39C12", "#3498DB", "#2ECC71", "#9B59B6"]
@@ -368,7 +376,7 @@ ax2.set_ylim(0, 0.16)
 ax2.legend(loc='upper left', fontsize=9)
 ax2.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('results/figures/task1_4_subspace_interference_and_magnitude.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_4_subspace_interference_and_magnitude.png', dpi=300)
 plt.close()
 
 # --- 1.4 Activation Diagnostics & Correlation ---
@@ -392,7 +400,7 @@ for ckpt in checkpoints:
             act_records.append({"Model": ckpt, "Layer": f"Layer {layer}", "Domain": "Non-Math (HellaSwag)", "R(z)": val})
 
 df_act = pd.DataFrame(act_records)
-df_act.to_csv('results/activation_diagnostics.csv', index=False)
+df_act.to_csv(f'{RESULTS_DIR}/activation_diagnostics.csv', index=False)
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5.2))
 df_l27 = df_act[df_act['Layer'] == 'Layer 27']
@@ -421,7 +429,7 @@ ax2.set_ylabel('Average General Benchmark Drop (pp)', fontsize=11)
 ax2.legend(loc='lower left', fontsize=10)
 ax2.grid(True, linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('results/figures/task1_4_activation_ratio_and_correlation.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_4_activation_ratio_and_correlation.png', dpi=300)
 plt.close()
 
 # --- 1.5 Qualitative Audit & Radar ---
@@ -451,7 +459,7 @@ for q_id in questions_2:
             overall = (fmt_comp + coherence + repetition + nonmath) / 4.0
             audit_rows.append({"Question": q_id, "Format": fmt, "Condition": cond, "Format_Compliance": fmt_comp, "Coherence": coherence, "Repetition": repetition, "NonMath_Purity": nonmath, "Overall_Score": overall, "Truncated": trunc, "Audit_Notes": notes})
 df_audit = pd.DataFrame(audit_rows)
-df_audit.to_csv('results/qualitative_42_annotation_table.csv', index=False)
+df_audit.to_csv(f'{RESULTS_DIR}/qualitative_42_annotation_table.csv', index=False)
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5.2))
 fmt_summary = df_audit.groupby(['Condition', 'Format'])['Format_Compliance'].mean().unstack()
@@ -487,7 +495,7 @@ ax2.set_ylim(0, 5.5)
 ax2.set_title('Behavioral Quality Profile (1-5 Scale)', fontsize=12.5, fontweight='bold', pad=15)
 ax2.legend(loc='lower right', bbox_to_anchor=(1.25, -0.1), fontsize=9)
 plt.tight_layout()
-plt.savefig('results/figures/task1_5_qualitative_audit_and_radar.png', dpi=300)
+plt.savefig(f'{FIG_DIR}/task1_5_qualitative_audit_and_radar.png', dpi=300)
 plt.close()
 
 print("All Task 1 figures and result tables generated successfully!")

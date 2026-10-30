@@ -1,0 +1,7 @@
+Suite,Mean_Acc,CI_Lower,CI_Upper,Pair_Acc,Image_Sensitivity,Swapped_Following
+Presence (Correct),91.67,85.42,96.53,84.72,95.83,0.0
+Presence (Swap),27.78,20.83,34.72,11.11,95.83,72.22
+Counting (Correct),77.78,69.44,85.42,65.28,90.28,0.0
+Counting (Swap),19.44,12.5,26.39,6.94,90.28,68.06
+Natural VQA (Correct),52.34,46.88,57.81,38.54,86.46,0.0
+Natural VQA (Swap),18.23,13.54,23.44,8.33,86.46,58.85

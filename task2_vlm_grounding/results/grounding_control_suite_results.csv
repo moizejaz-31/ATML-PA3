@@ -1,0 +1,5 @@
+Condition,Annotation-Derived (Presence Acc %),Annotation-Derived (Counting MAE),Natural VQAv2 Score (%),VQAv2 Reference NLL
+Correct Image,91.67,0.31,52.34,1.32
+Complementary Swap,27.78,1.84,18.23,2.84
+Mismatched Image,48.61,1.42,29.69,2.21
+No Image,50.0,1.56,28.12,2.38

@@ -1,0 +1,4 @@
+Stage,Updates,Trainable_Params,Peak_VRAM_GB,Runtime_Min,Primary_Data
+Stage 1: Caption Alignment,2250,1.84M (Connector),4.12,38.5,"18,000 Captions"
+Stage 2: Visual Instruction,1500,10.67M (Connector + LoRA),5.45,32.1,Presence + Counting
+Stage 3: VQA Specialization,750,10.67M (Connector + LoRA),5.82,18.2,Natural VQAv2 Pairs

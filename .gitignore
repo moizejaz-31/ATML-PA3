@@ -60,6 +60,7 @@ ATML-PA3-Data/
 
 # --- Figures & Images (plots stay embedded in executed notebooks / markdown) ---
 *.png
+!**/results/figures/*.png
 *.jpg
 *.jpeg
 *.gif
@@ -85,6 +86,8 @@ ENV/
 # --- Jupyter Checkpoints & Temporary Runs ---
 .ipynb_checkpoints/
 */.ipynb_checkpoints/*
+# --- Temporary Build / Scratch Scripts ---
+build_*.py
 scratch/
 
 # --- IDEs, Editors & OS Metadata ---

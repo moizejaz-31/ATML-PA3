@@ -1,0 +1,8 @@
+num_visual_tokens: 49
+pooling_kernel: 2
+pooling_stride: 2
+pooling_type: "avg"
+vision_encoder: "google/siglip-base-patch16-224"
+llm_backbone: "Qwen/Qwen3-0.6B"
+seed: 6304
+fp16: true

@@ -1,0 +1,2 @@
+Condition,GSM8K (Acc),HellaSwag (Norm Acc),BoolQ (Acc),ARC-Easy (Norm Acc),Avg General Retention
+1. Baseline (Unchanged Starting Model),38.21,54.82,67.43,63.15,61.800000000000004

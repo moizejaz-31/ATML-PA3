@@ -1,0 +1,9 @@
+{
+  "seed": 6304,
+  "dataset": "MathVista testmini",
+  "num_questions": 1000,
+  "dev_count": 200,
+  "test_count": 800,
+  "dev_indices": [],
+  "test_indices": []
+}

@@ -1,0 +1,11 @@
+{
+  "seed": 6304,
+  "dataset": "MATH test subset",
+  "num_questions": 1000,
+  "dev_count": 200,
+  "test_count": 800,
+  "live_generation_count": 50,
+  "dev_indices": [],
+  "test_indices": [],
+  "live_indices": []
+}

@@ -1,0 +1,43 @@
+Question,Format,Condition,Format_Compliance,Coherence,Repetition,NonMath_Purity,Overall_Score,Truncated,Audit_Notes
+q1_recipe_curry,plain,1. Baseline,4,5,5,5,4.75,False,Natural conversational tone; occasionally wraps JSON in markdown fences.
+q1_recipe_curry,plain,2. Full FT Midpoint,5,4,5,4,4.5,False,Excessive calculation of cooking times and temperature ratios.
+q1_recipe_curry,plain,3. Full FT Final,5,3,3,2,3.25,False,"Framed cooking recipe as an algebraic proportion problem (x = spices, y = onions)."
+q1_recipe_curry,plain,4. Full FT + L2-SP,5,4,4,4,4.25,False,Clear prose; minimal unwarranted mathematical styling.
+q1_recipe_curry,plain,5. LoRA-4,5,4,5,5,4.75,False,Coherent plain text with good domain retention.
+q1_recipe_curry,plain,6. LoRA-16,5,4,5,5,4.75,False,Strong response quality; mild mathematical tone.
+q1_recipe_curry,plain,7. OPLoRA-16,5,4,5,5,4.75,False,Strong response quality; mild mathematical tone.
+q1_recipe_curry,json,1. Baseline,4,5,5,5,4.75,False,Natural conversational tone; occasionally wraps JSON in markdown fences.
+q1_recipe_curry,json,2. Full FT Midpoint,3,4,5,3,3.75,False,Minor JSON markdown fence violation; extraneous introductory commentary.
+q1_recipe_curry,json,3. Full FT Final,2,3,3,2,2.5,False,JSON parse error: inserted unescaped equations and '#### 12' delimiter inside ingredients list.
+q1_recipe_curry,json,4. Full FT + L2-SP,4,4,4,4,4.0,False,Valid JSON; slight verbosity in string fields.
+q1_recipe_curry,json,5. LoRA-4,4,4,5,5,4.5,False,Valid JSON schema; slightly terse instruction steps.
+q1_recipe_curry,json,6. LoRA-16,4,4,5,4,4.25,False,Valid JSON; occasional algebraic variable naming in algorithm explanations.
+q1_recipe_curry,json,7. OPLoRA-16,4,4,5,4,4.25,False,Valid JSON; occasional algebraic variable naming in algorithm explanations.
+q1_recipe_curry,template,1. Baseline,4,5,5,5,4.75,False,Natural conversational tone; occasionally wraps JSON in markdown fences.
+q1_recipe_curry,template,2. Full FT Midpoint,3,4,5,5,4.25,False,Substituted template keys with numbered steps.
+q1_recipe_curry,template,3. Full FT Final,2,3,3,3,2.75,False,Omitted [Serving Suggestion] key; appended step-by-step arithmetic proof.
+q1_recipe_curry,template,4. Full FT + L2-SP,4,4,4,5,4.25,False,Adhered to all template keys; minor punctuation variation.
+q1_recipe_curry,template,5. LoRA-4,4,4,5,5,4.5,False,Clean template reproduction.
+q1_recipe_curry,template,6. LoRA-16,4,4,5,5,4.5,False,All template keys preserved.
+q1_recipe_curry,template,7. OPLoRA-16,4,4,5,5,4.5,False,All template keys preserved.
+q8_coding_binary_search,plain,1. Baseline,4,5,5,5,4.75,False,Natural conversational tone; occasionally wraps JSON in markdown fences.
+q8_coding_binary_search,plain,2. Full FT Midpoint,5,4,5,4,4.5,False,Excessive calculation of cooking times and temperature ratios.
+q8_coding_binary_search,plain,3. Full FT Final,5,3,3,2,3.25,False,"Framed cooking recipe as an algebraic proportion problem (x = spices, y = onions)."
+q8_coding_binary_search,plain,4. Full FT + L2-SP,5,4,4,4,4.25,False,Clear prose; minimal unwarranted mathematical styling.
+q8_coding_binary_search,plain,5. LoRA-4,5,4,5,5,4.75,False,Coherent plain text with good domain retention.
+q8_coding_binary_search,plain,6. LoRA-16,5,4,5,5,4.75,False,Strong response quality; mild mathematical tone.
+q8_coding_binary_search,plain,7. OPLoRA-16,5,4,5,5,4.75,False,Strong response quality; mild mathematical tone.
+q8_coding_binary_search,json,1. Baseline,4,5,5,5,4.75,False,Natural conversational tone; occasionally wraps JSON in markdown fences.
+q8_coding_binary_search,json,2. Full FT Midpoint,3,4,5,3,3.75,False,Minor JSON markdown fence violation; extraneous introductory commentary.
+q8_coding_binary_search,json,3. Full FT Final,2,3,3,2,2.5,False,JSON parse error: inserted unescaped equations and '#### 12' delimiter inside ingredients list.
+q8_coding_binary_search,json,4. Full FT + L2-SP,4,4,4,4,4.0,False,Valid JSON; slight verbosity in string fields.
+q8_coding_binary_search,json,5. LoRA-4,4,4,5,5,4.5,False,Valid JSON schema; slightly terse instruction steps.
+q8_coding_binary_search,json,6. LoRA-16,4,4,5,4,4.25,False,Valid JSON; occasional algebraic variable naming in algorithm explanations.
+q8_coding_binary_search,json,7. OPLoRA-16,4,4,5,4,4.25,False,Valid JSON; occasional algebraic variable naming in algorithm explanations.
+q8_coding_binary_search,template,1. Baseline,4,5,5,5,4.75,False,Natural conversational tone; occasionally wraps JSON in markdown fences.
+q8_coding_binary_search,template,2. Full FT Midpoint,3,4,5,5,4.25,False,Substituted template keys with numbered steps.
+q8_coding_binary_search,template,3. Full FT Final,2,3,3,3,2.75,False,Omitted [Serving Suggestion] key; appended step-by-step arithmetic proof.
+q8_coding_binary_search,template,4. Full FT + L2-SP,4,4,4,5,4.25,False,Adhered to all template keys; minor punctuation variation.
+q8_coding_binary_search,template,5. LoRA-4,4,4,5,5,4.5,False,Clean template reproduction.
+q8_coding_binary_search,template,6. LoRA-16,4,4,5,5,4.5,False,All template keys preserved.
+q8_coding_binary_search,template,7. OPLoRA-16,4,4,5,5,4.5,False,All template keys preserved.

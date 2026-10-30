@@ -1,0 +1,17 @@
+stage: 1
+stage_name: "caption_alignment"
+total_updates: 2250
+micro_batch_size: 8
+gradient_accumulation_steps: 2
+effective_batch_size: 16
+connector_peak_lr: 1.0e-3
+lora_peak_lr: 0.0
+warmup_ratio: 0.05
+min_lr_ratio: 0.10
+optimizer: "AdamW"
+weight_decay: 0.01
+gradient_clipping: 1.0
+seed: 6304
+fp16: true
+eval_interval_updates: 500
+save_interval_updates: 250

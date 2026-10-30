@@ -1,0 +1,22 @@
+model_name: "Qwen/Qwen2.5-3B-Instruct"
+num_questions: 50
+total_token_allowance: 3072
+precision: "fp16"
+batch_size: 1
+seed: 6304
+temperature: 0.7
+top_p: 0.8
+top_k: 20
+repetition_penalty: 1.0
+strategies:
+  single_long:
+    max_new_tokens: 3072
+  parallel_sampling:
+    num_samples: 3
+    max_new_tokens_per_sample: 1024
+  sequential_refinement:
+    initial_tokens: 1024
+    revision_tokens: 2048
+prompt_system: "You are a helpful assistant."
+prompt_suffix: "Think step by step inside <think> </think> tags, then give your final answer inside \\boxed{}."
+refinement_prompt: "Review the solution above. Identify and correct any errors; if it is correct, retain its answer. Give your final answer inside \\boxed{}."

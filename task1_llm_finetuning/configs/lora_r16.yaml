@@ -1,0 +1,23 @@
+method: "lora"
+model_name: "Qwen/Qwen3-0.6B"
+enable_thinking: false
+seed: 6304
+dataset: "MetaMathQA"
+num_examples: 40000
+max_updates: 1250
+micro_batch_size: 2
+gradient_accumulation_steps: 16
+effective_batch_size: 32
+learning_rate: 2.0e-4
+weight_decay: 0.01
+warmup_updates: 38
+lr_schedule: "cosine"
+max_seq_length: 2048
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules: ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+gradient_checkpointing: true
+fp16: true
+save_checkpoints: [312, 625, 937, 1250]
+eval_checkpoints: [1250]

@@ -1,0 +1,63 @@
+# Qualitative Prompt Audit Suite for Task 1
+# 24 Prompts: 8 Questions x 3 Formats (plain, json, template)
+# Probing instruction following, format compliance, style, coherence,
+# and potential mathematical intrusion / hallucinations on non-math domains.
+# Annotated Focal Subset: First and last underlying questions across all 3 formats and 7 conditions (42 responses).
+
+questions:
+  - id: "q1_recipe_curry"
+    domain: "culinary_procedure"
+    title: "Vegetable Curry Recipe"
+    plain: "Explain step-by-step how to make a classic vegetable curry from scratch using fresh ingredients and whole spices."
+    json: "Explain step-by-step how to make a classic vegetable curry from scratch using fresh ingredients and whole spices. Return your answer strictly as a valid JSON object adhering to this schema: {\"title\": \"string\", \"prep_time_minutes\": \"number\", \"ingredients\": [\"string\"], \"instructions\": [\"string\"], \"chef_tips\": \"string\"}. Do not output markdown backticks or text outside the JSON object."
+    template: "Explain step-by-step how to make a classic vegetable curry from scratch using fresh ingredients and whole spices. Format your response strictly using the following template:\n[Title]: <Curry Name>\n[Ingredient List]: <Comma-separated ingredients>\n[Preparation Steps]: <Numbered steps>\n[Serving Suggestion]: <One sentence recommendation>"
+
+  - id: "q2_history_printing"
+    domain: "historical_analysis"
+    title: "Printing Press Impact"
+    plain: "Discuss the primary social, religious, and scientific impacts of the invention of the movable type printing press in 15th-century Europe."
+    json: "Discuss the primary social, religious, and scientific impacts of the invention of the movable type printing press in 15th-century Europe. Return your answer strictly as a valid JSON object with keys: {\"era\": \"string\", \"religious_impact\": \"string\", \"scientific_impact\": \"string\", \"literacy_shift\": \"string\"}. Do not output markdown backticks or commentary outside the JSON."
+    template: "Discuss the primary social, religious, and scientific impacts of the invention of the movable type printing press in 15th-century Europe. Format your response strictly using the following template:\n[Historical Context]: <15th Century Setting>\n[Religious Revolution]: <Impact on Reformation>\n[Scientific Democratization]: <Dissemination of Knowledge>\n[Long-term Legacy]: <Summary>"
+
+  - id: "q3_creative_scifi"
+    domain: "creative_dialogue"
+    title: "Astronaut Satellite Discovery"
+    plain: "Write a tense, dramatic dialogue between two astronauts on an extravehicular spacewalk who have just stumbled upon an unidentified, dormant satellite in deep orbit."
+    json: "Write a tense, dramatic dialogue between two astronauts on an extravehicular spacewalk who have just stumbled upon an unidentified, dormant satellite in deep orbit. Return your response strictly as a JSON object: {\"setting\": \"string\", \"characters\": [\"string\"], \"dialogue\": [{\"speaker\": \"string\", \"line\": \"string\"}], \"cliffhanger\": \"string\"}. No surrounding text."
+    template: "Write a tense, dramatic dialogue between two astronauts on an extravehicular spacewalk who have just stumbled upon an unidentified, dormant satellite in deep orbit. Format your response strictly using the following template:\n[Scene Setting]: <Orbital Coordinates & Atmosphere>\n[Dialogue]:\n- Astronaut 1: <Spoken Line>\n- Astronaut 2: <Spoken Line>\n- Astronaut 1: <Spoken Line>\n[Final Observation]: <Tense discovery line>"
+
+  - id: "q4_travel_itinerary"
+    domain: "planning_scheduling"
+    title: "Kyoto Walking Tour"
+    plain: "Design a comprehensive, realistic 3-day walking tour itinerary for a traveler visiting historic temples, gardens, and food markets in Kyoto, Japan."
+    json: "Design a comprehensive, realistic 3-day walking tour itinerary for a traveler visiting historic temples, gardens, and food markets in Kyoto, Japan. Output strictly as a JSON object: {\"destination\": \"string\", \"daily_itinerary\": [{\"day\": 1, \"morning\": \"string\", \"afternoon\": \"string\", \"evening\": \"string\"}, {\"day\": 2, \"morning\": \"string\", \"afternoon\": \"string\", \"evening\": \"string\"}, {\"day\": 3, \"morning\": \"string\", \"afternoon\": \"string\", \"evening\": \"string\"}], \"budget_advice\": \"string\"}."
+    template: "Design a comprehensive, realistic 3-day walking tour itinerary for a traveler visiting historic temples, gardens, and food markets in Kyoto, Japan. Format your response strictly using the following template:\n[Destination]: Kyoto Cultural Tour\n[Day 1 Itinerary]: <Highlights & Route>\n[Day 2 Itinerary]: <Highlights & Route>\n[Day 3 Itinerary]: <Highlights & Route>\n[Essential Travel Tip]: <Key recommendation>"
+
+  - id: "q5_biology_photosynthesis"
+    domain: "scientific_explanation"
+    title: "Photosynthesis Mechanism"
+    plain: "Explain the biochemical mechanisms of photosynthesis in green plants, clearly contrasting the light-dependent reactions with the Calvin cycle."
+    json: "Explain the biochemical mechanisms of photosynthesis in green plants, clearly contrasting the light-dependent reactions with the Calvin cycle. Output strictly as a JSON object: {\"process_name\": \"string\", \"light_dependent_stage\": {\"location\": \"string\", \"inputs\": [\"string\"], \"outputs\": [\"string\"]}, \"calvin_cycle_stage\": {\"location\": \"string\", \"inputs\": [\"string\"], \"outputs\": [\"string\"]}, \"biological_importance\": \"string\"}."
+    template: "Explain the biochemical mechanisms of photosynthesis in green plants, clearly contrasting the light-dependent reactions with the Calvin cycle. Format your response strictly using the following template:\n[Biochemical Process]: Photosynthesis\n[Light-Dependent Reactions]: <Thylakoid membrane reactions>\n[Light-Independent Calvin Cycle]: <Stroma dark reactions>\n[Overall Energetic Equation]: <Summary in words>"
+
+  - id: "q6_email_customer_apology"
+    domain: "professional_communication"
+    title: "Project Delay Client Apology"
+    plain: "Draft a polite, empathetic, and professional email to an enterprise client explaining an unforeseen technical delay in shipping a major software feature, offering remediation steps."
+    json: "Draft a polite, empathetic, and professional email to an enterprise client explaining an unforeseen technical delay in shipping a major software feature. Output strictly as a JSON object: {\"subject_line\": \"string\", \"salutation\": \"string\", \"core_message\": \"string\", \"remediation_actions\": [\"string\"], \"sign_off\": \"string\"}."
+    template: "Draft a polite, empathetic, and professional email to an enterprise client explaining an unforeseen technical delay in shipping a major software feature. Format your response strictly using the following template:\n[Subject Line]: <Professional Title>\n[Opening Statement]: <Greeting and direct ownership of delay>\n[Root Cause & Mitigation]: <Explanation and proactive solution>\n[Revised Timeline]: <Milestone dates>\n[Closing & Commitment]: <Professional reassurance>"
+
+  - id: "q7_literature_hamlet"
+    domain: "literary_analysis"
+    title: "Hamlet Indecision Theme"
+    plain: "Analyze the psychological and thematic significance of Prince Hamlet's procrastination and indecision regarding the assassination of King Claudius in Shakespeare's tragedy."
+    json: "Analyze the psychological and thematic significance of Prince Hamlet's procrastination and indecision regarding the assassination of King Claudius in Shakespeare's tragedy. Output strictly as a JSON object: {\"tragedy\": \"string\", \"protagonist\": \"string\", \"psychological_factors\": [\"string\"], \"moral_and_religious_dilemmas\": [\"string\"], \"critical_synthesis\": \"string\"}."
+    template: "Analyze the psychological and thematic significance of Prince Hamlet's procrastination and indecision regarding the assassination of King Claudius in Shakespeare's tragedy. Format your response strictly using the following template:\n[Literary Work]: Hamlet, Prince of Denmark\n[Philosophical Conflict]: <Thought vs. Action>\n[The Prayer Scene Pivot]: <Why Hamlet spared Claudius at prayer>\n[Tragic Repercussions]: <Impact on the Danish court>"
+
+  - id: "q8_coding_binary_search"
+    domain: "computer_science_algorithms"
+    title: "Binary Search Explanation"
+    plain: "Explain how the binary search algorithm operates on a sorted array, provide its time complexity derivation, and highlight the classic integer overflow bug when calculating midpoints."
+    json: "Explain how the binary search algorithm operates on a sorted array, provide its time complexity derivation, and highlight the classic integer overflow bug when calculating midpoints. Return strictly a JSON object: {\"algorithm\": \"string\", \"prerequisite\": \"string\", \"time_complexity\": {\"best\": \"string\", \"worst\": \"string\", \"space\": \"string\"}, \"midpoint_formula_bug\": \"string\", \"safe_midpoint_formula\": \"string\"}."
+    template: "Explain how the binary search algorithm operates on a sorted array, provide its time complexity derivation, and highlight the classic integer overflow bug when calculating midpoints. Format your response strictly using the following template:\n[Algorithm Concept]: Binary Search\n[Prerequisite Condition]: <Sorted Array requirement>\n[Mathematical Time Complexity]: <O(log n) derivation>\n[Integer Overflow Pitfall]: <low + high vs low + (high - low) / 2>\n[Summary Recommendation]: <Best practice implementation>"
+

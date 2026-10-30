@@ -1,0 +1,8 @@
+check_points: [4, 8, 16]
+max_candidates: 32
+dev_size: 200
+test_size: 800
+seed: 6304
+tau_grid: [0.5, 0.625, 0.75, 0.875, 1.0]
+gamma_grid: [0.0, 0.1, 0.25, 0.5]
+margin_threshold_criterion: 0.01  # within 1 percentage point of fixed-32 self-consistency

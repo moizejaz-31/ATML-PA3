@@ -1,0 +1,17 @@
+{
+  "seed": 6304,
+  "description": "Image-disjoint splits for Task 2 curriculum training and grounding evaluation",
+  "coco_captions": {
+    "train_images": 6000,
+    "dev_images": 96
+  },
+  "annotation_grounding": {
+    "dev_pairs": 24,
+    "test_pairs": 64
+  },
+  "natural_vqav2": {
+    "train_pairs": 1536,
+    "dev_pairs": 32,
+    "test_pairs": 96
+  }
+}

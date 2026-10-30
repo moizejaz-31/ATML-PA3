@@ -1,0 +1,14 @@
+budgets: [1, 2, 4, 8, 16, 32]
+num_permutations: 10
+seed: 6304
+bootstrap_resamples: 1000
+ci: 0.95
+datasets:
+  math:
+    model: "Qwen2.5-3B-Instruct"
+    data_path: "data/qwen2.5_3b_instruct_math"
+    rules: ["first_ans", "self_consistency", "mean_logp", "self_certainty", "self_certainty_rwc"]
+  mathvista:
+    model: "Qwen2.5-VL-3B-Instruct"
+    data_path: "data/qwen2.5_vl_3b_instruct_mathvista"
+    rules: ["first_ans", "self_consistency", "mean_logp", "self_certainty", "self_certainty_rwc", "vision_only", "visconf", "visconf_rwc"]

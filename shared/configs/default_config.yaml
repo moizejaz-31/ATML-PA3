@@ -1,0 +1,6 @@
+global_seed: 6304
+device: "cuda"
+precision: "fp16"
+save_dir: "./checkpoints"
+results_dir: "./results"
+enable_thinking: false

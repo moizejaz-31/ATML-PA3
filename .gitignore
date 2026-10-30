@@ -1,0 +1,101 @@
+# ==============================================================================
+# Gitignore for ATML PA3: Pretrained Adaptation, Visual Grounding, & Test-Time Compute
+# Deliverables: code, configuration files, split files, environment specifications,
+# machine-readable results, and reproducible instructions in README.
+# ==============================================================================
+
+# --- Manual & Assignment Prompts (Private/Course Materials) ---
+manual/
+*.pdf
+manual_extracted.txt
+
+# --- Academic Report & LaTeX (the PDF is submitted on LMS) ---
+report/
+*.pdf
+*.tex
+*.bib
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# --- Text Files (manual extracts, notes; keep requirements.txt) ---
+*.txt
+!requirements.txt
+
+# --- Datasets & Raw Archives ---
+data/
+datasets/
+ATML-PA3-Data/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.gz
+*.parquet
+!**/data/README.md
+
+# --- Model Checkpoints & Pretrained Weights ---
+# Weights/adapters are excluded; keep config/history json
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.bin
+*.safetensors
+**/checkpoints/*
+!**/checkpoints/*_history.json
+!**/checkpoints/.gitkeep
+
+# --- Cached Feature Representations & Arrays ---
+*.npy
+*.npz
+**/cache/*
+!**/cache/.gitkeep
+
+# --- Figures & Images (plots stay embedded in executed notebooks / markdown) ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+*.mp4
+
+# --- Python Bytecode & Package Builds ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Jupyter Checkpoints & Temporary Runs ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+scratch/
+
+# --- IDEs, Editors & OS Metadata ---
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Experiment Tracking ---
+wandb/
+runs/

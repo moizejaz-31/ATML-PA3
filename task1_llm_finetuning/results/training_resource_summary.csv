@@ -1,0 +1,6 @@
+Method,Trainable Params (M),Peak GPU Mem (MB),Training Time (min),Checkpoint Size (MB)
+Full FT,590.0,8450,142.5,2260.0
+Full FT + L2-SP,590.0,9120,158.0,2260.0
+LoRA-4,2.21,4280,68.2,8.8
+LoRA-16,8.83,4650,74.8,35.3
+OPLoRA-16,8.83,4890,79.4,35.3

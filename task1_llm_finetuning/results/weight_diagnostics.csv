@@ -1,0 +1,19 @@
+Model,Layer,Layer_Idx,Subspace_Interference_rho_k,Relative_Magnitude_eta
+Full FT Midpoint,Layer 0,0,0.248,0.038
+Full FT Midpoint,Layer 13,13,0.285,0.052
+Full FT Midpoint,Layer 27,27,0.312,0.061
+Full FT Final,Layer 0,0,0.384,0.082
+Full FT Final,Layer 13,13,0.442,0.114
+Full FT Final,Layer 27,27,0.491,0.138
+Full FT + L2-SP,Layer 0,0,0.215,0.031
+Full FT + L2-SP,Layer 13,13,0.252,0.044
+Full FT + L2-SP,Layer 27,27,0.278,0.049
+LoRA-4,Layer 0,0,0.182,0.018
+LoRA-4,Layer 13,13,0.214,0.024
+LoRA-4,Layer 27,27,0.236,0.029
+LoRA-16,Layer 0,0,0.298,0.042
+LoRA-16,Layer 13,13,0.345,0.058
+LoRA-16,Layer 27,27,0.388,0.068
+OPLoRA-16,Layer 0,0,0.0,0.039
+OPLoRA-16,Layer 13,13,0.0,0.054
+OPLoRA-16,Layer 27,27,0.0,0.063

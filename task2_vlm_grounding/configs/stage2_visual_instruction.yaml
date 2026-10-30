@@ -1,0 +1,25 @@
+stage: 2
+stage_name: "visual_instruction_tuning"
+total_updates: 1500
+micro_batch_size: 8
+gradient_accumulation_steps: 2
+effective_batch_size: 16
+connector_peak_lr: 1.0e-4
+lora_peak_lr: 2.0e-5
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules: ["q_proj", "k_proj", "v_proj", "o_proj"]
+sampling_weights:
+  presence: 0.50
+  counting: 0.25
+  caption_replay: 0.25
+warmup_ratio: 0.05
+min_lr_ratio: 0.10
+optimizer: "AdamW"
+weight_decay: 0.01
+gradient_clipping: 1.0
+seed: 6304
+fp16: true
+eval_interval_updates: 500
+save_interval_updates: 250

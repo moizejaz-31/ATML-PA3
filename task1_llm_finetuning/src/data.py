@@ -229,3 +229,50 @@ def prepare_metamath_dataset(
     )
     dataset = MetaMathDataset(filtered_examples, tokenizer=tokenizer, max_length=max_length)
     return dataset, stats
+
+
+if __name__ == "__main__":
+    import argparse
+    from transformers import AutoTokenizer
+    from shared.src.seed import set_seed
+
+    parser = argparse.ArgumentParser(description="Prepare MetaMathQA dataset and activation probe set")
+    parser.add_argument("--model_name", type=str, default="Qwen/Qwen3-0.6B")
+    parser.add_argument("--target_count", type=int, default=40000)
+    parser.add_argument("--max_length", type=int, default=2048)
+    parser.add_argument("--seed", type=int, default=6304)
+    parser.add_argument("--probe_path", type=str, default="task1_llm_finetuning/splits/probe_set_seed6304.json")
+    args = parser.parse_args()
+
+    set_seed(args.seed)
+    print(f"[Data CLI] Initializing with Seed {args.seed}...")
+    print(f"[Data CLI] Loading tokenizer for {args.model_name}...")
+    tokenizer = AutoTokenizer.from_pretrained(args.model_name)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
+    print(f"[Data CLI] Preparing MetaMathQA ({args.target_count} examples, max_len={args.max_length})...")
+    ds, stats = prepare_metamath_dataset(
+        tokenizer=tokenizer,
+        max_length=args.max_length,
+        target_count=args.target_count,
+        seed=args.seed,
+    )
+    print(f"[Data CLI] Dataset preparation complete! Stats: {stats}")
+
+    print(f"[Data CLI] Sampling activation probe set (Seed {args.seed})...")
+    try:
+        from datasets import load_dataset
+        gsm_test = load_dataset("gsm8k", "main", split="test")
+        hella_val = load_dataset("hellaswag", split="validation")
+
+        sample_activation_probe_set(
+            gsm8k_questions=[{"id": i, "question": ex["question"]} for i, ex in enumerate(gsm_test)],
+            hellaswag_contexts=[{"id": i, "ctx": ex["ctx"]} for i, ex in enumerate(hella_val)],
+            seed=args.seed,
+            n_samples=32,
+            save_path=args.probe_path,
+        )
+        print(f"[Data CLI] Probe manifest saved to {args.probe_path}")
+    except Exception as e:
+        print(f"[Data CLI] Probe sampling note: {e}")

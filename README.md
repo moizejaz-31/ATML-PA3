@@ -123,7 +123,7 @@ set_seed(6304)
 ## Experimental Workflow
 
 ### Task 1: LLM Fine-Tuning
-Run `kaggle_runner.ipynb` on Kaggle (GPU T4 x2). It trains the five variants, evaluates the seven conditions, computes diagnostics and qualitative responses, and resumes across sessions. See `task1_llm_finetuning/README.md` for the individual commands.
+Run `kaggle_task1.ipynb` on Kaggle (GPU T4 x2). It trains the five variants, evaluates the seven conditions, computes diagnostics and qualitative responses, and resumes across sessions. See `task1_llm_finetuning/README.md` for the individual commands.
 
 ### Task 2: Vision-Language Models & Grounding
 Run `kaggle_task2.ipynb` on Kaggle (GPU T4 x2). It selects the data, caches SigLIP features, trains the 4,500-update curriculum with resuming across sessions, runs the final evaluation, and executes the seven analysis notebooks in `task2_vlm_grounding/notebooks/`.
@@ -137,3 +137,19 @@ Run `kaggle_task3.ipynb` on Kaggle (GPU T4). It downloads `ATML-PA3-Data` and th
 * **Code & Experiments:** All source code, configs, notebooks, and machine-readable outputs are tracked in this repository.
 * **Report:** 8-page NeurIPS-style PDF report synthesizing empirical evidence and answering the 14 research questions.
 * **Author:** Moiz Ejaz (Roll Number / Student ID: 28100357).
+
+---
+
+## Running on Kaggle From the Terminal
+Each task is independent and has its own runner. `kaggle_push.py` pushes a runner and starts it on a GPU T4 x2 with internet enabled.
+
+```bash
+pip install kaggle
+python kaggle_push.py task1 smoke
+python kaggle_push.py task1 status
+python kaggle_push.py task1 full
+python kaggle_push.py task1 resume
+python kaggle_push.py task1 results
+```
+
+Replace `task1` with `task2` or `task3`. Task 3 has no `smoke` mode. Kaggle clones the code from GitHub, so commit and push before running.

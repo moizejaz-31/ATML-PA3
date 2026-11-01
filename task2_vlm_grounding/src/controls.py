@@ -1,65 +1,40 @@
 """
-Four Image Control Conditions for Task 2 Visual Grounding Evaluation:
-1. Correct: The original image intended for the question.
-2. Complementary Swap: The partner image from the same complementary pair (shared question, different target).
-3. Mismatched: A fixed derangement mapping to an unrelated image from another pair.
-4. No Image: Visual tokens omitted (tests language model prior alone).
+Four Image Control Conditions for Task 2 Visual Grounding Evaluation. The question and original
+references stay fixed across conditions:
+1. correct: The original image.
+2. swap: The partner image from the same complementary pair.
+3. mismatched: An unrelated image from another pair in the same suite.
+4. no_image: Visual tokens omitted; text instructions unchanged.
 """
+from typing import Any, Dict, List, Optional, Tuple
 import numpy as np
-from typing import Dict, Any, List, Tuple, Optional
 
-def generate_derangement_mapping(image_ids: List[str], seed: int = 6304) -> Dict[str, str]:
+CONDITIONS = ["correct", "swap", "mismatched", "no_image"]
+
+def mismatched_mapping(pairs: List[Dict[str, Any]], seed: int = 6304) -> Dict[Tuple[int, str], str]:
     """
-    Constructs a fixed derangement (permutation where pi(i) != i)
-    for the mismatched image control condition.
+    Fixed before generation: each pair takes the same-side image of the next pair in a seeded cycle,
+    which excludes both images of the original pair. The mapping is reused across comparisons.
     """
-    rng = np.random.default_rng(seed)
-    n = len(image_ids)
-    if n <= 1:
-        return {img: img for img in image_ids}
+    if len(pairs) < 2:
+        raise ValueError("Mismatched control needs at least two pairs")
+    cycle = np.random.default_rng(seed).permutation(len(pairs)).tolist()
+    mapping = {}
+    for position, pair_index in enumerate(cycle):
+        donor = pairs[cycle[(position + 1) % len(cycle)]]
+        for side in ("a", "b"):
+            mapping[(pair_index, side)] = donor[side]["image"]
+    return mapping
 
-    # Derangement generation via rejection sampling
-    indices = np.arange(n)
-    while True:
-        perm = rng.permutation(n)
-        if np.all(perm != indices):
-            break
-
-    return {image_ids[i]: image_ids[perm[i]] for i in range(n)}
-
-def prepare_control_inputs(
-    pair: Dict[str, Any],
-    control_condition: str,
-    mismatched_mapping: Optional[Dict[str, str]] = None,
-) -> Tuple[Dict[str, Any], Dict[str, Any]]:
-    """
-    Returns (item_a, item_b) for evaluation under the requested control condition:
-    'correct', 'complementary_swap', 'mismatched', or 'no_image'.
-    """
-    q = pair["question"]
-    target_a = pair["image_a"]["target"]
-    target_b = pair["image_b"]["target"]
-    img_a = pair["image_a"]["image_id"]
-    img_b = pair["image_b"]["image_id"]
-
-    prompt = f"<|im_start|>user\n{q}<|im_end|>\n<|im_start|>assistant\n"
-
-    if control_condition == "correct":
-        item_a = {"image_id": img_a, "prompt": prompt, "target": target_a, "partner_target": target_b, "all_answers": pair["image_a"]["all_answers"]}
-        item_b = {"image_id": img_b, "prompt": prompt, "target": target_b, "partner_target": target_a, "all_answers": pair["image_b"]["all_answers"]}
-    elif control_condition == "complementary_swap":
-        # Swapped images: question A paired with image B, question B paired with image A
-        item_a = {"image_id": img_b, "prompt": prompt, "target": target_a, "partner_target": target_b, "all_answers": pair["image_a"]["all_answers"]}
-        item_b = {"image_id": img_a, "prompt": prompt, "target": target_b, "partner_target": target_a, "all_answers": pair["image_b"]["all_answers"]}
-    elif control_condition == "mismatched":
-        m_a = mismatched_mapping.get(img_a, img_b) if mismatched_mapping else img_b
-        m_b = mismatched_mapping.get(img_b, img_a) if mismatched_mapping else img_a
-        item_a = {"image_id": m_a, "prompt": prompt, "target": target_a, "partner_target": target_b, "all_answers": pair["image_a"]["all_answers"]}
-        item_b = {"image_id": m_b, "prompt": prompt, "target": target_b, "partner_target": target_a, "all_answers": pair["image_b"]["all_answers"]}
-    elif control_condition == "no_image":
-        item_a = {"image_id": None, "prompt": prompt, "target": target_a, "partner_target": target_b, "all_answers": pair["image_a"]["all_answers"]}
-        item_b = {"image_id": None, "prompt": prompt, "target": target_b, "partner_target": target_a, "all_answers": pair["image_b"]["all_answers"]}
-    else:
-        raise ValueError(f"Unknown control condition: {control_condition}")
-
-    return item_a, item_b
+def conditioned_image(pair: Dict[str, Any], pair_index: int, side: str, condition: str, mapping: Dict[Tuple[int, str], str]) -> Optional[str]:
+    """Image key used for one question side under one condition, or None for no image."""
+    other = "b" if side == "a" else "a"
+    if condition == "correct":
+        return pair[side]["image"]
+    if condition == "swap":
+        return pair[other]["image"]
+    if condition == "mismatched":
+        return mapping[(pair_index, side)]
+    if condition == "no_image":
+        return None
+    raise ValueError(f"Unknown control condition: {condition}")

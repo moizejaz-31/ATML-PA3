@@ -10,17 +10,35 @@ This task investigates supervised fine-tuning of `Qwen/Qwen3-0.6B` on mathematic
 5. **OPLoRA-16:** Orthogonal Projection LoRA with rank $r=16, \alpha=32$, and protection rank $k=128$ projecting updates outside leading singular bases of $W_0$.
 
 ## Key Modules
-* `src/data.py`: MetaMathQA dataset loader, sequence filtering, prompt/padding masking.
-* `src/train.py`: Unified training loop supporting FP16 mixed precision, FP32 master/adapter weights, AdamW, and cosine decay.
-* `src/l2sp.py`: Implementation of L2-SP regularization loss $\Omega(\theta, \theta_0)$.
-* `src/lora.py`: Linear LoRA adapter layer targeting attention and MLP projections.
-* `src/oplora.py`: Orthogonal projection adapter computing SVD bases and effective factors $\tilde{A}, \tilde{B}$.
-* `src/diagnostics.py`: Subspace interference $\rho_k$, relative update magnitude $\eta$, and prompt activation ratio $R(z)$.
-* `src/evaluate.py`: Zero-shot evaluation harness wrapper and GSM8K CoT answer extraction.
+* `src/data.py`: MetaMathQA selection, non-thinking chat formatting, prompt/padding masking, probe set.
+* `src/train.py`: Training loop with effective-batch token normalization, FP16 autocast, resumable recovery checkpoints, and resource logging.
+* `src/l2sp.py`: L2-SP penalty $\Omega(\theta, \theta_0)$ and displacement.
+* `src/lora.py`: LoRA adapters, factor export, and merging into fresh backbones.
+* `src/oplora.py`: OPLoRA adapters with SVD bases and projected factors $\tilde{A}, \tilde{B}$.
+* `src/conditions.py`: The seven evaluation conditions and the merged-versus-unmerged logit check.
+* `src/evaluate.py`: Zero-shot benchmarks through lm-evaluation-harness, with per-example outputs.
+* `src/diagnostics.py`: Subspace interference $\rho_k$, relative update magnitude $\eta$, and activation ratio $R(z)$.
+* `src/qualitative.py`: The 168 qualitative responses and the blank sheet for the 42 hand annotations.
+* `run_task1_figures.py`: Tables and figures, built only from saved results.
+* `tests/test_task1.py`: Fast CPU checks on a tiny random model.
 
-## Notebook Walkthrough
-1. `notebooks/1_data_and_baselines.ipynb`: Data filtering, tokenization checks, and unchanged baseline evaluation.
-2. `notebooks/2_training_runs.ipynb`: Execution and logging for the 5 fine-tuning variants.
-3. `notebooks/3_benchmark_evaluations.ipynb`: Zero-shot evaluation across GSM8K, HellaSwag, BoolQ, and ARC-Easy.
-4. `notebooks/4_weight_and_activation_diagnostics.ipynb`: Weight-space SVD projection and activation probe diagnostics.
-5. `notebooks/5_qualitative_analysis.ipynb`: Qualitative prompt audit across plain, JSON, and template formats.
+## Reproducing
+Use `kaggle_runner.ipynb` in the repository root. It runs every step below over as many sessions as needed. To run steps yourself from the repository root:
+
+```bash
+python -m pytest task1_llm_finetuning/tests -q
+python -m task1_llm_finetuning.src.data --seed 6304
+python -m task1_llm_finetuning.src.train --config task1_llm_finetuning/configs/lora_r16.yaml
+python -m task1_llm_finetuning.src.evaluate --condition lora_r16_1250
+python -m task1_llm_finetuning.src.diagnostics
+python -m task1_llm_finetuning.src.qualitative
+python task1_llm_finetuning/run_task1_figures.py
+```
+
+Evaluation conditions are `baseline`, `full_ft_625`, `full_ft_1250`, `full_ft_l2sp_1250`, `lora_r4_1250`, `lora_r16_1250`, and `oplora_r16_1250`. Re-running a stopped command resumes it.
+
+## Deviation From the Manual
+The manual asks for recovery checkpoints at updates 312, 625, 937, and 1,250. All four are written, but by default each one replaces the previous one, and the last is removed once a run finishes, because a Full FT recovery file is about 7 GB and Kaggle keeps about 20 GB. Weights or adapters at every evaluation stage are always kept. Pass `--keep_all_recovery` to keep all four. State this in the report if you use the default.
+
+## External Material
+`configs/first_plot_questions.yaml` is from the [emergent-misalignment repository](https://github.com/emergent-misalignment/emergent-misalignment).

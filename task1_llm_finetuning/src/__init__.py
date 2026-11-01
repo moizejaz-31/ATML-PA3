@@ -8,7 +8,6 @@ from .l2sp import L2SPRegularizer
 from .lora import LoRALinear
 from .oplora import OPLoRALinear
 from .diagnostics import compute_subspace_interference, compute_relative_magnitude
-from .evaluate import evaluate_benchmarks
 
 __all__ = [
     "prepare_metamath_dataset",
@@ -19,5 +18,4 @@ __all__ = [
     "OPLoRALinear",
     "compute_subspace_interference",
     "compute_relative_magnitude",
-    "evaluate_benchmarks",
 ]

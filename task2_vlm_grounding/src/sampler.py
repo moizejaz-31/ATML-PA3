@@ -1,82 +1,79 @@
 """
-Curriculum mixture replay sampler for Task 2.
+Curriculum example streams for Task 2.
+- Stage 1: two passes over the caption examples.
 - Stage 2 (Visual Instruction): 50% presence pairs, 25% counting pairs, 25% caption replay.
 - Stage 3 (Natural VQA Specialization): 70% natural VQAv2, 10% presence, 10% counting, 10% caption replay.
-Each draw contributes two examples: a complete complementary pair, or two caption examples.
+Each draw contributes two examples: a complete question pair, or two caption examples.
+Draws are seeded with no batch or stage quotas. Stream state can be saved and restored.
 """
+from typing import Any, Dict, List
 import numpy as np
-from typing import Dict, Any, List, Tuple
+
+STAGE_MIXTURES = {
+    2: {"presence": 0.50, "counting": 0.25, "caption": 0.25},
+    3: {"natural": 0.70, "presence": 0.10, "counting": 0.10, "caption": 0.10},
+}
+
+def pair_examples(pair: Dict[str, Any], kind: str) -> List[Dict[str, Any]]:
+    return [{"image": pair[side]["image"], "question": pair["question"], "target": pair[side]["target"], "kind": kind} for side in ("a", "b")]
+
+def caption_example(caption: Dict[str, str]) -> Dict[str, Any]:
+    return {"image": caption["image"], "question": None, "target": caption["caption"], "kind": "caption"}
+
+class CaptionStream:
+    """Stage 1: seeded shuffled passes over all caption examples."""
+    def __init__(self, captions: List[Dict[str, str]], seed: int):
+        self.captions = captions
+        self.rng = np.random.default_rng(seed)
+        self.order = self.rng.permutation(len(captions))
+        self.position = 0
+
+    def next_examples(self, count: int) -> List[Dict[str, Any]]:
+        examples = []
+        while len(examples) < count:
+            if self.position == len(self.order):
+                self.order = self.rng.permutation(len(self.captions))
+                self.position = 0
+            examples.append(caption_example(self.captions[int(self.order[self.position])]))
+            self.position += 1
+        return examples
+
+    def state(self) -> Dict[str, Any]:
+        return {"rng": self.rng.bit_generator.state, "order": self.order.tolist(), "position": self.position}
+
+    def load_state(self, state: Dict[str, Any]) -> None:
+        self.rng.bit_generator.state = state["rng"]
+        self.order = np.array(state["order"])
+        self.position = state["position"]
 
 class CurriculumSampler:
-    def __init__(
-        self,
-        stage: int,
-        presence_pairs: List[Dict[str, Any]] = None,
-        counting_pairs: List[Dict[str, Any]] = None,
-        caption_examples: List[Dict[str, Any]] = None,
-        vqa_pairs: List[Dict[str, Any]] = None,
-        seed: int = 6304,
-    ):
-        self.stage = stage
+    """Stages 2 and 3: seeded draws from the stage mixture. Mixture counts are logged."""
+    def __init__(self, stage: int, manifest: Dict[str, Any], seed: int):
+        self.mixture = STAGE_MIXTURES[stage]
         self.rng = np.random.default_rng(seed)
-        self.presence = presence_pairs or []
-        self.counting = counting_pairs or []
-        self.captions = caption_examples or []
-        self.vqa = vqa_pairs or []
+        self.pools = {"presence": manifest["presence_pool"], "counting": manifest["counting_pool"], "natural": manifest["vqa_train"], "caption": manifest["caption_train"]}
+        self.names = list(self.mixture)
+        self.probabilities = [self.mixture[n] for n in self.names]
+        self.counts = {n: 0 for n in self.names}
 
-        if stage == 2:
-            self.categories = ["presence", "counting", "caption"]
-            self.probs = [0.50, 0.25, 0.25]
-        elif stage == 3:
-            self.categories = ["vqa", "presence", "counting", "caption"]
-            self.probs = [0.70, 0.10, 0.10, 0.10]
-        else:
-            raise ValueError(f"CurriculumSampler only configured for stages 2 and 3, got stage {stage}")
+    def draw(self) -> List[Dict[str, Any]]:
+        name = str(self.rng.choice(self.names, p=self.probabilities))
+        self.counts[name] += 1
+        pool = self.pools[name]
+        if name == "caption":
+            first, second = self.rng.choice(len(pool), size=2, replace=False)
+            return [caption_example(pool[int(first)]), caption_example(pool[int(second)])]
+        return pair_examples(pool[int(self.rng.integers(len(pool)))], name)
 
-    def draw_pair_or_replay(self) -> List[Dict[str, Any]]:
-        """
-        Draws one curriculum item yielding exactly two training examples.
-        Preserves complete question pairs.
-        """
-        cat = self.rng.choice(self.categories, p=self.probs)
+    def next_examples(self, count: int) -> List[Dict[str, Any]]:
+        examples: List[Dict[str, Any]] = []
+        while len(examples) < count:
+            examples.extend(self.draw())
+        return examples
 
-        if cat == "presence" and self.presence:
-            idx = self.rng.integers(len(self.presence))
-            pair = self.presence[idx]
-            q = pair["question"]
-            return [
-                {"image_id": pair["image_a"]["image_id"], "prompt": f"<|im_start|>user\n{q}<|im_end|>\n<|im_start|>assistant\n", "target": pair["image_a"]["target"]},
-                {"image_id": pair["image_b"]["image_id"], "prompt": f"<|im_start|>user\n{q}<|im_end|>\n<|im_start|>assistant\n", "target": pair["image_b"]["target"]},
-            ]
-        elif cat == "counting" and self.counting:
-            idx = self.rng.integers(len(self.counting))
-            pair = self.counting[idx]
-            q = pair["question"]
-            return [
-                {"image_id": pair["image_a"]["image_id"], "prompt": f"<|im_start|>user\n{q}<|im_end|>\n<|im_start|>assistant\n", "target": pair["image_a"]["target"]},
-                {"image_id": pair["image_b"]["image_id"], "prompt": f"<|im_start|>user\n{q}<|im_end|>\n<|im_start|>assistant\n", "target": pair["image_b"]["target"]},
-            ]
-        elif cat == "vqa" and self.vqa:
-            idx = self.rng.integers(len(self.vqa))
-            pair = self.vqa[idx]
-            q = pair["question"]
-            return [
-                {"image_id": pair["image_a"]["image_id"], "prompt": f"<|im_start|>user\n{q}<|im_end|>\n<|im_start|>assistant\n", "target": pair["image_a"]["target"]},
-                {"image_id": pair["image_b"]["image_id"], "prompt": f"<|im_start|>user\n{q}<|im_end|>\n<|im_start|>assistant\n", "target": pair["image_b"]["target"]},
-            ]
-        else:
-            # Caption replay (draw 2 captions)
-            if len(self.captions) >= 2:
-                idxs = self.rng.choice(len(self.captions), size=2, replace=False)
-                exs = []
-                for i in idxs:
-                    cap = self.captions[i]
-                    prompt = "<|im_start|>user\nProvide a description for this image.<|im_end|>\n<|im_start|>assistant\n"
-                    exs.append({"image_id": cap["image_id"], "prompt": prompt, "target": cap["caption"]})
-                return exs
-            elif len(self.captions) == 1:
-                cap = self.captions[0]
-                prompt = "<|im_start|>user\nProvide a description for this image.<|im_end|>\n<|im_start|>assistant\n"
-                return [{"image_id": cap["image_id"], "prompt": prompt, "target": cap["caption"]}] * 2
-            else:
-                return []
+    def state(self) -> Dict[str, Any]:
+        return {"rng": self.rng.bit_generator.state, "counts": dict(self.counts)}
+
+    def load_state(self, state: Dict[str, Any]) -> None:
+        self.rng.bit_generator.state = state["rng"]
+        self.counts = dict(state["counts"])

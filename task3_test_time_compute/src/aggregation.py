@@ -5,16 +5,18 @@ Answer aggregation and candidate selection rules for Task 3:
 3. Highest-Score Selection (argmax_i Q_i)
 4. Rank-Weighted Consensus (RWC):
    w_i = (N - r_i) / (N - 1), W(a) = sum_{i: a_i = a} w_i
+Score and vote ties resolve to the earliest supporting rollout in the current order.
 """
-from typing import List, Dict, Any, Tuple
+from typing import List, Sequence
 from collections import defaultdict
 import numpy as np
+from scipy.stats import rankdata
 
-def select_first_ans(answers: List[str]) -> str:
+def select_first_ans(answers: List):
     """Return earliest candidate answer."""
     return answers[0]
 
-def select_self_consistency(answers: List[str]) -> str:
+def select_self_consistency(answers: List):
     """Majority voting with tie broken by earliest appearance."""
     counts = defaultdict(int)
     earliest_idx = {}
@@ -23,52 +25,32 @@ def select_self_consistency(answers: List[str]) -> str:
         if a not in earliest_idx:
             earliest_idx[a] = i
 
-    best_ans = max(counts.keys(), key=lambda a: (counts[a], -earliest_idx[a]))
-    return best_ans
+    return max(counts.keys(), key=lambda a: (counts[a], -earliest_idx[a]))
 
-def select_highest_score(answers: List[str], scores: List[float]) -> str:
+def select_highest_score(answers: List, scores: Sequence[float]):
     """Return answer of candidate with highest score (earliest on tie)."""
-    best_idx = 0
-    best_score = scores[0]
-    for i, s in enumerate(scores):
-        if s > best_score:
-            best_score = s
-            best_idx = i
-    return answers[best_idx]
+    return answers[int(np.argmax(scores))]
 
-def rank_weighted_consensus(answers: List[str], scores: List[float]) -> str:
+def average_ranks(scores: Sequence[float]) -> np.ndarray:
+    """Descending average ranks: rank 1 is the best score, and ties share their mean rank."""
+    return rankdata(-np.asarray(scores, dtype=float), method="average")
+
+def rank_weighted_consensus(answers: List, scores: Sequence[float]):
     """
     RWC selection rule:
     w_i = (N - r_i) / (N - 1) where r_i is average rank in descending order (rank 1 is best).
     W(a) = sum_{i: a_i = a} w_i
     """
-    N = len(scores)
-    if N == 1:
+    n = len(scores)
+    if n == 1:
         return answers[0]
-
-    # Compute average rank for tied scores in descending order
-    # (highest score gets rank 1)
-    sorted_indices = sorted(range(N), key=lambda i: scores[i], reverse=True)
-    ranks = [0.0] * N
-    
-    i = 0
-    while i < N:
-        j = i
-        while j < N and scores[sorted_indices[j]] == scores[sorted_indices[i]]:
-            j += 1
-        # Indices sorted_indices[i...j-1] are tied
-        avg_rank = (i + 1 + j) / 2.0
-        for idx in range(i, j):
-            ranks[sorted_indices[idx]] = avg_rank
-        i = j
 
     vote_weights = defaultdict(float)
     earliest_idx = {}
-    for idx, (a, r) in enumerate(zip(answers, ranks)):
-        w = (N - r) / (N - 1.0)
-        vote_weights[a] += w
+    for idx, (a, r) in enumerate(zip(answers, average_ranks(scores))):
+        vote_weights[a] += (n - r) / (n - 1.0)
         if a not in earliest_idx:
             earliest_idx[a] = idx
 
-    best_ans = max(vote_weights.keys(), key=lambda a: (vote_weights[a], -earliest_idx[a]))
-    return best_ans
+    # Rounding guard: floating-point sums of equal votes must still tie
+    return max(vote_weights.keys(), key=lambda a: (round(vote_weights[a], 9), -earliest_idx[a]))

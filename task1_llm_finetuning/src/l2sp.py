@@ -55,6 +55,27 @@ class L2SPRegularizer:
         return penalty * self.lambda_reg, raw_omega, scaled_penalty
 
     @torch.no_grad()
+    def add_penalty_gradient(self, current_model: nn.Module, grad_scale: float = 1.0) -> Tuple[float, float]:
+        """
+        Add the penalty's exact gradient, lambda * (theta - theta_0), to each parameter's .grad,
+        multiplied by the gradient scaler's current scale so that unscaling treats it like the SFT gradients.
+        Equivalent to backpropagating compute_penalty, without keeping a full copy of the weights alive.
+        Returns (raw_omega, lambda * raw_omega).
+        """
+        omega = None
+        for name, param in current_model.named_parameters():
+            if name not in self.reference_params:
+                continue
+            diff = param.float() - self.reference_params[name].to(param.device)
+            part = 0.5 * diff.pow(2).sum()
+            omega = part if omega is None else omega + part
+            if param.grad is None:
+                param.grad = torch.zeros_like(param)
+            param.grad.add_(diff.to(param.grad.dtype), alpha=self.lambda_reg * grad_scale)
+        raw_omega = float(omega) if omega is not None else 0.0
+        return raw_omega, self.lambda_reg * raw_omega
+
+    @torch.no_grad()
     def compute_displacement(self, current_model: nn.Module) -> float:
         """
         Compute Euclidean norm of parameter displacement: ||theta - theta_0||_2.

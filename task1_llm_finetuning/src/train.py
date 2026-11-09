@@ -70,11 +70,32 @@ def configure_optimizer(model: nn.Module, lr: float, weight_decay: float = 0.01)
         {"params": decay_params, "weight_decay": weight_decay},
         {"params": no_decay_params, "weight_decay": 0.0},
     ]
-    return torch.optim.AdamW(optim_groups, lr=lr, betas=(0.9, 0.999), eps=1e-8)
+    # The fused kernel avoids the temporary copies of every gradient that the default implementation makes
+    fused = all(p.is_cuda for group in optim_groups for p in group["params"]) and torch.cuda.is_available()
+    return torch.optim.AdamW(optim_groups, lr=lr, betas=(0.9, 0.999), eps=1e-8, fused=fused)
 
 def count_valid_tokens(labels: torch.Tensor) -> int:
     """Number of supervised next-token targets in a microbatch."""
     return int((labels[:, 1:] != -100).sum().item())
+
+LOSS_CHUNK_TOKENS = 1024
+
+def _chunk_cross_entropy(hidden: torch.Tensor, targets: torch.Tensor, lm_head: nn.Module) -> torch.Tensor:
+    return F.cross_entropy(lm_head(hidden).float(), targets, reduction="sum")
+
+def chunked_next_token_loss(hidden: torch.Tensor, labels: torch.Tensor, lm_head: nn.Module, chunk: int = LOSS_CHUNK_TOKENS) -> torch.Tensor:
+    """
+    The same sum as summed_next_token_loss, without full-vocabulary logits for every position.
+    Only supervised positions are projected, a chunk at a time, and each chunk's logits are
+    recomputed during backward instead of stored.
+    """
+    mask = labels[:, 1:] != -100
+    selected = hidden[:, :-1][mask]
+    targets = labels[:, 1:][mask]
+    total = selected.new_zeros((), dtype=torch.float32)
+    for start in range(0, selected.shape[0], chunk):
+        total = total + torch.utils.checkpoint.checkpoint(_chunk_cross_entropy, selected[start:start + chunk], targets[start:start + chunk], lm_head, use_reentrant=False)
+    return total
 
 def summed_next_token_loss(logits: torch.Tensor, labels: torch.Tensor) -> torch.Tensor:
     """Next-token cross-entropy summed over supervised tokens, computed in FP32."""
@@ -321,8 +342,8 @@ def train_task1_model(
             labels = batch["labels"].to(device)
 
             with torch.amp.autocast("cuda", enabled=use_amp, dtype=torch.float16):
-                logits = model(input_ids=input_ids, attention_mask=attention_mask).logits
-            loss = summed_next_token_loss(logits, labels) / valid_tokens
+                hidden = model.model(input_ids=input_ids, attention_mask=attention_mask).last_hidden_state
+                loss = chunked_next_token_loss(hidden, labels, model.lm_head) / valid_tokens
 
             scaler.scale(loss).backward()
             accum_sft_loss += loss.item()
@@ -332,8 +353,7 @@ def train_task1_model(
         raw_omega, scaled_omega = 0.0, 0.0
         if use_l2sp:
             l2sp_start = time.perf_counter()
-            penalty_tensor, raw_omega, scaled_omega = reference.compute_penalty(model)
-            scaler.scale(penalty_tensor).backward()
+            raw_omega, scaled_omega = reference.add_penalty_gradient(model, grad_scale=scaler.get_scale())
             summary["l2sp_seconds"] += time.perf_counter() - l2sp_start
 
         current_lr = scheduler.get_last_lr()[0]

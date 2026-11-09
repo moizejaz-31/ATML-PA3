@@ -13,7 +13,7 @@ from task1_llm_finetuning.src.l2sp import L2SPRegularizer
 from task1_llm_finetuning.src.lora import apply_lora_to_model, export_adapter_factors, delta_from_factors
 from task1_llm_finetuning.src.oplora import apply_oplora_to_model
 from task1_llm_finetuning.src.diagnostics import compute_subspace_interference
-from task1_llm_finetuning.src.train import count_valid_tokens, summed_next_token_loss, train_task1_model
+from task1_llm_finetuning.src.train import chunked_next_token_loss, count_valid_tokens, summed_next_token_loss, train_task1_model
 
 TARGETS = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
 
@@ -106,6 +106,38 @@ def test_l2sp_counts_tied_parameters_once_and_is_not_averaged():
     assert omega == pytest.approx(0.5 * model.lm_head.weight.numel(), rel=1e-5)
     assert scaled == pytest.approx(1e-3 * omega)
     assert reference.compute_displacement(model) == pytest.approx(model.lm_head.weight.numel() ** 0.5, rel=1e-5)
+
+def test_chunked_loss_matches_full_logits_loss_and_gradients():
+    model = tiny_model()
+    ids = torch.randint(0, 64, (2, 12))
+    labels = ids.clone()
+    labels[0, :5] = -100
+    labels[1, 9:] = -100
+    full = summed_next_token_loss(model(input_ids=ids).logits, labels)
+    full.backward()
+    expected = model.lm_head.weight.grad.clone()
+    model.zero_grad()
+    chunked = chunked_next_token_loss(model.model(input_ids=ids).last_hidden_state, labels, model.lm_head, chunk=3)
+    chunked.backward()
+    assert torch.isclose(full, chunked, rtol=1e-5)
+    assert torch.allclose(expected, model.lm_head.weight.grad, atol=1e-5)
+
+def test_direct_l2sp_gradient_matches_autograd():
+    model = tiny_model()
+    reference = L2SPRegularizer(model, lambda_reg=1e-3)
+    with torch.no_grad():
+        for p in model.parameters():
+            p.add_(torch.randn_like(p) * 0.1)
+    penalty, omega, _ = reference.compute_penalty(model)
+    penalty.backward()
+    expected = {n: p.grad.clone() for n, p in model.named_parameters()}
+    model.zero_grad()
+    for p in model.parameters():
+        p.grad = torch.zeros_like(p)
+    direct_omega, scaled = reference.add_penalty_gradient(model, grad_scale=8.0)
+    assert direct_omega == pytest.approx(omega, rel=1e-5) and scaled == pytest.approx(1e-3 * omega, rel=1e-5)
+    for n, p in model.named_parameters():
+        assert torch.allclose(p.grad, 8.0 * expected[n], atol=1e-7)
 
 def adapter_model():
     plain = tiny_model()

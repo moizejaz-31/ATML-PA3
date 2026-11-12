@@ -1,0 +1,43 @@
+{
+ "visual_tokens": 196,
+ "total_updates": 4500,
+ "full_recipe": true,
+ "training_seconds": 7236.621558904648,
+ "peak_gpu_mb": 5692.25390625,
+ "skipped_updates": [
+  1,
+  2,
+  3,
+  4,
+  13
+ ],
+ "stage_params": {
+  "1": 1837056,
+  "2": 6424576,
+  "3": 6424576
+ },
+ "stage_seconds": {
+  "1": 3367.0207130908966,
+  "2": 5956.923461437225,
+  "3": 7236.621558904648
+ },
+ "mixture_counts": {
+  "2": {
+   "presence": 6005,
+   "counting": 2961,
+   "caption": 3034
+  },
+  "3": {
+   "natural": 4262,
+   "presence": 538,
+   "counting": 598,
+   "caption": 602
+  }
+ },
+ "checkpoint_mb": {
+  "stage_1": 7.010483741760254,
+  "stage_2": 24.583020210266113,
+  "stage_3": 24.583020210266113
+ },
+ "completed": true
+}

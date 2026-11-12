@@ -1,0 +1,26 @@
+{
+  "run_name": "oplora_r16",
+  "method": "oplora",
+  "max_updates": 1250,
+  "effective_batch_size": 32,
+  "trainable_params": 10092544,
+  "total_params": 606142464,
+  "displacement": {},
+  "skipped_updates": [],
+  "checkpoint_sizes_mb": {
+    "recovery_312": 115.99970722198486,
+    "recovery_625": 116.02247333526611,
+    "recovery_937": 116.04511737823486,
+    "evaluation_1250": 77.22595119476318,
+    "recovery_1250": 116.06938648223877
+  },
+  "peak_gpu_mb": 9722.26708984375,
+  "training_seconds": 11862.966472148895,
+  "l2sp_seconds": 0.0,
+  "preprocessing": {
+    "svd_seconds": 126.43351824400088,
+    "basis_storage_mb": 308.00048828125
+  },
+  "completed": true,
+  "adapter_export_seconds": 0.14633147999848006
+}

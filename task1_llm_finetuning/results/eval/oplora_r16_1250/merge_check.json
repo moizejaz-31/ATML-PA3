@@ -1,0 +1,6 @@
+{
+  "condition": "oplora_r16_1250",
+  "checked": true,
+  "max_logit_diff": 6.67572021484375e-05,
+  "tolerance": 0.01
+}

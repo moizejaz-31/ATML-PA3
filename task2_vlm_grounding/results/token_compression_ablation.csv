@@ -1,6 +1,0 @@
-Metric,196 Tokens (14x14),49 Tokens (7x7 pooled),Delta (%)
-Presence Acc (%),91.67,88.89,-3.03
-Counting MAE,0.31,0.44,41.9
-VQAv2 Score (%),52.34,48.72,-6.92
-Throughput (tokens/s),18.4,34.2,85.9
-Peak VRAM (GB),5.82,4.21,-27.7

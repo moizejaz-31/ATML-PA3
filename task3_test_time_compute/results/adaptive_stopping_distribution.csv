@@ -1,0 +1,17 @@
+rollouts,share,policy
+4,66.73750000000001,math: Agreement
+32,26.8375,math: Agreement
+8,5.175,math: Agreement
+16,1.25,math: Agreement
+4,77.3,math: Quality-aware
+32,16.0,math: Quality-aware
+8,5.5,math: Quality-aware
+16,1.2,math: Quality-aware
+4,57.7125,mathvista: Agreement
+32,32.3875,mathvista: Agreement
+8,7.875,mathvista: Agreement
+16,2.025,mathvista: Agreement
+4,59.675,mathvista: Quality-aware
+32,26.275,mathvista: Quality-aware
+8,9.9,mathvista: Quality-aware
+16,4.15,mathvista: Quality-aware

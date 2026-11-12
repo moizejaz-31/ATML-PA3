@@ -1,0 +1,5 @@
+Dataset,Case,Question,Gold,Self-consistency,Quality-aware,Votes per group
+MATH (Qwen2.5-3B),Selection disagreement,test:2892,-71,1,0,"[4, 4, 2, 1, 1]"
+MATH (Qwen2.5-3B),Premature stop at 4,test:3504,216,fixed-32 was correct,stopped early and was wrong,"[13, 4, 2, 2, 1]"
+MathVista (Qwen2.5-VL-3B),Selection disagreement,552,4,4,2,"[14, 9, 9]"
+MathVista (Qwen2.5-VL-3B),Premature stop at 4,358,A,fixed-32 was correct,stopped early and was wrong,"[14, 7, 5, 3, 3]"

@@ -1,0 +1,5 @@
+strategy,accuracy,extraction,truncation,input_tokens,output_tokens,seconds
+single_long,62.0,96.0,4.0,108.38,686.38,34.46
+parallel,66.0,90.0,24.0,325.14,1863.42,92.34
+refinement,64.0,100.0,12.0,863.6,1151.04,58.11
+initial_only,60.0,88.0,12.0,108.38,609.72,30.3

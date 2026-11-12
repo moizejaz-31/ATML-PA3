@@ -1,0 +1,6 @@
+{
+  "condition": "lora_r16_1250",
+  "checked": true,
+  "max_logit_diff": 3.528594970703125e-05,
+  "tolerance": 0.01
+}

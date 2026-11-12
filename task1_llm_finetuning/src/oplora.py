@@ -22,6 +22,8 @@ from typing import List, Optional, Tuple
 import torch
 import torch.nn as nn
 
+from .lora import DEFAULT_TARGET_MODULES, replace_target_linears
+
 class OPLoRALinear(nn.Module):
     def __init__(
         self,
@@ -66,22 +68,27 @@ class OPLoRALinear(nn.Module):
 
     def get_projected_factors(self) -> Tuple[torch.Tensor, torch.Tensor]:
         """
-        Compute effective projected factors:
+        Compute effective projected factors in FP32, even inside an FP16 autocast region:
         B_tilde = B - Uk (Uk^T B)
         A_tilde = A - (A Vk) Vk^T
         """
-        Uk = self.Uk.to(self.lora_B.device, dtype=torch.float32)
-        Vk = self.Vk.to(self.lora_A.device, dtype=torch.float32)
+        with torch.autocast(device_type=self.lora_B.device.type, enabled=False):
+            Uk = self.Uk.to(self.lora_B.device, dtype=torch.float32)
+            Vk = self.Vk.to(self.lora_A.device, dtype=torch.float32)
 
-        # Uk @ (Uk.T @ B)
-        B_proj = Uk @ (Uk.T @ self.lora_B)
-        B_tilde = self.lora_B - B_proj
+            # Uk @ (Uk.T @ B)
+            B_proj = Uk @ (Uk.T @ self.lora_B)
+            B_tilde = self.lora_B - B_proj
 
-        # (A @ Vk) @ Vk.T
-        A_proj = (self.lora_A @ Vk) @ Vk.T
-        A_tilde = self.lora_A - A_proj
+            # (A @ Vk) @ Vk.T
+            A_proj = (self.lora_A @ Vk) @ Vk.T
+            A_tilde = self.lora_A - A_proj
 
         return A_tilde, B_tilde
+
+    def get_effective_factors(self) -> Tuple[torch.Tensor, torch.Tensor]:
+        """Return the projected (A_tilde, B_tilde) pair that defines delta W."""
+        return self.get_projected_factors()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         if self.merged:
@@ -128,27 +135,13 @@ def apply_oplora_to_model(
     Returns the adapted model.
     """
     if target_modules is None:
-        target_modules = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+        target_modules = DEFAULT_TARGET_MODULES
 
     effective_alpha = alpha if alpha is not None else (lora_alpha if lora_alpha is not None else 32.0)
 
-    # Freeze backbone
-    for param in model.parameters():
-        param.requires_grad = False
-
-    count = 0
-    for name, module in model.named_modules():
-        for child_name, child_module in list(module.named_children()):
-            if any(child_name == t or name.endswith(t) for t in target_modules):
-                if isinstance(child_module, nn.Linear):
-                    oplora_layer = OPLoRALinear(
-                        base_layer=child_module,
-                        r=r,
-                        lora_alpha=effective_alpha,
-                        k=k,
-                        lora_dropout=lora_dropout,
-                    )
-                    setattr(module, child_name, oplora_layer)
-                    count += 1
-    model.oplora_module_count = count
+    model.oplora_module_count = replace_target_linears(
+        model,
+        target_modules,
+        lambda base: OPLoRALinear(base_layer=base, r=r, lora_alpha=effective_alpha, k=k, lora_dropout=lora_dropout),
+    )
     return model

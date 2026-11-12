@@ -1,5 +1,0 @@
-Pair_ID,Type,Question,ImgA_Target,ImgA_Pred_Correct,ImgA_Pred_Swap,ImgA_Pred_NoImg,ImgB_Target,ImgB_Pred_Correct,ImgB_Pred_Swap,ImgB_Pred_NoImg,Evidence_Dependence
-Presence_01,Presence,Does this image contain a dog?,yes,yes,no,yes,no,no,yes,yes,Strong visual grounding (flips correctly on swap; prior defaults to 'yes')
-Counting_04,Counting,How many sheep can you see?,2,2,3,2,4,3,2,2,Partial grounding (under-counts at count=4; sensitive to swap)
-VQA_09,Natural VQA,What color is the fire hydrant?,yellow,yellow,red,red,,,,,Perfect grounding (overcomes dominant training prior 'red' under image evidence)
-VQA_18,Natural VQA,Is the train moving?,yes,yes,yes,yes,,,,,Prior dominance (fails to shift on swap; persistently predicts 'yes')

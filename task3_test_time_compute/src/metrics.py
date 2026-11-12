@@ -3,56 +3,53 @@ Quality scoring and confidence metrics for Task 3:
 1. Mean log-probability L_i
 2. Self-certainty K_i
 3. Visual engagement V_i
-4. Candidate-calibrated VisConf Z_i = V_i * C_i
+4. Candidate-calibrated VisConf Z_i = V_i * C_i, and its tokenwise ablation
 """
-from typing import List
+from typing import List, Sequence, Tuple
 import numpy as np
 
-def compute_mean_logp(logp_list: List[float]) -> float:
-    """L_i = (1 / T_i) sum_t log p_{i,t}(y_{i,t})"""
-    if not logp_list:
-        return 0.0
+def compute_mean_logp(logp_list: Sequence[float]) -> float:
+    """L_i = (1 / T_i) sum_t log p_{i,t}(y_{i,t}). An empty rollout ranks last."""
+    if len(logp_list) == 0:
+        return float("-inf")
     return float(np.mean(logp_list))
 
-def compute_self_certainty(kl_list: List[float]) -> float:
-    """K_i = (1 / T_i) sum_t D_KL(U || p_{i,t})"""
-    if not kl_list:
-        return 0.0
+def compute_self_certainty(kl_list: Sequence[float]) -> float:
+    """K_i = (1 / T_i) sum_t D_KL(U || p_{i,t}). An empty rollout ranks last."""
+    if len(kl_list) == 0:
+        return float("-inf")
     return float(np.mean(kl_list))
 
-def compute_visual_engagement(image_att: List[float], prompt_att: List[float], gen_att: List[float]) -> float:
-    """
-    v_{i,t} = A^image / (A^image + A^prompt + A^generated)
-    V_i = (1 / T_i) sum_t v_{i,t}
-    """
-    if not image_att:
+def compute_token_engagement(image_att, prompt_att, gen_att) -> np.ndarray:
+    """v_{i,t} = A^image / (A^image + A^prompt + A^generated), zero where the total is zero."""
+    image_att, prompt_att, gen_att = [np.asarray(a, dtype=np.float64) for a in (image_att, prompt_att, gen_att)]
+    total = image_att + prompt_att + gen_att
+    return np.divide(image_att, total, out=np.zeros_like(total), where=total > 0)
+
+def compute_visual_engagement(image_att, prompt_att, gen_att) -> float:
+    """V_i = (1 / T_i) sum_t v_{i,t}"""
+    if len(image_att) == 0:
         return 0.0
-    v_t = []
-    for a_img, a_prm, a_gen in zip(image_att, prompt_att, gen_att):
-        denom = a_img + a_prm + a_gen
-        v_t.append(a_img / denom if denom > 0 else 0.0)
-    return float(np.mean(v_t))
+    return float(np.mean(compute_token_engagement(image_att, prompt_att, gen_att)))
 
-def compute_visconf(
-    candidate_kl_tokens: List[List[float]],
-    candidate_vis_engagements: List[float],
-) -> List[float]:
+def calibrate_tokens(candidate_kl_tokens: List[np.ndarray]) -> List[np.ndarray]:
     """
-    Candidate-calibrated VisConf Z_i = V_i * C_i
     c_{i,t} = clip_{[0,1]}((k_{i,t} - Q_{.05}(G)) / max(Q_{.95}(G) - Q_{.05}(G), 10^-8))
+    G pools the current candidates only, so unseen rollouts never influence the calibration.
     """
-    all_kl = [k for tokens in candidate_kl_tokens for k in tokens]
-    if not all_kl:
-        return [0.0] * len(candidate_kl_tokens)
+    pooled = np.concatenate(candidate_kl_tokens) if candidate_kl_tokens else np.empty(0)
+    if pooled.size == 0:
+        return [np.empty(0) for _ in candidate_kl_tokens]
+    q05, q95 = np.percentile(pooled, [5, 95], method="linear")
+    scale = max(q95 - q05, 1e-8)
+    return [np.clip((np.asarray(k) - q05) / scale, 0.0, 1.0) for k in candidate_kl_tokens]
 
-    q05 = np.percentile(all_kl, 5, method="linear")
-    q95 = np.percentile(all_kl, 95, method="linear")
-    denom = max(q95 - q05, 1e-8)
+def compute_visconf(candidate_kl_tokens: List[np.ndarray], candidate_vis_engagements: Sequence[float]) -> List[float]:
+    """Z_i = V_i * C_i, where C_i averages calibrated confidence within the rollout."""
+    calibrated = calibrate_tokens(candidate_kl_tokens)
+    return [float(V * c.mean()) if c.size else 0.0 for c, V in zip(calibrated, candidate_vis_engagements)]
 
-    Z_scores = []
-    for kl_tokens, V_i in zip(candidate_kl_tokens, candidate_vis_engagements):
-        c_tokens = [np.clip((k - q05) / denom, 0.0, 1.0) for k in kl_tokens]
-        C_i = float(np.mean(c_tokens)) if c_tokens else 0.0
-        Z_scores.append(V_i * C_i)
-
-    return Z_scores
+def compute_visconf_tokenwise(candidate_kl_tokens: List[np.ndarray], candidate_v_tokens: List[np.ndarray]) -> List[float]:
+    """Z_i^token = (1 / T_i) sum_t c_{i,t} v_{i,t}"""
+    calibrated = calibrate_tokens(candidate_kl_tokens)
+    return [float(np.mean(c * v)) if c.size else 0.0 for c, v in zip(calibrated, candidate_v_tokens)]

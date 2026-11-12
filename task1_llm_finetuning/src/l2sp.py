@@ -13,25 +13,25 @@ Key Requirements:
 - Do not average Omega over parameters.
 - Record Omega, lambda * Omega, total loss, and parameter displacement ||theta - theta_0||_2.
 """
-from typing import Dict, Set, Tuple
+import time
+from typing import Dict, Tuple
 import torch
 import torch.nn as nn
 
 class L2SPRegularizer:
     def __init__(self, reference_model: nn.Module, lambda_reg: float = 1e-3, device: str = "cpu"):
         """
-        Store frozen reference parameter snapshot theta_0 on CPU or target device.
+        Store frozen reference parameter snapshot theta_0 on the target device.
+        named_parameters() already yields tied parameters once.
         """
         self.lambda_reg = lambda_reg
         self.reference_params: Dict[str, torch.Tensor] = {}
-        seen_ptrs: Set[int] = set()
 
+        start = time.perf_counter()
         for name, param in reference_model.named_parameters():
-            # Track unique parameters to avoid duplicate regularization on tied weights
-            ptr = param.data_ptr()
-            if ptr not in seen_ptrs:
-                seen_ptrs.add(ptr)
-                self.reference_params[name] = param.detach().clone().to(device)
+            self.reference_params[name] = param.detach().to(device, dtype=torch.float32, copy=True)
+        self.snapshot_seconds = time.perf_counter() - start
+        self.storage_mb = sum(p.numel() * p.element_size() for p in self.reference_params.values()) / (1024 ** 2)
 
     def compute_penalty(self, current_model: nn.Module) -> Tuple[torch.Tensor, float, float]:
         """
@@ -44,40 +44,47 @@ class L2SPRegularizer:
         """
         first_param = next(current_model.parameters())
         penalty = torch.tensor(0.0, device=first_param.device, dtype=torch.float32)
-        seen_ptrs: Set[int] = set()
 
         for name, param in current_model.named_parameters():
-            ptr = param.data_ptr()
-            if ptr in seen_ptrs:
-                continue
-            seen_ptrs.add(ptr)
-
             if name in self.reference_params:
-                ref = self.reference_params[name].to(param.device, dtype=torch.float32)
-                cur = param.float()
-                diff = cur - ref
-                penalty = penalty + 0.5 * torch.sum(diff ** 2)
+                ref = self.reference_params[name].to(param.device)
+                penalty = penalty + 0.5 * torch.sum((param - ref) ** 2)
 
         raw_omega = penalty.item()
         scaled_penalty = self.lambda_reg * raw_omega
         return penalty * self.lambda_reg, raw_omega, scaled_penalty
 
+    @torch.no_grad()
+    def add_penalty_gradient(self, current_model: nn.Module, grad_scale: float = 1.0) -> Tuple[float, float]:
+        """
+        Add the penalty's exact gradient, lambda * (theta - theta_0), to each parameter's .grad,
+        multiplied by the gradient scaler's current scale so that unscaling treats it like the SFT gradients.
+        Equivalent to backpropagating compute_penalty, without keeping a full copy of the weights alive.
+        Returns (raw_omega, lambda * raw_omega).
+        """
+        omega = None
+        for name, param in current_model.named_parameters():
+            if name not in self.reference_params:
+                continue
+            diff = param.float() - self.reference_params[name].to(param.device)
+            part = 0.5 * diff.pow(2).sum()
+            omega = part if omega is None else omega + part
+            if param.grad is None:
+                param.grad = torch.zeros_like(param)
+            param.grad.add_(diff.to(param.grad.dtype), alpha=self.lambda_reg * grad_scale)
+        raw_omega = float(omega) if omega is not None else 0.0
+        return raw_omega, self.lambda_reg * raw_omega
+
+    @torch.no_grad()
     def compute_displacement(self, current_model: nn.Module) -> float:
         """
         Compute Euclidean norm of parameter displacement: ||theta - theta_0||_2.
         """
         sum_sq = 0.0
-        seen_ptrs: Set[int] = set()
 
         for name, param in current_model.named_parameters():
-            ptr = param.data_ptr()
-            if ptr in seen_ptrs:
-                continue
-            seen_ptrs.add(ptr)
-
             if name in self.reference_params:
-                ref = self.reference_params[name].to(param.device, dtype=torch.float32)
-                diff = param.detach().float() - ref
-                sum_sq += torch.sum(diff ** 2).item()
+                ref = self.reference_params[name].to(param.device)
+                sum_sq += torch.sum((param.float() - ref) ** 2).item()
 
         return float(sum_sq ** 0.5)

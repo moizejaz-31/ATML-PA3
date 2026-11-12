@@ -1,0 +1,12 @@
+{
+  "exact_match_flexible": 61.63760424564063,
+  "exact_match_strict": 0.0,
+  "task": "gsm8k_cot",
+  "primary_metric": "exact_match_flexible",
+  "primary": 61.63760424564063,
+  "n": 1319,
+  "truncated_rate": 0.530705079605762,
+  "invalid_flexible_rate": 0.0758150113722517,
+  "mean_new_tokens": 137.91508718726308,
+  "condition": "lora_r16_1250"
+}

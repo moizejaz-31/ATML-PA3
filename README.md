@@ -65,9 +65,9 @@ Pretrained foundation models serve as strong initializations for downstream appl
 │   ├── README.md                       # Task 1 guide & experimental protocol
 │   ├── configs/                        # Hyperparameter YAMLs (Full FT, L2-SP, LoRA-4, LoRA-16, OPLoRA)
 │   ├── splits/                         # Probe set sample IDs (32 GSM8K + 32 HellaSwag)
-│   ├── notebooks/                      # 5 step-by-step notebooks (Data, Training, Eval, Diagnostics, Qualitative)
-│   ├── src/                            # Modular implementations (Data, L2-SP, LoRA, OPLoRA, SVD, Eval)
-│   ├── checkpoints/                    # Saved checkpoints and run histories
+│   ├── src/                            # Modular implementations (Data, L2-SP, LoRA, OPLoRA, Eval, Diagnostics, Qualitative)
+│   ├── tests/                          # Fast CPU checks on a tiny random model
+│   ├── checkpoints/                    # Saved checkpoints (not committed)
 │   └── results/                        # Machine-readable output CSVs and JSONs
 ├── task2_vlm_grounding/
 │   ├── README.md                       # Task 2 guide & curriculum protocol
@@ -123,19 +123,13 @@ set_seed(6304)
 ## Experimental Workflow
 
 ### Task 1: LLM Fine-Tuning
-1. **Baseline Evaluation:** Run `task1_llm_finetuning/notebooks/1_data_and_baselines.ipynb` to evaluate the unchanged `Qwen/Qwen3-0.6B` baseline zero-shot across GSM8K, HellaSwag, BoolQ, and ARC-Easy.
-2. **Training Runs:** Execute `task1_llm_finetuning/notebooks/2_training_runs.ipynb` for Full FT, Full FT + L2-SP, LoRA-4, LoRA-16, and OPLoRA-16 with checkpointing at 312, 625, 937, and 1,250 updates.
-3. **Diagnostics & Qualitative:** Execute notebooks `3`, `4`, and `5` for lm-eval benchmark comparisons, SVD subspace interference calculations, and qualitative prompt audits.
+Run `kaggle_task1.ipynb` on Kaggle (GPU T4 x2). It trains the five variants, evaluates the seven conditions, computes diagnostics and qualitative responses, and resumes across sessions. See `task1_llm_finetuning/README.md` for the individual commands.
 
 ### Task 2: Vision-Language Models & Grounding
-1. **Feature Caching:** Run `task2_vlm_grounding/notebooks/1_siglip_feature_caching.ipynb` to cache FP16 SigLIP patch features.
-2. **Curriculum Training:** Progress through notebooks `3_stage1_caption_alignment.ipynb`, `4_stage2_visual_instruction_tuning.ipynb`, and `5_stage3_vqa_specialization.ipynb`.
-3. **Grounding Evaluation:** Execute `6_grounding_evaluation_and_controls.ipynb` to evaluate the model under the four image conditions and compute bootstrap confidence intervals.
+Run `kaggle_task2.ipynb` on Kaggle (GPU T4 x2). It selects the data, caches SigLIP features, trains the 4,500-update curriculum with resuming across sessions, runs the final evaluation, and executes the seven analysis notebooks in `task2_vlm_grounding/notebooks/`.
 
 ### Task 3: Test-Time Compute
-1. **Data Ingestion:** Place `ATML-PA3-Data` parquet files into `task3_test_time_compute/data/`.
-2. **Offline Evaluation:** Run `task3_test_time_compute/notebooks/1_data_loading_and_oracle_coverage.ipynb` and `2_quality_scoring_and_rwc.ipynb` to analyze candidate budgets $N \in \{1, 2, 4, 8, 16, 32\}$.
-3. **Live Refinement & Adaptive Sampling:** Execute notebooks `4`, `5`, and `6` to evaluate the 3,072-token budget strategies on the 50 MATH problems and simulate adaptive stopping controllers.
+Run `kaggle_task3.ipynb` on Kaggle (GPU T4). It downloads `ATML-PA3-Data` and the MathVista metadata, runs the six notebooks in `task3_test_time_compute/notebooks/` in order, and packages the executed notebooks, results, and split IDs.
 
 ---
 
@@ -143,3 +137,19 @@ set_seed(6304)
 * **Code & Experiments:** All source code, configs, notebooks, and machine-readable outputs are tracked in this repository.
 * **Report:** 8-page NeurIPS-style PDF report synthesizing empirical evidence and answering the 14 research questions.
 * **Author:** Moiz Ejaz (Roll Number / Student ID: 28100357).
+
+---
+
+## Running on Kaggle From the Terminal
+Each task is independent and has its own runner. `kaggle_push.py` pushes a runner and starts it on a GPU T4 x2 with internet enabled.
+
+```bash
+pip install kaggle
+python kaggle_push.py task1 smoke
+python kaggle_push.py task1 status
+python kaggle_push.py task1 full
+python kaggle_push.py task1 resume
+python kaggle_push.py task1 results
+```
+
+Replace `task1` with `task2` or `task3`. Task 3 has no `smoke` mode. Kaggle clones the code from GitHub, so commit and push before running.

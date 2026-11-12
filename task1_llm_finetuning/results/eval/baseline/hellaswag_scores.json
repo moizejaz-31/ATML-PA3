@@ -1,0 +1,9 @@
+{
+  "acc_norm": 47.31129257120096,
+  "acc": 37.582154949213304,
+  "task": "hellaswag",
+  "primary_metric": "acc_norm",
+  "primary": 47.31129257120096,
+  "n": 10042,
+  "condition": "baseline"
+}

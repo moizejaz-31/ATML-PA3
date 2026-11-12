@@ -1,0 +1,5 @@
+{
+ "rule": "mean L2 norm of training-caption token embeddings / mean L2 norm of initial connector outputs on training features",
+ "scale": 0.05473073944449425,
+ "sample_images": 256
+}

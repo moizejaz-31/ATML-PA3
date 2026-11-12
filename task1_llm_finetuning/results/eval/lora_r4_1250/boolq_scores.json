@@ -1,0 +1,8 @@
+{
+  "acc": 67.24770642201835,
+  "task": "boolq",
+  "primary_metric": "acc",
+  "primary": 67.24770642201835,
+  "n": 3270,
+  "condition": "lora_r4_1250"
+}

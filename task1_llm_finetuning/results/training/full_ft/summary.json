@@ -1,0 +1,28 @@
+{
+  "run_name": "full_ft",
+  "method": "full_ft",
+  "max_updates": 1250,
+  "effective_batch_size": 32,
+  "trainable_params": 596049920,
+  "total_params": 596049920,
+  "displacement": {
+    "625": 10.023909022834577,
+    "1250": 10.661891655590587
+  },
+  "skipped_updates": [],
+  "checkpoint_sizes_mb": {
+    "recovery_312": 6821.687096595764,
+    "evaluation_625": 2273.8732023239136,
+    "recovery_625": 6821.709862709045,
+    "recovery_937": 6821.732506752014,
+    "evaluation_1250": 2273.8735036849976,
+    "recovery_1250": 6821.7565240859985
+  },
+  "peak_gpu_mb": 11981.92236328125,
+  "training_seconds": 8386.462000846863,
+  "l2sp_seconds": 0.0,
+  "preprocessing": {},
+  "completed": true,
+  "reference_storage_mb": 2273.75,
+  "reference_snapshot_seconds": 2.0472635230000833
+}

@@ -1,0 +1,4 @@
+Dataset,Training,Development,Final test
+COCO captions,18000 examples,96,-
+Annotation-derived grounding,8000 presence + 7900 counting in pools,24 pairs,64 pairs
+Natural VQAv2,1536 pairs,32 pairs,96 pairs

@@ -1,0 +1,22 @@
+{
+ "math": {
+  "agreement": {
+   "tau": 0.625,
+   "gamma": null
+  },
+  "quality_aware": {
+   "tau": 0.5,
+   "gamma": 0.0
+  }
+ },
+ "mathvista": {
+  "agreement": {
+   "tau": 0.625,
+   "gamma": null
+  },
+  "quality_aware": {
+   "tau": 0.5,
+   "gamma": 0.25
+  }
+ }
+}

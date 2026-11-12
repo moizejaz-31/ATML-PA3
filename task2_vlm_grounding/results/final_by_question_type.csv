@@ -1,0 +1,6 @@
+suite,type,Correct image,Complementary swap,Mismatched,No image
+grounding,counting,46.875,17.1875,21.875,0.0
+grounding,presence,93.75,6.25,50.0,0.0
+natural,number,59.583333333333336,15.625,28.125,0.0
+natural,other,46.66666666666666,18.88888888888889,20.13888888888889,0.0
+natural,yes/no,56.94444444444444,52.22222222222223,48.33333333333333,0.0

@@ -1,0 +1,8 @@
+{
+  "acc": 59.84709480122324,
+  "task": "boolq",
+  "primary_metric": "acc",
+  "primary": 59.84709480122324,
+  "n": 3270,
+  "condition": "full_ft_625"
+}

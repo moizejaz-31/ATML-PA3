@@ -1,0 +1,9 @@
+{
+  "acc_norm": 63.04713804713805,
+  "acc": 65.9090909090909,
+  "task": "arc_easy",
+  "primary_metric": "acc_norm",
+  "primary": 63.04713804713805,
+  "n": 2376,
+  "condition": "full_ft_l2sp_1250"
+}

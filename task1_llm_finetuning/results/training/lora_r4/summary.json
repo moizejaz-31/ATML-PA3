@@ -1,0 +1,23 @@
+{
+  "run_name": "lora_r4",
+  "method": "lora",
+  "max_updates": 1250,
+  "effective_batch_size": 32,
+  "trainable_params": 2523136,
+  "total_params": 598573056,
+  "displacement": {},
+  "skipped_updates": [],
+  "checkpoint_sizes_mb": {
+    "recovery_312": 29.374646186828613,
+    "recovery_625": 29.397351264953613,
+    "recovery_937": 29.419995307922363,
+    "evaluation_1250": 19.475951194763184,
+    "recovery_1250": 29.44432544708252
+  },
+  "peak_gpu_mb": 9298.76708984375,
+  "training_seconds": 9421.222253322601,
+  "l2sp_seconds": 0.0,
+  "preprocessing": {},
+  "completed": true,
+  "adapter_export_seconds": 0.036199748999933945
+}

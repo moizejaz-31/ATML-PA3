@@ -1,0 +1,26 @@
+{
+  "run_name": "full_ft_l2sp",
+  "method": "full_ft_l2sp",
+  "max_updates": 1250,
+  "effective_batch_size": 32,
+  "trainable_params": 596049920,
+  "total_params": 596049920,
+  "displacement": {
+    "1250": 6.268570635356765
+  },
+  "skipped_updates": [],
+  "checkpoint_sizes_mb": {
+    "recovery_312": 6821.687096595764,
+    "recovery_625": 6821.709801673889,
+    "recovery_937": 6821.732445716858,
+    "evaluation_1250": 2273.8735036849976,
+    "recovery_1250": 6821.756463050842
+  },
+  "peak_gpu_mb": 11981.92236328125,
+  "training_seconds": 9194.863900899887,
+  "l2sp_seconds": 782.2735311820506,
+  "preprocessing": {},
+  "completed": true,
+  "reference_storage_mb": 2273.75,
+  "reference_snapshot_seconds": 2.0415311319993634
+}

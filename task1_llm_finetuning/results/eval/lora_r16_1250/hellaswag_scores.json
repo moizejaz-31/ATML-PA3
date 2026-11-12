@@ -1,0 +1,9 @@
+{
+  "acc_norm": 47.50049790878311,
+  "acc": 37.88090021907987,
+  "task": "hellaswag",
+  "primary_metric": "acc_norm",
+  "primary": 47.50049790878311,
+  "n": 10042,
+  "condition": "lora_r16_1250"
+}

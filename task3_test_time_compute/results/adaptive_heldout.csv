@@ -1,0 +1,7 @@
+Dataset,Policy,tau,gamma,Accuracy (%),Mean tokens,Mean rollouts
+MATH (Qwen2.5-3B),Fixed-32,,,73.9,21347.0175,32.0
+MATH (Qwen2.5-3B),Agreement,0.625,,73.6875,10212.5475,11.871500000000001
+MATH (Qwen2.5-3B),Quality-aware,0.5,0.0,73.25,7556.959124999999,8.844000000000001
+MathVista (Qwen2.5-VL-3B),Fixed-32,,,63.175000000000004,8897.7575,32.0
+MathVista (Qwen2.5-VL-3B),Agreement,0.625,,63.1125,4628.174,13.6265
+MathVista (Qwen2.5-VL-3B),Quality-aware,0.5,0.25,63.237500000000004,4036.9265,12.251

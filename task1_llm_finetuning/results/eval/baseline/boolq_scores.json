@@ -1,0 +1,8 @@
+{
+  "acc": 64.37308868501529,
+  "task": "boolq",
+  "primary_metric": "acc",
+  "primary": 64.37308868501529,
+  "n": 3270,
+  "condition": "baseline"
+}

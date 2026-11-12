@@ -1,0 +1,9 @@
+{
+  "acc_norm": 45.67815176259709,
+  "acc": 37.03445528779128,
+  "task": "hellaswag",
+  "primary_metric": "acc_norm",
+  "primary": 45.67815176259709,
+  "n": 10042,
+  "condition": "full_ft_625"
+}

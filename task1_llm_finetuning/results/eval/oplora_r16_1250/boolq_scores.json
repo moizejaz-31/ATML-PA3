@@ -1,0 +1,8 @@
+{
+  "acc": 72.75229357798165,
+  "task": "boolq",
+  "primary_metric": "acc",
+  "primary": 72.75229357798165,
+  "n": 3270,
+  "condition": "oplora_r16_1250"
+}

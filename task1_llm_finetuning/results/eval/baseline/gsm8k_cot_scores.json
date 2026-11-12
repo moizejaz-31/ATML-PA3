@@ -1,0 +1,12 @@
+{
+  "exact_match_flexible": 43.36618650492798,
+  "exact_match_strict": 0.0,
+  "task": "gsm8k_cot",
+  "primary_metric": "exact_match_flexible",
+  "primary": 43.36618650492798,
+  "n": 1319,
+  "truncated_rate": 0.9855951478392722,
+  "invalid_flexible_rate": 0.0,
+  "mean_new_tokens": 226.47536012130402,
+  "condition": "baseline"
+}

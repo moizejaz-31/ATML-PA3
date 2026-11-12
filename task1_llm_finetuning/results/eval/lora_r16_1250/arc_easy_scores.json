@@ -1,0 +1,9 @@
+{
+  "acc_norm": 63.76262626262626,
+  "acc": 66.62457912457911,
+  "task": "arc_easy",
+  "primary_metric": "acc_norm",
+  "primary": 63.76262626262626,
+  "n": 2376,
+  "condition": "lora_r16_1250"
+}

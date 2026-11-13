@@ -131,12 +131,21 @@ Run `kaggle_task2.ipynb` on Kaggle (GPU T4 x2). It selects the data, caches SigL
 ### Task 3: Test-Time Compute
 Run `kaggle_task3.ipynb` on Kaggle (GPU T4). It downloads `ATML-PA3-Data` and the MathVista metadata, runs the six notebooks in `task3_test_time_compute/notebooks/` in order, and packages the executed notebooks, results, and split IDs.
 
+### Report statistics and Figure 1 (CPU, from saved results)
+These read only the committed result files and take under a minute:
+```bash
+python -m task1_llm_finetuning.paired_differences      # Task 1 paired bootstrap intervals -> results/paired_differences.csv
+python -m task3_test_time_compute.adaptive_differences # adaptive vs fixed-32 intervals   -> results/adaptive_differences.csv
+python make_overview_figure.py task_overview.png       # report Figure 1
+```
+
 ---
 
 ## Deliverables & Academic Integrity
 * **Code & Experiments:** All source code, configs, notebooks, and machine-readable outputs are tracked in this repository.
 * **Report:** 8-page NeurIPS-style PDF report synthesizing empirical evidence and answering the 14 research questions.
 * **Author:** Moiz Ejaz (Roll Number / Student ID: 28100357).
+* **Attribution:** The LoRA, OPLoRA, L2-SP, VLM connector and Task 3 selection/stopping code is our own implementation of the cited methods; no external code was copied. We build on PyTorch, Hugging Face Transformers and Datasets, lm-evaluation-harness 0.4.13 (benchmark evaluation) and math-verify (MATH answer equivalence). Models (Qwen3-0.6B, SigLIP-base) and datasets (MetaMathQA, GSM8K, HellaSwag, BoolQ, ARC-Easy, COCO, VQAv2, MATH, MathVista, ATML-PA3-Data) are downloaded at runtime and not committed. Code was written with assistance from Claude (Anthropic).
 
 ---
 

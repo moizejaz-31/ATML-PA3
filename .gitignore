@@ -102,3 +102,9 @@ Thumbs.db
 # --- Experiment Tracking ---
 wandb/
 runs/
+
+# --- Personal Kaggle runners and notes (kept locally, not part of the submission) ---
+kaggle_push.py
+kaggle_task*.ipynb
+discussion_questions.md
+build_task2_notebooks.py

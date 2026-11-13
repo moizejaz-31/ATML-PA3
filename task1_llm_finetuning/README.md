@@ -23,7 +23,7 @@ This task investigates supervised fine-tuning of `Qwen/Qwen3-0.6B` on mathematic
 * `tests/test_task1.py`: Fast CPU checks on a tiny random model.
 
 ## Reproducing
-Use `kaggle_task1.ipynb` in the repository root. It runs every step below over as many sessions as needed. To run steps yourself from the repository root:
+Run these from the repository root, in order (we ran them on Kaggle, GPU T4 x2, over several sessions):
 
 ```bash
 python -m pytest task1_llm_finetuning/tests -q

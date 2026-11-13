@@ -3,7 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![PyTorch 2.1+](https://img.shields.io/badge/PyTorch-2.1%2B-red.svg)](https://pytorch.org/)
 [![Random Seed: 6304](https://img.shields.io/badge/Seed-6304-green.svg)](shared/src/seed.py)
-[![Course: EE--5102/CS--6304](https://img.shields.io/badge/Course-ATML--Fall2026-purple.svg)](manual/ATML-PA3-manual.md)
+![Course: EE--5102/CS--6304](https://img.shields.io/badge/Course-ATML--Fall2026-purple.svg)
 
 > **Course:** EE-5102 / CS-6304: Advanced Topics in Machine Learning  
 > **Institution:** Department of Computer Science, Lahore University of Management Sciences (LUMS)  
@@ -46,11 +46,7 @@ Pretrained foundation models serve as strong initializations for downstream appl
 ├── README.md                           # Master documentation and reproduction guide
 ├── requirements.txt                    # Exact environment specifications
 ├── setup.py                            # Local editable package installer
-├── discussion_questions.md             # Detailed breakdown of all 14 research questions
-├── manual/
-│   ├── ATML-PA3.pdf                    # Official course assignment manual
-│   ├── manual_extracted.txt            # Raw text extraction of all 15 manual pages
-│   └── ATML-PA3-manual.md              # Formatted Markdown specification of manual
+├── make_overview_figure.py             # Report Figure 1, built from saved results
 ├── shared/
 │   ├── README.md                       # Documentation for common utilities
 │   ├── configs/
@@ -122,14 +118,16 @@ set_seed(6304)
 
 ## Experimental Workflow
 
+All experiments were run on Kaggle (GPU T4 x2 for Tasks 1 and 2, one T4 for Task 3). Every command is run from the repository root, and a stopped run resumes when re-run.
+
 ### Task 1: LLM Fine-Tuning
-Run `kaggle_task1.ipynb` on Kaggle (GPU T4 x2). It trains the five variants, evaluates the seven conditions, computes diagnostics and qualitative responses, and resumes across sessions. See `task1_llm_finetuning/README.md` for the individual commands.
+Run the commands in `task1_llm_finetuning/README.md` in order: data selection, training of the five variants, evaluation of the seven conditions, diagnostics, qualitative responses, and the figures. Outputs land in `task1_llm_finetuning/results/` (benchmark scores and per-example outputs, diagnostics, training histories, figures).
 
 ### Task 2: Vision-Language Models & Grounding
-Run `kaggle_task2.ipynb` on Kaggle (GPU T4 x2). It selects the data, caches SigLIP features, trains the 4,500-update curriculum with resuming across sessions, runs the final evaluation, and executes the seven analysis notebooks in `task2_vlm_grounding/notebooks/`.
+Run notebooks 1–6 in `task2_vlm_grounding/notebooks/` in order: feature caching, data selection, the three curriculum stages, and the final grounding evaluation. The committed notebooks keep their executed outputs. Notebook 7 is the optional 49-token experiment, which was not run.
 
 ### Task 3: Test-Time Compute
-Run `kaggle_task3.ipynb` on Kaggle (GPU T4). It downloads `ATML-PA3-Data` and the MathVista metadata, runs the six notebooks in `task3_test_time_compute/notebooks/` in order, and packages the executed notebooks, results, and split IDs.
+Place the supplied `ATML-PA3-Data` rollouts and the MathVista metadata in `task3_test_time_compute/data/`, then run notebooks 1–6 in `task3_test_time_compute/notebooks/` in order. The committed notebooks keep their executed outputs.
 
 ### Report statistics and Figure 1 (CPU, from saved results)
 These read only the committed result files and take under a minute:
@@ -146,19 +144,3 @@ python make_overview_figure.py task_overview.png       # report Figure 1
 * **Report:** 8-page NeurIPS-style PDF report synthesizing empirical evidence and answering the 14 research questions.
 * **Author:** Moiz Ejaz (Roll Number / Student ID: 28100357).
 * **Attribution:** The LoRA, OPLoRA, L2-SP, VLM connector and Task 3 selection/stopping code is our own implementation of the cited methods; no external code was copied. We build on PyTorch, Hugging Face Transformers and Datasets, lm-evaluation-harness 0.4.13 (benchmark evaluation) and math-verify (MATH answer equivalence). Models (Qwen3-0.6B, SigLIP-base) and datasets (MetaMathQA, GSM8K, HellaSwag, BoolQ, ARC-Easy, COCO, VQAv2, MATH, MathVista, ATML-PA3-Data) are downloaded at runtime and not committed. Code was written with assistance from Claude (Anthropic).
-
----
-
-## Running on Kaggle From the Terminal
-Each task is independent and has its own runner. `kaggle_push.py` pushes a runner and starts it on a GPU T4 x2 with internet enabled.
-
-```bash
-pip install kaggle
-python kaggle_push.py task1 smoke
-python kaggle_push.py task1 status
-python kaggle_push.py task1 full
-python kaggle_push.py task1 resume
-python kaggle_push.py task1 results
-```
-
-Replace `task1` with `task2` or `task3`. Task 3 has no `smoke` mode. Kaggle clones the code from GitHub, so commit and push before running.
